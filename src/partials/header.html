@@ -1,9 +1,48 @@
-<header class="header container">
+<header class="header container" id="header">
   <div class="header-container">
     <nav class="header-nav">
-      <svg class="logo">
-        <use class="logo-icon" href="./images/sprite.svg#logo"></use>
-      </svg>
+      <a class="logo" href="./index.html" aria-label="Логотип сайта Ice Cream">
+        <img src="./images/icon/logo.svg" alt="Логотип">
+      </a>
+
+      <button
+            type="button"
+            class="header-mobile-menu-btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+          
+            <svg class="header-mobile-btn-icon"
+              width="30"
+              height="30"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="header-menu"
+            >
+              <use class="header-icon-close-menu" href="./images/icon/close.svg"></use>
+              <use class="header-icon-menu" 
+              width="24" height="16" 
+              href="./images/icon/burger.svg">
+            </use>
+            </svg>
+          </button>
+
+          <div class="header-menu" id="header-menu" data-menu>
+            
+            <!-- <ul class="header-site-nav-list list-decor">
+              <li class="header-site-nav__item">
+                <a
+                  class="header-site-nav__link--link-current link header-site-nav__link"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-site-nav__item">
+                <a class="link header-site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-site-nav__item">
+                <a class="link header-site-nav__link" href="">Контакты</a>
+              </li>
+            </ul> -->
     </nav>
   </div>
 </header>
