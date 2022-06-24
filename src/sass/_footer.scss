@@ -1,3 +1,4 @@
+
 .footer {
     background-color: var(--secondary-bg-cl);
 
@@ -59,5 +60,11 @@
     &__item:not(:last-child) {
         margin-bottom: 10px;
     }
+}
+
+
+.btn {
+    color: var(--dark-cl);
+    background-color: var(--hero-txt-cl);
 }
 
