@@ -3,24 +3,17 @@
   margin-left: auto;
   margin-right: auto;
 }
-.reviews__bg {
+.reviews__background {
+  background-color: var(--reviews-bg-cl);
+}
+.reviews__gradient {
   background-color: var(--reviews-bg-cl);
   margin-bottom: 15px;
-  &::before {
-    content: '';
-    width: 54px;
-    height: 40px;
-    background-color: tomato;
-  }
-}
-.reviews__text {
-  position: relative;
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.55;
-  text-align: center;
-  color: var(--dark-cl);
+
+  padding-top: 43px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   background-clip: content-box;
   background-position-y: 6px;
@@ -31,11 +24,19 @@
     var(--reviews-bg-cl) 1px,
     var(--reviews-bg-cl) 31px
   );
+}
+.reviews__text {
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: var(--dark-cl);
+  z-index: 100;
 
-  padding-top: 43px;
-  padding-bottom: 25px;
-  padding-left: 65px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .reviews__client {
   position: relative;
@@ -46,7 +47,7 @@
   text-align: center;
   color: var(--dark-cl);
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
   &::before {
     position: absolute;
@@ -73,7 +74,7 @@
   }
   &--dot::before {
     position: absolute;
-    top: -71px;
+    top: -66px;
     left: 149px;
     content: '';
     width: 4px;
@@ -85,9 +86,29 @@
 .swiper-pagination {
   top: 490px;
 }
-// .swiper-slide::before {
-//   content: '';
-//   width: 54px;
-//   height: 40px;
-//   background-color: tomato;
-// }
+.swiper-slide {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 140px;
+    left: 54px;
+    z-index: 99;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/reviews/marks.svg);
+  }
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: var(--pagination-bg-cl);
+}
+.swiper-pagination-bullet-active {
+  border-radius: 0%;
+  background: url(../images/reviews/home.svg);
+}
