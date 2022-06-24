@@ -41,6 +41,24 @@
     letter-spacing: 0.04em;
     margin-bottom: 20px;
 }
+.contacts__card-place2 {
+    background-color: #C2E297;
+    border-radius: 4px;
+    width: 130px;
+
+   
+        font-size: 12px;
+        line-height: 22px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        justify-content: center;
+    
+        color: #FFFFFF;
+        margin-bottom: 20px;
+}
 .contacts__card-title {
    
         
@@ -109,8 +127,22 @@
        
     color: #907E82;
     margin-top: 24px;
+
+    &:hover {
+        color: #D41443;
+    }
+    &:focus {
+        color: #D41443;
+    }
 }
 .contacts__card-time {
     display: flex;
     flex-direction: column;
+}
+.contacts__button {
+    display: block;
+}
+.contacts__button-location {
+    width: 162px;
+    height: 44px;
 }
