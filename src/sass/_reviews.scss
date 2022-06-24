@@ -1,0 +1,77 @@
+.reviews__img {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__bg {
+  background-color: var(--reviews-bg-cl);
+  margin-bottom: 15px;
+}
+.reviews__text {
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: var(--dark-cl);
+
+  background-clip: content-box;
+  background-position-y: 6px;
+  background-image: repeating-linear-gradient(
+    to top,
+    var(--reviews-gradient-cl) 0px,
+    var(--reviews-gradient-cl) 1px,
+    var(--reviews-bg-cl) 1px,
+    var(--reviews-bg-cl) 31px
+  );
+
+  padding-top: 43px;
+  padding-bottom: 25px;
+  padding-left: 65px;
+  padding-right: 60px;
+}
+.reviews__client {
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--dark-cl);
+  padding-top: 15px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 127px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 137px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+  &--dot {
+    position: relative;
+  }
+  &--dot::before {
+    position: absolute;
+    top: -41px;
+    left: 147px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+}
