@@ -1,3 +1,17 @@
+.hero-container {
+    height: 422px;
+    padding-top: 114px;
+    background-color: var(--hero-bg-cl);
+
+    background-image: url(../images/hero/ice-cream.png), url(../images/hero/Ellipse.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 117px 12px, 36px 3px;
+
+    
+}
+
+
+
 .hero-title {
     width: 218px;
     height: 106px;
@@ -11,6 +25,8 @@
     text-transform: uppercase;
 
     color: var(--main-txt-cl);
+
+    margin-bottom: 20px;
 }
 
 .hero-title-big {
@@ -22,5 +38,46 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: red;
+    color: var(--hero-txt-cl);
+}
+
+.hero-button {
+    display: flex;     
+    
+    align-items: center;
+    text-align: center;
+}
+
+.button-red {
+    @include mq (mobile-only) {
+        font-size: 8px;
+        line-height: 1.25;
+        width: 61px;
+        height: 24px;
+           
+    }
+
+    color: var(--main-txt-cl);
+
+    background-color: var(--hero-txt-cl);
+    border-radius: 20px;
+    border: none;
+
+    margin-right: 8px;
+}
+
+.button-white {
+    @include mq (mobile-only) {
+            font-size: 8px;
+            line-height: 1.25;
+            width: 82px;
+            height: 24px;
+    
+        }
+    
+        color:var(--hero-txt-cl);
+    
+        background-color: var(--main-txt-cl);
+        border-radius: 20px;
+        border: none;
 }
