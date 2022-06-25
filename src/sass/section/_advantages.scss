@@ -1,0 +1,74 @@
+.advantages {
+  background-color: var(--secondary-bg-cl);
+}
+
+.advantages__list > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages__list > * {
+  &::before {
+    content: '';
+    display: block;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  &:first-child::before {
+    width: 33px;
+    background-image: url('../images/advantages/milk.png');
+    background-size: 33px 50px;
+  }
+
+  &:nth-child(2)::before {
+    width: 50px;
+    background-image: url('../images/advantages/apple.png');
+    background-size: 50px 50px;
+  }
+
+  &:last-child::before {
+    width: 44px;
+    background-image: url('../images/advantages/heart.png');
+    background-size: 44px 50px;
+  }
+}
+
+.advantages__block {
+  width: 230px;
+}
+
+.advantages__title {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-txt-cl);
+  margin-bottom: 20px;
+}
+
+.advantages__description {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--dark-cl);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages__list > * {
+    &:first-child::before {
+      background-image: url('../images/advantages/milk@2x.png');
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../images/advantages/apple@2x.png');
+    }
+
+    &:last-child::before {
+      background-image: url('../images/advantages/heart@2x.png');
+    }
+  }
+}
