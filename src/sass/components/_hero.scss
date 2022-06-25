@@ -1,12 +1,17 @@
+.hero {
+    background-color: var(--hero-bg-cl);
+
+    background-image: url(../images/hero/ice-cream.png),
+        url(../images/hero/ellipse.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 344px;
+    background-position: calc(50% + 43px) 12px, calc(50% + 50px) 3px;
+}
+
+
 .hero-container {
     height: 422px;
     padding-top: 114px;
-    background-color: var(--hero-bg-cl);
-
-    background-image: url(../images/hero/ice-cream.png), 
-    url(../images/hero/Ellipse.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 117px 12px, 36px 3px;
 
     
 }
