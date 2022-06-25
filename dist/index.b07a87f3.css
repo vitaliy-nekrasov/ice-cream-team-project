@@ -184,6 +184,7 @@ summary {
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -195,6 +196,147 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:root {
+  --hero-txt-cl: #d41443;
+  --main-txt-cl: #fff;
+  --secondary-txt-cl: #907e82;
+  --accent-cl: #ffa5ba;
+  --dark-cl: #000;
+  --hero-bg-cl: #ffb8ca;
+  --main-bg-cl: #fff;
+  --secondary-bg-cl: #fff5f6;
+  --reviews-bg-cl: #fafafa;
+  --reviews-gradient-cl: #e1e1e1;
+  --reviews-dot-cl: #c7133e;
+  --pagination-bg-cl: #d9d9d9;
+  --main-font: "DM Sans", sans-serif;
+  --secondary-font: "Titan One", sans-serif;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__section {
+    background-image: linear-gradient(to bottom, var(--secondary-bg-cl) 21px, var(--main-bg-cl) 24px);
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .gallery__section {
+    background-image: linear-gradient(to bottom, var(--secondary-bg-cl) 142px, var(--main-bg-cl) 158px);
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__section {
+    background-color: var(--main-bg-cl);
+    padding-bottom: 80px;
+  }
+}
+
+.gallery__list {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.gallery__item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__item:nth-child(3) {
+    align-items: flex-start;
+  }
+
+  .gallery__item:nth-child(4) {
+    padding-top: 3px;
+  }
+
+  .gallery__item:nth-child(5) {
+    padding-bottom: 7px;
+  }
+
+  .gallery__item:nth-child(6) {
+    padding-top: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .gallery__item:nth-child(3) {
+    align-items: flex-start;
+  }
+
+  .gallery__item:nth-child(4) {
+    padding-top: 7px;
+  }
+
+  .gallery__item:nth-child(5) {
+    padding-bottom: 18px;
+  }
+
+  .gallery__item:nth-child(6) {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item:nth-child(3) {
+    align-items: flex-start;
+  }
+
+  .gallery__item:nth-child(4) {
+    padding-top: 10px;
+  }
+
+  .gallery__item:nth-child(5) {
+    padding-bottom: 23px;
+  }
+
+  .gallery__item:nth-child(6) {
+    padding-top: 12px;
+  }
+}
+
+.gallery__picture {
+  cursor: pointer;
+  background-image: contai;
+  transition: box-shadow .4s ease-in-out, transform .4s ease-in-out, filter .4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__picture {
+    border-radius: 8px;
+    margin: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__picture {
+    border-radius: 20px;
+    margin: 3px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__picture {
+    margin: 3.5px;
+  }
+}
+
+.gallery__picture:hover, .gallery__picture:focus {
+  filter: sepia(14%) brightness() saturate(203%) contrast(98%);
+  z-index: 2;
+  transform: translate3d(20%, 20%, 50px)rotateY(180deg)scale3d(1, 1, 5);
+  box-shadow: -4px 4px 7px 1px #0000004d;
 }
 
 @media screen and (max-width: 767px) {
@@ -401,6 +543,56 @@ a {
     height: 12px;
     margin-left: 14px;
   }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
