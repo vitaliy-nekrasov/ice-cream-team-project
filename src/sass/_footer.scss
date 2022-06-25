@@ -1,7 +1,7 @@
 
 .footer {
     background-color: var(--secondary-bg-cl);
-
+    
     &__text {
 
         font-family: var(--secondary-font);
@@ -10,6 +10,8 @@
         font-size: 18px;
         line-height: 21px;
         text-transform: uppercase;
+
+        width: 232px;
 
         margin-top: 40px;
         margin-bottom: 16px;
@@ -24,6 +26,8 @@
         line-height: 39px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+
+        width: 200px;
         
         margin-bottom: 40px;  
     }
@@ -66,5 +70,80 @@
 .btn {
     color: var(--dark-cl);
     background-color: var(--hero-txt-cl);
+}
+
+// Socials
+
+.socials__list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.socials__link {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+
+    background-color: var(--accent-cl);
+    border-radius: 50%;
+
+    &:hover,
+     &:focus {
+            background-color: #2196F3;
+        }
+}
+
+.socials__icon {
+    fill: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Footer tel
+
+.footer__tel {
+
+   text-align: right;
+   margin-bottom: 40px;
+
+    &--text {
+        font-weight: 700;
+            font-size: 12px;
+            line-height: 22px;
+    }
+    &--number {
+       color: var(--hero-txt-cl);
+    }
+}
+
+// Footer copyright
+
+.footer__copyright {
+
+    padding-top: 16px;
+    border-top: 1px solid #E1E1E1;
+
+    &--text {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        justify-content: center;
+        color: var(--secondary-txt-cl);
+
+       
+
+    }
 }
 
