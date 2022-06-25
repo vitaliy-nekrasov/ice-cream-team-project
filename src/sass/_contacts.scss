@@ -2,9 +2,9 @@
     
     @include mq (mobile) {
         background-image: linear-gradient(to bottom,
-                       #FFFFFF 23%,
-                       #FFF5F6 23%,
-                    #fff5f6 80%);
+        #FFFFFF 23%,
+        #FFF5F6 23%,
+    #fff5f6 80%);
     }
     @include mq (tablet-only) {
     background-image: linear-gradient(to bottom,
@@ -14,9 +14,9 @@
     }
     @include mq (desktop) {
         background-image: linear-gradient(to bottom,
-                    #FFFFFF 18%,
-                    #FFF5F6 18%,
-                    #fff5f6 82%);
+        #FFFFFF 18%,
+        #FFF5F6 18%,
+        #fff5f6 82%);
     }
    
 }
@@ -177,21 +177,21 @@
    
     @include mq (tablet-only){
         background-color: #C2E297;
-            width: 138px;
-            height: 28px;
-            border-radius: 6px;
-            color: #ffffff;
+        width: 138px;
+        height: 28px;
+        border-radius: 6px;
+        color: #ffffff;
         
-            font-size: 16px;
-            line-height: 0.53;
+        font-size: 16px;
+        line-height: 0.53;
         
         
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            letter-spacing: 0.04em;
-            margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
     }
   
     @include mq (desktop) {
