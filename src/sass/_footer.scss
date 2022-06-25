@@ -88,27 +88,33 @@
 }
 
 .socials__link {
+    fill: var(--accent-cl);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // width: 32px;
+    // height: 32px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
+    // background-color: var(--accent-cl);
+    // border-radius: 50%;
 
-    background-color: var(--accent-cl);
-    border-radius: 50%;
+    // &:hover,
+    //  &:focus {
+    //         background-color: #2196F3;
+    //     }
+    &:hover .socials__icon,
+    &:focus .socials__icon{
+        fill: aqua;
+    }
 
-    &:hover,
-     &:focus {
-            background-color: #2196F3;
-        }
 }
 
 .socials__icon {
-    fill: #2196F3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    fill: var(--accent-cl);
+    // fill: #2196F3;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 // Footer tel
