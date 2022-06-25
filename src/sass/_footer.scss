@@ -1,7 +1,9 @@
 
 .footer {
+    width: 100wv;
+    height: 100wh;
     background-color: var(--secondary-bg-cl);
-    
+ 
     &__text {
 
         font-family: var(--secondary-font);
@@ -132,6 +134,7 @@
 
     padding-top: 16px;
     border-top: 1px solid #E1E1E1;
+    
 
     &--text {
         display: flex;
@@ -141,9 +144,6 @@
         text-align: center;
         justify-content: center;
         color: var(--secondary-txt-cl);
-
-       
-
     }
 }
 
