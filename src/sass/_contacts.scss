@@ -1,64 +1,64 @@
 .contacts {
-    @media screen and (min-width: 320px) and (max-width:767px) {
-    background-image: linear-gradient(to bottom,
-        #FFFFFF 23%,
-        #FFF5F6 23%,
-        #FFF5F6 80%);
+    
+    @include mq (mobile) {
+        background-image: linear-gradient(to bottom,
+                       #FFFFFF 23%,
+                       #FFF5F6 23%,
+                    #fff5f6 80%);
     }
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
     background-image: linear-gradient(to bottom,
         #FFFFFF 50%,
         #FFF5F6 50%,
-        #fff5f6 50%);
+        #fff5f6 50%); 
     }
-    @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(to bottom,
-        #FFFFFF 18%,
-        #FFF5F6 18%,
-        #fff5f6 82%);
+    @include mq (desktop) {
+        background-image: linear-gradient(to bottom,
+                    #FFFFFF 18%,
+                    #FFF5F6 18%,
+                    #fff5f6 82%);
     }
+   
 }
 
 .contacts__item {
-    @media screen and (min-width: 320px) and (max-width:767px){
-        
-   
+    @include mq (mobile-only){
         background-color: #ffffff;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-
-   
+        
+        
         width: 280px;
         height: 412px;
-
+        
         padding-top: 40px;
         padding-left: 32px;
         padding-bottom: 40px;
-
+        
         &:not(:last-child) {
-        margin-bottom: 20px;
-        }
+            margin-bottom: 20px;
+                 }
     }
-
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    
+   
+    @include mq (tablet-only){
         background-color: #FFFFFF;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-
-        width: 224px;
-        padding-top: 40px;
-        padding-left: 32px;
-        padding-bottom: 40px;
-
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 32px;
-        }
-      
+                 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+                 border-radius: 24px;
+        
+                 width: 224px;
+                padding-top: 40px;
+                 padding-left: 32px;
+                padding-bottom: 40px;
+        
+                 display: inline-block;
+        
+                 &:not(:last-child) {
+                     margin-right: 32px;
+                 }
     }
-
-    @media screen and (min-width: 1200px) {
+   
+    @include mq (desktop) {
         background-color: #FFFFFF;
             box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
             border-radius: 24px;
@@ -69,71 +69,73 @@
             padding-left: 40px;
             padding-bottom: 40px;
         
-            
+        
             display: inline-block;
         
             &:not(:last-child) {
                 margin-right: 32px;
             }
     }
+   
 
 }
 .contacts__card {
         list-style: none;
         margin-right: 0px;
 
-    @media screen and (min-width: 320px) and (max-width:767px){
+    @include mq (mobile-only){
         border-bottom: 1px solid #E1E1E1;
-        width: 218px;
+            width: 218px;
     }
-    @media screen and (min-width: 768px) and (max-width:1199px){
-        border-bottom: 1px solid #E1E1E1;
+   @include mq (tablet-only){
+    border-bottom: 1px solid #E1E1E1;
         width: 160px;
-    }
-    @media screen and (min-width: 1200px) {
+   }
+    @include mq (desktop) {
         border-bottom: 1px solid #E1E1E1;
         width: 288px;
     }
     
+    
 }
 .contacts__card-place {
-    @media screen and (min-width: 320px) and (max-width:767px) {
-        background-color: #F0D1A5;
-        width: 80px;
-        border-radius: 4px;
-        color: #ffffff;
-    
-        font-weight: 500;
-        font-size: 12px;
-    
-    
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        letter-spacing: 0.04em;
-        margin-bottom: 20px;
+    @include mq (mobile-only){
+            background-color: #F0D1A5;
+            width: 80px;
+            border-radius: 4px;
+            color: #ffffff;
+        
+            // font-weight: 500;
+            // font-size: 12px;
+        
+        
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 20px;
     }
-
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+   
+    @include mq (tablet-only) {
         background-color: #F0D1A5;
-        width: 73px;
-        height: 28px;
-        border-radius: 6px;
-        color: #ffffff;
+            width: 73px;
+            height: 28px;
+            border-radius: 6px;
+            color: #ffffff;
         
-        font-size: 16px;
-        line-height: 0.53;
+            font-size: 16px;
+            line-height: 0.53;
         
         
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        letter-spacing: 0.04em;
-        margin-bottom: 20px;
- }
-    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 20px;
+    }
+    @include mq (desktop) {
         background-color: #F0D1A5;
             width: 75px;
             height: 28px;
@@ -151,46 +153,29 @@
             letter-spacing: 0.04em;
             margin-bottom: 32px;
     }
+  
    
 }
 .contacts__card-place2 {
-    @media screen and (min-width: 320px) and (max-width:767px) {
-            background-color: #C2E297;
-            border-radius: 4px;
-            width: 130px;
-        
-        
-            font-size: 12px;
-            line-height: 22px;
-        
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.04em;
-            justify-content: center;
-        
-            color: #FFFFFF;
-            margin-bottom: 20px;
-    }
-   @media screen and (min-width: 768px) and (max-width:1199px) {
-       background-color: #C2E297;
-       width: 138px;
-       height: 28px;
-       border-radius: 6px;
-       color: #ffffff;
-
-       font-size: 16px;
-       line-height: 0.53;
-
-
-       display: flex;
-       align-items: center;
-       text-align: center;
-       justify-content: center;
-       letter-spacing: 0.04em;
-       margin-bottom: 20px;
-   }
-    @media screen and (min-width: 1200px) {
+    @include mq (mobile-only){
+        background-color: #C2E297;
+        border-radius: 4px;
+        width: 130px;
+    
+    
+        // font-size: 12px;
+        line-height: 22px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        justify-content: center;
+    
+        color: #FFFFFF;
+        margin-bottom: 20px;}
+   
+    @include mq (tablet-only){
         background-color: #C2E297;
             width: 138px;
             height: 28px;
@@ -206,14 +191,33 @@
             text-align: center;
             justify-content: center;
             letter-spacing: 0.04em;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
     }
+  
+    @include mq (desktop) {
+        background-color: #C2E297;
+        width: 138px;
+        height: 28px;
+        border-radius: 6px;
+        color: #ffffff;
+    
+        font-size: 16px;
+        line-height: 0.53;
+    
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 32px;}
+    
 }
 .contacts__card-title {
    
    
    
-    @media screen and (min-width: 320px) and (max-width:767px) {
+    @include mq (mobile-only) {
         font-size: 12px;
         line-height: 22px;
         margin-bottom: 8px;
@@ -221,7 +225,7 @@
         color: #000000;
     }
        
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+   @include mq (tablet-only) {
         font-family: 'DM Sans';
         font-style: normal;
         
@@ -233,7 +237,7 @@
         
         color: #000000;
     }
-    @media screen and (min-width: 1200px) {
+        @include mq (desktop) {
         font-family: 'DM Sans';
             font-style: normal;
         
@@ -249,12 +253,12 @@
 .contacts__card-text {
         color: #907E82;
 
-    @media screen and (min-width: 320px) and (max-width:767px){
+    @include mq (mobile-only){
         font-size: 12px;
         width: 179px;
         margin-bottom: 24px;
     }   
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
         font-family: 'DM Sans';
         font-weight: 500;
         width: 159px;
@@ -263,7 +267,7 @@
             
         margin-bottom: 32px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         font-family: 'DM Sans';
             font-weight: 500;
             width: 243px;
@@ -275,17 +279,17 @@
        
 }       
 .contacts__card-date {
-    @media screen and (min-width: 320px) and (max-width:767px) {
+    @include mq (mobile-only) {
         margin-top: 24px;
         border-bottom: 1px solid #E1E1E1;
         width: 218px;
     }
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
         margin-top: 32px;
         border-bottom: 1px solid #E1E1E1;
         width: 160px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         margin-top: 32px;
         border-bottom: 1px solid #E1E1E1;
         width: 288px;
@@ -293,7 +297,7 @@
 }
 .contacts__card-item {
 
-    @media screen and (min-width: 320px) and (max-width:767px) {
+    @include mq (mobile-only) {
         &:not(:last-child) {
                 margin-bottom: 8px;
             }
@@ -303,7 +307,7 @@
             }
     }
 
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
         &:not(:last-child) {
                 margin-bottom: 12px;
             }
@@ -312,7 +316,7 @@
                 margin-bottom: 32px;
             }
     }
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         &:not(:last-child) {
                 margin-bottom: 12px;
             }
@@ -323,7 +327,7 @@
     }
 }
 .contacts__card-day {
-    @media screen and (min-width: 320px) and (max-width:767px) {
+    @include mq (mobile-only) {
         font-weight: 500;
         font-size: 12px;
         line-height: 22px;
@@ -334,14 +338,14 @@
         flex-direction: column;
     }
    
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
         color: #000000;
         font-weight: 500;
         font-size: 14px;
         line-height: 23px;
     }
        
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         color: #000000;
             font-weight: 500;
             font-size: 16px;
@@ -352,20 +356,20 @@
 .contacts__card-time {
         color: #FFA5BA;
 
-    @media screen and (min-width: 320px) and (max-width:767px) {
+    @include mq (mobile-only) {
         font-family: 'DM Sans';
         font-weight: 500;
         font-size: 12px;
         line-height: 22px;
     }
    
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @include mq (tablet-only) {
         font-family: 'DM Sans';
         font-weight: 500;
         font-size: 14px;
         line-height: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         font-family: 'DM Sans';
             font-weight: 500;
             font-size: 16px;
@@ -384,7 +388,7 @@
             color: #D41443;
         }
 
-    @media screen and (min-width: 320px) and (max-width:767px) {
+        @include mq (mobile-only) {
             display: flex;
             flex-direction: column;
             font-family: 'DM Sans';
@@ -395,7 +399,7 @@
             margin-top: 24px;
     }
    
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+        @include mq (tablet-only) {
             display: flex;
             flex-direction: column;
 
@@ -406,7 +410,7 @@
             line-height: 26px;
             margin-top: 32px;
     }
-    @media screen and (min-width: 1200px) {
+        @include mq (desktop) {
             display: flex;
             flex-direction: column;
         
