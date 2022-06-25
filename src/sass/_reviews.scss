@@ -1,0 +1,114 @@
+.reviews__img {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__background {
+  background-color: var(--reviews-bg-cl);
+}
+.reviews__gradient {
+  background-color: var(--reviews-bg-cl);
+  margin-bottom: 15px;
+
+  padding-top: 43px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background-clip: content-box;
+  background-position-y: 6px;
+  background-image: repeating-linear-gradient(
+    to top,
+    var(--reviews-gradient-cl) 0px,
+    var(--reviews-gradient-cl) 1px,
+    var(--reviews-bg-cl) 1px,
+    var(--reviews-bg-cl) 31px
+  );
+}
+.reviews__text {
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: var(--dark-cl);
+  z-index: 100;
+
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.reviews__client {
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--dark-cl);
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 129px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 139px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+  &--dot {
+    position: relative;
+  }
+  &--dot::before {
+    position: absolute;
+    top: -66px;
+    left: 149px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--reviews-dot-cl);
+    border-radius: 2px;
+  }
+}
+.swiper-pagination {
+  top: 490px;
+}
+.swiper-slide {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 140px;
+    left: 54px;
+    z-index: 99;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/reviews/marks.svg);
+  }
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: var(--pagination-bg-cl);
+}
+.swiper-pagination-bullet-active {
+  border-radius: 0%;
+  background: url(../images/reviews/home.svg);
+}
