@@ -184,7 +184,6 @@ summary {
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 img {
@@ -196,6 +195,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
 }
 
 .reviews__img {
@@ -759,6 +762,75 @@ a {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.advantages {
+  background-color: var(--secondary-bg-cl);
+}
+
+.advantages__list > :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages__list > :before {
+  content: "";
+  height: 50px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.advantages__list > :first-child:before {
+  width: 33px;
+  background-image: url("milk.2a36f432.png");
+  background-size: 33px 50px;
+}
+
+.advantages__list > :nth-child(2):before {
+  width: 50px;
+  background-image: url("apple.3ce2f42b.png");
+  background-size: 50px 50px;
+}
+
+.advantages__list > :last-child:before {
+  width: 44px;
+  background-image: url("heart.61aa518c.png");
+  background-size: 44px 50px;
+}
+
+.advantages__block {
+  width: 230px;
+}
+
+.advantages__title {
+  font-family: var(--secondary-font);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--hero-txt-cl);
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.14;
+}
+
+.advantages__description {
+  font-family: var(--main-font);
+  color: var(--dark-cl);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2x) {
+  .advantages__list > :first-child:before {
+    background-image: url("milk@2x.46cb5e97.png");
+  }
+
+  .advantages__list > :nth-child(2):before {
+    background-image: url("apple@2x.ed8aec11.png");
+  }
+
+  .advantages__list > :last-child:before {
+    background-image: url("heart@2x.aa230464.png");
+  }
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
