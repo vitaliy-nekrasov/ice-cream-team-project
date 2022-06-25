@@ -2,46 +2,55 @@
   <div class="header-container">
     <nav class="header-nav">
       <a class="logo" href="./index.html" aria-label="Логотип сайта Ice Cream">
-        <img src="./images/icon/logo.svg" alt="Логотип">
+        <img src="./images/icon/logo.svg" alt="Логотип" />
       </a>
-      <button type="button" class="header-mobile-menu-btn" aria-expanded="false" data-menu-button>
-      
-        <svg class="header-mobile-btn-icon" width="30" height="30" aria-label="Переключатель мобильного меню"
-          aria-controls="header-menu">
-          <use href="./images/sprite.svg#burger-test" class="header-icon-menu"></use>
-          <use href="./images/sprite.svg#cross-test" class="header-icon-close-menu"></use>
+      <button
+        type="button"
+        class="header-mobile-menu-btn"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg
+          class="header-mobile-btn-icon"
+          width="20"
+          height="20"
+          aria-label="Переключатель мобильного меню"
+          aria-controls="header-menu"
+        >
+          <use
+            href="./images/sprite.svg#burger-test"
+            class="header-icon-menu"
+          ></use>
+          <use
+            href="./images/sprite.svg#cross-test"
+            class="header-icon-close-menu"
+          ></use>
         </svg>
       </button>
       <div class="header-menu" data-menu>
-        <nav>
+        <button type="button" class="header-button-modal">Buy now</button>
+        <nav class="header-menu-nav">
           <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>How it's made?</li>
-            <li>Our products</li>
-            <li>Contact</li>
+            <li>
+              <a class="header-menu-link link" href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#about">About us</a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#made"> How it's made? </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#products"
+                >Our products
+              </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
-
-          <!-- <div class="header-menu" id="header-menu" data-menu>
-            
-            <ul class="header-site-nav-list list-decor">
-              <li class="header-site-nav__item">
-                <a
-                  class="header-site-nav__link--link-current link header-site-nav__link"
-                  href="./index.html"
-                  >Студия</a
-                >
-              </li>
-              <li class="header-site-nav__item">
-                <a class="link header-site-nav__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-site-nav__item">
-                <a class="link header-site-nav__link" href="">Контакты</a>
-              </li>
-            </ul>
-          </div> -->
     </nav>
   </div>
 </header>

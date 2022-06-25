@@ -40,14 +40,17 @@
     color: var(--hero-txt-cl);
 }
 
-.hero-button {
+.hero-link {
     display: flex;     
     
     align-items: center;
     text-align: center;
 }
 
-.button-red {
+.link-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include mq (mobile-only) {
         font-size: 8px;
         line-height: 1.25;
@@ -63,9 +66,17 @@
     border: none;
 
     margin-right: 8px;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
 }
 
-.button-white {
+.link-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include mq (mobile-only) {
             font-size: 8px;
             line-height: 1.25;
@@ -79,4 +90,9 @@
         background-color: var(--main-txt-cl);
         border-radius: 20px;
         border: none;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
 }

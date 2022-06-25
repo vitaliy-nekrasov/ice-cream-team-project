@@ -3,7 +3,7 @@
     display: flex;
     
 
-    // background-color: var(--hero-bg-cl);
+    background-color: var(--hero-bg-cl);
 
 }
 
@@ -31,10 +31,10 @@
     @include mq (desktop) {
         display: none;
     }
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 18px;
+    top: 25px;
     right: 0px;
 
     display: flex;
@@ -46,19 +46,19 @@
 
     border: none;
     background-color: transparent;
-    z-index: 10;
 
     &.is-open {
         position: fixed;
         z-index: 200;
+        
+        top: 25px;
+        right: 20px;
 
     }
 
 
     & .header-icon-menu {
         display: block;
-        
-        fill: black;
 
     }
 
@@ -74,24 +74,26 @@
     &.is-open .header-icon-close-menu {
         display: block;
         opacity: 1;
+        position: fixed;
+        
 
     }
 
     &:hover .header-mobile-btn-icon {
         cursor: pointer;
-        color: var(--accent-color);
+        fill: currentColor;
     }
 
     &:hover .header-icon-close-menu,
     &:focus .header-icon-close-menu {
         cursor: pointer;
-        fill: currentColor;
+        fill: #000000;
     }
 
     &:hover .header-icon-menu,
     &:focus .header-icon-menu {
         cursor: pointer;
-        fill: currentColor;
+        fill: #ffffff;
     }
 
 }
@@ -109,10 +111,7 @@
         width: 100%;
         height: 100%;
 
-        padding-top: 48px;
-        padding-bottom: 48px;
-        padding-left: 40px;
-        background-color: #ffffff;
+        background-color: #E17992;
 
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
@@ -123,14 +122,6 @@
             transform: translateX(0);
             z-index: 90;
 
-        }
-
-        &.is-open .header-icon-close-menu {
-            display: block;
-            opacity: 1;
-            position: fixed;
-            top: 0;
-            right: 15px;
         }
 
     }
@@ -151,81 +142,83 @@
     }
 
 }
-
-.header-nav-menu {
-    @include mq (mobile-only) {
-        margin-bottom: auto;
-    }
-
-    @include mq (tablet) {
-        display: flex;
-        margin-left: 60px;
-
-    }
-
+.header-menu-nav {
+    display: flex;
+    flex-direction: column;
 
 }
 
-.header-site-nav-list {
+.header-button-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 209px;
+    height: 44px;
+
+    margin-top: 60px;
 
     @include mq (mobile-only) {
-        margin-bottom: auto;
-    }
-
-    @include mq (tablet) {
-        display: flex;
+        margin-left: auto;
         margin-right: auto;
-    }
-
-}
-
-.header-site-nav__item:not(:last-child) {
-    @include mq (mobile-only) {
         margin-bottom: 32px;
     }
 
-    margin-right: 50px;
+    align-items: center;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: var(--hero-txt-cl);
+
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: none;
+
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        display: inline-flex;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+        
+        margin-left: 16px;
+        background-image: url(../images/icon/vector-buy.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
 }
 
+.header-menu-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+    padding-left: 20px;
+    text-align: start;
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid #E18298;
 
-.header-site-nav__link {
-
-    @include mq (mobile-only) {
-        font-size: 40px;
-        line-height: 1.17;
-    }
-
-    @include mq (tablet) {
-        display: block;
-        padding-top: 31px;
-        padding-bottom: 31px;
-    }
-
-    color: var(--header-cl);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.15;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.29;
+    color: #FFFFFF;
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-
+    &:hover {
+        color: var(--hero-txt-cl);
     }
-
-
 }
 
-.header-site-nav__link--link-current {
-    @include mq (mobile-only) {
-        color: var(--accent-color);
-        border-bottom: 0px solid var(--accent-color);
-    }
-
-    color: var(--accent-color);
-    border-bottom: 4px solid var(--accent-color);
+.header-menu-link:last-child {
+    border-bottom: 1px solid #E18298;
 }
+
+
+
 
 
