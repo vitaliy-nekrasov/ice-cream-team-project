@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link
+
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
@@ -17,8 +25,439 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+
+    <section class="gallery gallery__section">
+      <div class="container">
+        <ul class="gallery__list">
+          <!-- block 1 -->
+          <li class="gallery__item">
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic1d.webp    1x,
+                  ./images/gallery-d/home-pic1d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic1t.webp    1x,
+                  ./images/gallery_tab/home-pic1t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic1m.webp    1x,
+                  ./images/gallery-mob/home-pic1m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic1m.jpg"
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+
+          <!-- block 2 -->
+          <li class="gallery__item">
+            <!-- pic2 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic2d.webp    1x,
+                  ./images/gallery-d/home-pic2d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic2t.webp    1x,
+                  ./images/gallery_tab/home-pic2t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic2m.webp    1x,
+                  ./images/gallery-mob/home-pic2m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic2m.jpg"
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+
+            <!-- pic3 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic3d.webp    1x,
+                  ./images/gallery-d/home-pic3d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic3t.webp    1x,
+                  ./images/gallery_tab/home-pic3t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic3m.webp    1x,
+                  ./images/gallery-mob/home-pic3m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic3m.jpg"
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+
+          <!-- block 3 -->
+          <li class="gallery__item">
+            <!-- pic4 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic5d.webp    1x,
+                  ./images/gallery-d/home-pic5d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic5t.webp    1x,
+                  ./images/gallery_tab/home-pic5t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic5m.webp    1x,
+                  ./images/gallery-mob/home-pic5m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic5m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+            <!-- pic4 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic4d.webp    1x,
+                  ./images/gallery-d/home-pic4d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic4t.webp    1x,
+                  ./images/gallery_tab/home-pic4t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic4m.webp    1x,
+                  ./images/gallery-mob/home-pic4m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic4m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+
+          <!-- block4 -->
+          <li class="gallery__item">
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic6d.webp    1x,
+                  ./images/gallery-d/home-pic6d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic6t.webp    1x,
+                  ./images/gallery_tab/home-pic6t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic6m.webp    1x,
+                  ./images/gallery-mob/home-pic6m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic6m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+            <!-- pic7 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic7d.webp    1x,
+                  ./images/gallery-d/home-pic7d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic7t.webp    1x,
+                  ./images/gallery_tab/home-pic7t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic7m.webp    1x,
+                  ./images/gallery-mob/home-pic7m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic7m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+
+          <!-- block5 -->
+          <li class="gallery__item">
+            <!-- pic8 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic8d.webp    1x,
+                  ./images/gallery-d/home-pic8d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic8t.webp    1x,
+                  ./images/gallery_tab/home-pic8t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic8m.webp    1x,
+                  ./images/gallery-mob/home-pic8m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic8m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+            <!-- pic9 -->
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic9d.webp    1x,
+                  ./images/gallery-d/home-pic9d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic9t.webp    1x,
+                  ./images/gallery_tab/home-pic9t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic9m.webp    1x,
+                  ./images/gallery-mob/home-pic9m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic9m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+            <!-- pic9 -->
+          </li>
+
+          <!-- block6 -->
+          <li class="gallery__item">
+            <picture class="gallery__picture">
+              <!-- ==================DESC================= -->
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/gallery-d/home-pic10d.webp    1x,
+                  ./images/gallery-d/home-pic10d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================TAB================= -->
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/gallery_tab/home-pic10t.webp    1x,
+                  ./images/gallery_tab/home-pic10t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- ==================MOB================= -->
+
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/gallery-mob/home-pic10m.webp    1x,
+                  ./images/gallery-mob/home-pic10m@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <img
+                class="work-image"
+                src="./images/gallery-mob/home-pic10m.jpg "
+                alt="разметка"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
     <main>    
       <include src="./partials/about.html"></include>
     </main>
+
   </body>
 </html>
