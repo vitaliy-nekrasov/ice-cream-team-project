@@ -1,9 +1,13 @@
 @import './common';
 @import './utils/mixins';
 
+@import './utils/vars';
 @import './base/container';
 @import './base/reset';
+
 @import './utils/vars';
 @import './gallery';
+
+@import './about';
 
 @import './base/container';
