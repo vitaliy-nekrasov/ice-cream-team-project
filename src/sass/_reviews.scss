@@ -2,9 +2,18 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(tablet) {
+    margin-bottom: 20px;
+  }
 }
 .reviews__background {
   background-color: var(--reviews-bg-cl);
+
+  @include mq(tablet) {
+    margin-left: 54px;
+    margin-right: 54px;
+  }
 }
 .reviews__gradient {
   background-color: var(--reviews-bg-cl);
@@ -24,6 +33,16 @@
     var(--reviews-bg-cl) 1px,
     var(--reviews-bg-cl) 31px
   );
+
+  @include mq(tablet) {
+    background-position-y: 18px;
+
+    padding-top: 37px;
+    padding-bottom: 44px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 4px;
+  }
 }
 .reviews__text {
   position: relative;
@@ -37,6 +56,14 @@
 
   padding-left: 15px;
   padding-right: 10px;
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    padding-left: 35px;
+    padding-right: 45px;
+  }
 }
 .reviews__client {
   position: relative;
@@ -49,6 +76,10 @@
   padding-top: 15px;
   padding-bottom: 25px;
 
+  @include mq(tablet) {
+    padding-bottom: 30px;
+  }
+
   &::before {
     position: absolute;
     top: 0;
@@ -58,6 +89,10 @@
     height: 4px;
     background: var(--reviews-dot-cl);
     border-radius: 2px;
+
+    @include mq(tablet) {
+      left: 351px;
+    }
   }
   &::after {
     position: absolute;
@@ -68,6 +103,10 @@
     height: 4px;
     background: var(--reviews-dot-cl);
     border-radius: 2px;
+
+    @include mq(tablet) {
+      left: 361px;
+    }
   }
   &--dot {
     position: relative;
@@ -81,10 +120,19 @@
     height: 4px;
     background: var(--reviews-dot-cl);
     border-radius: 2px;
+
+    @include mq(tablet) {
+      left: 371px;
+      top: -71px;
+    }
   }
 }
 .swiper-pagination {
   top: 490px;
+
+  @include mq(tablet) {
+    top: 335px;
+  }
 }
 .swiper-slide {
   position: relative;
@@ -97,6 +145,11 @@
     width: 54px;
     height: 40px;
     background-image: url(../images/reviews/marks.svg);
+
+    @include mq(tablet) {
+      top: 127px;
+      left: 59px;
+    }
   }
 }
 .swiper-pagination-bullet {
