@@ -55,3 +55,12 @@ function changeHeaderBackground() {
     aboutModalRef.classList.toggle('is-hidden');
   });
 })();
+
+var swiper = new Swiper('.mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+  speed: 1000,
+});
