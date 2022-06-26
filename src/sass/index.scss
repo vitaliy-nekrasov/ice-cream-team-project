@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import './common';
 @import './utils/mixins';
 @import './contacts';
@@ -20,4 +21,12 @@
 
 
 
+=======
+// @import './common';
+>>>>>>> Stashed changes
 
+@import './base/container';
+@import './base/reset';
+
+// @import './utils/mixins';
+@import './utils/vars';
