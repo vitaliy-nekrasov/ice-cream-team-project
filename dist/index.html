@@ -3,85 +3,126 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page title</title>
-
+    <title>Ice Cream</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-
     <link rel="stylesheet" href="/index.b07a87f3.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/index.975ef6c8.js" defer=""></script>
   </head>
-  <body>
-
-    <section class="section reviews">
+  <body id="body">
+    <main>
+      <header class="header" id="header">
   <div class="container">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="reviews__img" srcset="/client-1@1x.6263c14a.jpg 1x, /client-1@2x.8cb7760e.jpg 2x" src="/client-1@1x.6263c14a.jpg" alt="Photo of client">
-          <div class="reviews__background">
-            <div class="reviews__gradient">
-              <p class="reviews__text">
-                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                Lorem ipsum primis in nibh vel risus.
-              </p>
-            </div>
-          </div>
-          <p class="reviews__client">Emily, Los Angeles</p>
-          <div class="reviews__client--dot"></div>
+    <div class="header-container">
+      <nav class="">
+        <div class="header-nav">
+          <a class="logo" href="/index.html" aria-label="Логотип сайта Ice Cream">
+            <img src="/logo.0e4a6d8b.svg" alt="Логотип">
+          </a>
+          <!-- <button type="button" class="header-btn-second" data-modal-open>
+            Buy now
+          </button> -->
+          <button type="button" class="header-mobile-menu-btn" aria-expanded="false" data-menu-button="">
+            <svg class="header-mobile-btn-icon" width="20" height="20" aria-label="Переключатель мобильного меню" aria-controls="header-menu">
+              <use href="/sprite.f14d31f7.svg#burger-test" class="header-icon-menu"></use>
+              <use href="/sprite.f14d31f7.svg#cross-test" class="header-icon-close-menu"></use>
+            </svg>
+          </button>
         </div>
-        <div class="swiper-slide">
-          <img class="reviews__img" srcset="/client-2@1x.c0956f75.jpg 1x, /client-2@2x.51740c02.jpg 2x" src="/client-2@1x.c0956f75.jpg" alt="Photo of client">
-          <div class="reviews__background">
-            <div class="reviews__gradient">
-              <p class="reviews__text">
-                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                Lorem ipsum primis in nibh vel risus.
-              </p>
-            </div>
-          </div>
-          <p class="reviews__client">Angelina, New York</p>
-          <div class="reviews__client--dot"></div>
+
+        <div class="header-menu" data-menu="">
+          <button type="button" class="header-button-modal" data-modal-open="">
+            Buy now
+          </button>
+          <nav class="header-menu-nav">
+            <ul>
+              <li>
+                <a class="header-menu-link link" href="/index.html"> Home </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#about">About us</a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#made">
+                  How it's made?
+                </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#products">Our products
+                </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="swiper-slide">
-          <img class="reviews__img" srcset="/client-3@1x.c7935fef.jpg 1x, /client-3@2x.e80a68ad.jpg 2x" src="/client-3@1x.c7935fef.jpg" alt="Photo of client">
-          <div class="reviews__background">
-            <div class="reviews__gradient">
-              <p class="reviews__text">
-                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                Lorem ipsum primis in nibh vel risus.
-              </p>
-            </div>
-          </div>
-          <p class="reviews__client">Emma, Miami</p>
-          <div class="reviews__client--dot"></div>
-        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="hero-modal-backdrop is-hidden" data-modal="">
+  <div class="hero-modal">
+    <button class="hero-modal-close--position" data-modal-close="">
+      <svg class="hero-modal__close-icon">
+        <use href="/sprite.f14d31f7.svg#cross-modal"></use>
+      </svg>
+    </button>
+
+    <form class="hero-modal-form">
+      <p class="hero-modal__text">leave your details, we will call you back</p>
+      <div role="group">
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Name</span>
+          <input class="hero-modal-form__input" type="text" name="input-modal">
+          <svg class="hero-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-person"></use>
+          </svg>
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Тel</span>
+          <input class="hero-modal-form__input" type="tel" name="input-modal">
+          <svg class="hero-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
+          </svg>
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">E-mail</span>
+          <input class="hero-modal-form__input" type="email" name="input-modal">
+          <svg class="hero-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-email"></use>
+          </svg>
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Address</span>
+          <textarea class="hero-modal-form__input hero-modal-form__comment" name="input-modal" placeholder="Input text"></textarea>
+        </label>
       </div>
-      <div class="swiper-pagination"></div>
+      <button class="hero-modal-mailing-btn-submit" type="submit">SEND</button>
+    </form>
+  </div>
+</div>
+
+      <section class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <h1 class="hero-title">
+        ice cream made with
+        <span class="hero-title-big"> passion</span>
+      </h1>
+      <div class="hero-link">
+        <a class="link link-red" href="#products">Products</a>
+        <a class="link link-white" href="#made">How it's made?</a>
+      </div>
     </div>
   </div>
 </section>
 
-    <button class="footer__button-locations" type="button">
-  Our Locations
-  <svg class="about-section__btn-svg" width="10px" height="12px">
-    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-  </svg>
-</button>
-<button class="footer__button-franchise" type="button">
-  Franchise
-  <svg class="footer__button-svg" width="10px" height="12px">
-    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-  </svg>
-</button>
-
-
-    <main>
       <section class="about-section" id="about">
   <div class="about-section__overlay">
     <div class="container">
@@ -462,7 +503,19 @@
 </article>
 
 
-    </main>
+      <button class="footer__button-locations" type="button">
+  Our Locations
+  <svg class="about-section__btn-svg" width="10px" height="12px">
+    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+  </svg>
+</button>
+<button class="footer__button-franchise" type="button">
+  Franchise
+  <svg class="footer__button-svg" width="10px" height="12px">
+    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+  </svg>
+</button>
 
+    </main>
   </body>
 </html>
