@@ -6,17 +6,33 @@
     <title>Ice Cream</title>
     <link
       rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
   <body id="body">
-
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
 
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/footer-button.html"></include>
+
+    <main>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
   </body>
 </html>

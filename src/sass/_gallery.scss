@@ -1,0 +1,114 @@
+.gallery__section {
+  @include mq(mobile-only) {
+    padding-bottom: 50px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-bg-cl) 21px,
+      var(--main-bg-cl) 24px
+    );
+  }
+
+  @include mq(tablet-only) {
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-bg-cl) 142px,
+      var(--main-bg-cl) 158px
+    );
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 80px;
+    background-color: var(--main-bg-cl);
+  }
+}
+
+.gallery__list {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+}
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(mobile-only) {
+    &:nth-child(3) {
+      align-items: flex-start;
+    }
+
+    &:nth-child(4) {
+      padding-top: 3px;
+    }
+    &:nth-child(5) {
+      padding-bottom: 7px;
+    }
+    &:nth-child(6) {
+      padding-top: 4px;
+    }
+  }
+
+  @include mq(tablet-only) {
+    &:nth-child(3) {
+      align-items: flex-start;
+    }
+
+    &:nth-child(4) {
+      padding-top: 7px;
+    }
+    &:nth-child(5) {
+      padding-bottom: 18px;
+    }
+    &:nth-child(6) {
+      padding-top: 8px;
+    }
+  }
+
+  @include mq(desktop) {
+    &:nth-child(3) {
+      align-items: flex-start;
+    }
+
+    &:nth-child(4) {
+      padding-top: 10px;
+    }
+    &:nth-child(5) {
+      padding-bottom: 23px;
+    }
+    &:nth-child(6) {
+      padding-top: 12px;
+    }
+  }
+}
+.gallery__picture {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-image: contai;
+  transition: box-shadow 400ms ease-in-out, transform 400ms ease-in-out,
+    filter 400ms ease-in-out;
+
+  @include mq(mobile-only) {
+    border-radius: 8px;
+    margin: 1px;
+  }
+  @include mq(tablet) {
+    border-radius: 20px;
+    margin: 3px;
+  }
+  @include mq(desktop) {
+    margin: 3.5px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: -4px 4px 7px 1px rgba(0, 0, 0, 0.3);
+
+    transform: translate3d(20%, 20%, 50px) rotatey(180deg) scale3d(1, 1, 5);
+
+    filter: sepia(14%) brightness(100%) saturate(203%) contrast(98%);
+    z-index: 2;
+  }
+}

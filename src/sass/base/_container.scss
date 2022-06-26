@@ -1,45 +1,41 @@
 .container {
-   
-    
-            @include mq (mobile-only) {
-                min-width: 320px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-    
-            @include mq (mobile) {
-                width: 320px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-    
-            @include mq (tablet) {
-                width: 768px;
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-    
-            @include mq (desktop) {
-                width: 1280px;
-                padding-left: 16px;
-                padding-right: 16px;
-    
-            }
-    
-            margin-left: auto;
-            margin-right: auto;
+  @include mq(mobile-only) {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
+  @include mq(mobile) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-            
-        }
-//     @include mq (mobile-only) {
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     }
-    
+  @include mq(tablet) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-//     margin-left: auto;
-//     margin-right: auto;
+  @include mq(desktop) {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@include mq(mobile) {
+  width: 320px;
+  margin: 0 auto;
+}
 
 //     @media screen and (min-width: 320px) {
 //         width: 320px;
