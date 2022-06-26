@@ -1,17 +1,43 @@
 <header class="header" id="header">
   <div class="container">
     <div class="header-container">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html" aria-label="Логотип сайта Ice Cream">
-          <img src="./images/icon/logo.svg" alt="Логотип" />
-        </a>
-        <button type="button" class="header-mobile-menu-btn" aria-expanded="false" data-menu-button>
-          <svg class="header-mobile-btn-icon" width="20" height="20" aria-label="Переключатель мобильного меню"
-            aria-controls="header-menu">
-            <use href="./images/sprite.svg#burger-test" class="header-icon-menu"></use>
-            <use href="./images/sprite.svg#cross-test" class="header-icon-close-menu"></use>
-          </svg>
-        </button>
+      <nav class="">
+        <div class="header-nav">
+          <a
+            class="logo"
+            href="./index.html"
+            aria-label="Логотип сайта Ice Cream"
+          >
+            <img src="./images/icon/logo.svg" alt="Логотип" />
+          </a>
+          <button type="button" class="header-btn-second" data-modal-open>
+            Buy now
+          </button>
+          <button
+            type="button"
+            class="header-mobile-menu-btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="header-mobile-btn-icon"
+              width="20"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="header-menu"
+            >
+              <use
+                href="./images/sprite.svg#burger-test"
+                class="header-icon-menu"
+              ></use>
+              <use
+                href="./images/sprite.svg#cross-test"
+                class="header-icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
         <div class="header-menu" data-menu>
           <button type="button" class="header-button-modal" data-modal-open>
             Buy now
@@ -25,10 +51,13 @@
                 <a class="header-menu-link link" href="#about">About us</a>
               </li>
               <li>
-                <a class="header-menu-link link" href="#made"> How it's made? </a>
+                <a class="header-menu-link link" href="#made">
+                  How it's made?
+                </a>
               </li>
               <li>
-                <a class="header-menu-link link" href="#products">Our products
+                <a class="header-menu-link link" href="#products"
+                  >Our products
                 </a>
               </li>
               <li>
@@ -39,7 +68,7 @@
         </div>
       </nav>
     </div>
-  </div> 
+  </div>
 </header>
 <div class="hero-modal-backdrop is-hidden" data-modal>
   <div class="hero-modal">
@@ -54,7 +83,11 @@
       <div role="group">
         <label class="hero-modal-form-unit">
           <span class="hero-modal-form__item">Name</span>
-          <input class="hero-modal-form__input" type="text" name="input-modal" />
+          <input
+            class="hero-modal-form__input"
+            type="text"
+            name="input-modal"
+          />
           <svg class="hero-modal-form__icon">
             <use href="./images/Sprite.svg#icon-person"></use>
           </svg>
@@ -70,7 +103,11 @@
 
         <label class="hero-modal-form-unit">
           <span class="hero-modal-form__item">E-mail</span>
-          <input class="hero-modal-form__input" type="email" name="input-modal" />
+          <input
+            class="hero-modal-form__input"
+            type="email"
+            name="input-modal"
+          />
           <svg class="hero-modal-form__icon">
             <use href="./images/Sprite.svg#icon-email"></use>
           </svg>
@@ -78,10 +115,12 @@
 
         <label class="hero-modal-form-unit">
           <span class="hero-modal-form__item">Address</span>
-          <textarea class="hero-modal-form__input hero-modal-form__comment" name="input-modal"
-            placeholder="Input text"></textarea>
+          <textarea
+            class="hero-modal-form__input hero-modal-form__comment"
+            name="input-modal"
+            placeholder="Input text"
+          ></textarea>
         </label>
-
       </div>
       <button class="hero-modal-mailing-btn-submit" type="submit">SEND</button>
     </form>
