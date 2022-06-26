@@ -4,13 +4,13 @@
     height: 100wh;
     background-color: var(--secondary-bg-cl);
     
-    // &__container {
-    //     @include mq (teblet) {
-    //         display: inline;
-    //         flex-direction: column-reverse;
-    //         margin: 0;
-    //     }
-    // }
+    &__container {
+        @include mq (teblet) {
+            display: inline;
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+    }
 
     &__text {
         font-family: var(--secondary-font);
@@ -79,12 +79,17 @@
     // align-items: center;
     // text-align: center;
     cursor: pointer;
-
-    
+ 
     border-radius: 22px;
     border: transparent;
     width: 162px;
     height: 45px;
+
+    @include mq (mobile-only) {
+        &__item:not(:last-child) {
+             margin-bottom: 10px;
+        }
+    }
 
     &__list {
         display: flex;
@@ -97,14 +102,8 @@
         @include mq (mobile-only){
         flex-direction: column;
         }
-
-
-
-     
     }
-    &__item:not(:last-child) {
-        margin-bottom: 10px;
-    }
+   
 }
 
 
