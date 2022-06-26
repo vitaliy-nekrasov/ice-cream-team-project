@@ -3,9 +3,16 @@
     width: 100wv;
     height: 100wh;
     background-color: var(--secondary-bg-cl);
- 
-    &__text {
+    
+    // &__container {
+    //     @include mq (teblet) {
+    //         display: inline;
+    //         flex-direction: column-reverse;
+    //         margin: 0;
+    //     }
+    // }
 
+    &__text {
         font-family: var(--secondary-font);
         color: var(--accent-cl);
         font-weight: 400;
@@ -17,6 +24,19 @@
 
         margin-top: 40px;
         margin-bottom: 16px;
+
+            @include mq (tablet-only){
+                font-size: 26px;
+                line-height: 30px;
+                letter-spacing: 0.04em;
+                width: 340px;
+            }
+            @include mq (desktop){
+                font-size: 30px;
+                line-height: 34px;
+                letter-spacing: 0.04em;
+                width: auto;
+            }
     }
 
     &__title{
@@ -32,6 +52,18 @@
         width: 200px;
         
         margin-bottom: 40px;  
+
+            @include mq (tablet-only) {
+                font-size: 48px;
+                line-height: 55px;
+                letter-spacing: 0.06em;
+            }
+            @include mq (desktop) {
+                font-size: 58px;
+                line-height: 66px;
+                letter-spacing: 0.06em;
+                width: auto;
+            }
     }
 }
 
@@ -56,10 +88,17 @@
 
     &__list {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        
         align-items: center;
         list-style: none;
         padding-top: 32px;
+
+        @include mq (mobile-only){
+        flex-direction: column;
+        }
+
+
 
      
     }
@@ -118,8 +157,16 @@
     &--number {
         text-decoration: none;
         color: var(--hero-txt-cl);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+// .footer__tel--number:focus,
+// .footer__tel--number:hover {
+//     color: #ff007b50;
+//     font-size: 14px;
+// }
 
 
 // Footer copyright
