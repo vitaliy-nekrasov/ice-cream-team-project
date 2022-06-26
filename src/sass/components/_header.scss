@@ -105,7 +105,6 @@
     height: 20px;
     position: absolute;
     @include mq (mobile-only) {
-    top: 25px;
     right: 0px;
     }
 
