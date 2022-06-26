@@ -1,10 +1,12 @@
-@import './common';
+@import './utils/common';
 @import './utils/mixins';
-@import './contacts';
-
 @import './utils/vars';
 @import './base/container';
 @import './base/reset';
+@import './components/header';
+@import './components/hero';
+@import './components/header-modal';
+@import './contacts';
 @import './reviews';
 @import './footer-button';
 

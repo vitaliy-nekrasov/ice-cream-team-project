@@ -1,3 +1,34 @@
+:root {
+  --hero-txt-cl: #d41443;
+  --main-txt-cl: #ffffff;
+  --secondary-txt-cl: #907e82;
+  --accent-cl: #ffa5ba;
+  --dark-cl: #000000;
+  --hero-bg-cl: #ffb8ca;
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #fff5f6;
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', sans-serif;
+}
+
+body {
+  font-family: var(--secondary-font);
+  font-family: var(--main-font);
+  font-style: normal;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .container {
   padding-left: 20px;
@@ -10,6 +41,7 @@
     width: 320px;
   }
 }
+
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
@@ -59,23 +91,63 @@ img {
   max-width: 100%;
   height: auto;
 }
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 136px;
+}
 
+.header-container {
+  position: relative;
+}
+
+.logo {
+  width: 199px;
+  height: 50px;
+}
+
+.hero-title {
+  width: 218px;
+  height: 106px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.hero-title-big {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
 a {
   color: inherit;
   text-decoration: none;
 }
 
 :root {
-  --hero-txt-cl: #D41443;
+  --hero-txt-cl: #d41443;
   --main-txt-cl: #ffffff;
-  --secondary-txt-cl: #907E82;
-  --accent-cl: #FFA5BA;
+  --secondary-txt-cl: #907e82;
+  --accent-cl: #ffa5ba;
   --dark-cl: #000000;
-  --hero-bg-cl: #FFB8CA;
+  --hero-bg-cl: #ffb8ca;
   --main-bg-cl: #ffffff;
-  --secondary-bg-cl: #FFF5F6;
-  --main-font: "DM Sans", sans-serif;
-  --secondary-font: "Titan One", sans-serif;
+  --secondary-bg-cl: #fff5f6;
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', sans-serif;
 }
 
 .gallery__section {
@@ -92,4 +164,4 @@ a {
 
 .gallery__picture {
   margin: 2.5px;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
