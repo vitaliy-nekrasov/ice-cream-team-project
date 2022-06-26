@@ -1,0 +1,95 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --hero-txt-cl: #D41443;
+  --main-txt-cl: #ffffff;
+  --secondary-txt-cl: #907E82;
+  --accent-cl: #FFA5BA;
+  --dark-cl: #000000;
+  --hero-bg-cl: #FFB8CA;
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #FFF5F6;
+  --main-font: "DM Sans", sans-serif;
+  --secondary-font: "Titan One", sans-serif;
+}
+
+.gallery__section {
+  background-color: tomato;
+}
+
+.gallery__list {
+  display: flex;
+}
+
+.gallery__item:nth-child(1) {
+  flex-direction: column;
+}
+
+.gallery__picture {
+  margin: 2.5px;
+}/*# sourceMappingURL=index.css.map */

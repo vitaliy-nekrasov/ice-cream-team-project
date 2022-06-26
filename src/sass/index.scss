@@ -1,5 +1,6 @@
 @import './common';
 @import './utils/mixins';
+@import './contacts';
 
 @import './utils/vars';
 @import './base/container';
@@ -7,6 +8,7 @@
 @import './reviews';
 @import './footer-button';
 
-@import './base/container';
-@import './base/reset';
-@import './utils/vars';
+@import './gallery';
+@import './about';
+@import './section/advantages';
+
