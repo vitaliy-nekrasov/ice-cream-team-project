@@ -1,0 +1,56 @@
+.button-up {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+
+  width: 50px;
+  height: 80px;
+
+  background-color: var(--accent-cl);
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px 2px;
+
+  display: none;
+  z-index: 1000;
+  scroll-behavior: smooth;
+}
+
+.button-up:hover,
+.button-up:focus {
+  background-color: var(--hero-txt-cl);
+  outline: none;
+  transform: scale(1.1);
+}
+
+.button-up:hover::before,
+.button-up:focus::before,
+.button-up:hover::after,
+.button-up:focus::after {
+  border-top: 3px solid var(--main-txt-cl);
+  border-left: 3px solid var(--main-txt-cl);
+}
+
+.button-up::before,
+.button-up::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.button-up::before {
+  width: 15px;
+  height: 15px;
+
+  transform: translate(-50%, -60%) rotate(45deg);
+  border-top: 3px solid var(--hero-txt-cl);
+  border-left: 3px solid var(--hero-txt-cl);
+}
+
+.button-up::after {
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, 20%) rotate(45deg);
+  border-top: 3px solid var(--hero-txt-cl);
+  border-left: 3px solid var(--hero-txt-cl);
+}
