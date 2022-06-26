@@ -27,6 +27,7 @@
   &:focus {
     color: var(--main-txt-cl);
     background-color: var(--hero-txt-cl);
+    fill: var(--main-txt-cl);
   }
 
   &:hover .footer__button-svg,
