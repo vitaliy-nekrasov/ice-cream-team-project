@@ -20,9 +20,15 @@
     }
    
 }
-// .contacts__list {
-//     display: flex;
-// }
+.contacts__list {
+    @include mq (tablet-only) {
+        display: flex;
+    }
+    @include mq (desktop) {
+        display: flex;
+         }
+    
+}
 .contacts__item {
     @include mq (mobile-only){
         background-color: #ffffff;
