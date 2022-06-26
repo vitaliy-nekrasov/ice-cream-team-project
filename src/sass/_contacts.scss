@@ -20,9 +20,9 @@
     }
    
 }
-.contacts__list {
-    display: flex;
-}
+// .contacts__list {
+//     display: flex;
+// }
 .contacts__item {
     @include mq (mobile-only){
         background-color: #ffffff;
