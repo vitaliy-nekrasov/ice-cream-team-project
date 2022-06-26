@@ -1199,6 +1199,8 @@ ul, ol, li {
 
 .advantages {
   background-color: var(--secondary-bg-cl);
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .advantages__list > :not(:last-child) {
