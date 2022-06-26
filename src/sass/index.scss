@@ -1,13 +1,13 @@
 @import './common';
 @import './utils/mixins';
-
-
+@import './utils/vars';
 @import './base/container';
 @import './base/reset';
-@import './utils/vars';
 
-@import './footer'
-
-
-
+@import './reviews';
+@import './gallery';
+@import './about';
+@import './section/advantages';
+@import './contacts';
+@import './footer';
 
