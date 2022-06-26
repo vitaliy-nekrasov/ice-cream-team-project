@@ -18,6 +18,10 @@ body {
   --hero-bg-cl: #ffb8ca;
   --main-bg-cl: #fff;
   --secondary-bg-cl: #fff5f6;
+  --btn-bg-accent: #d41342;
+  --hero-bg-cl: #ffb8ca;
+  --main-bg-cl: #fff;
+  --secondary-bg-cl: #fff5f6;
   --reviews-bg-cl: #fafafa;
   --reviews-gradient-cl: #e1e1e1;
   --reviews-dot-cl: #c7133e;
@@ -106,6 +110,89 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer__button-locations, .footer__button-franchise {
+  height: 44px;
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--hero-txt-cl);
+  background-color: var(--main-bg-cl);
+  border-color: #0000;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+}
+
+.footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus {
+  color: var(--main-txt-cl);
+  background-color: var(--hero-txt-cl);
+}
+
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg, .footer__button-franchise:hover .footer__button-svg, .footer__button-franchise:focus .footer__button-svg {
+  fill: #fff;
+}
+
+.footer__button-locations {
+  margin-bottom: 10px;
+}
+
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg {
+  fill: #fff;
+}
+
+.footer__button-svg {
+  width: 9.8px;
+  height: 12px;
+  fill: #7fffd4;
+  margin-left: 14px;
+}
+
+.footer__button-locations, .footer__button-franchise {
+  height: 44px;
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--hero-txt-cl);
+  background-color: var(--main-bg-cl);
+  border: none;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+}
+
+.footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus {
+  color: var(--main-txt-cl);
+  background-color: var(--hero-txt-cl);
+}
+
+.footer__button-locations {
+  margin-bottom: 10px;
+}
+
+.footer__button-svg {
+  width: 9.8px;
+  height: 12px;
+  margin-left: 14px;
 }
 
 .header {
@@ -590,58 +677,6 @@ li {
   margin-right: auto;
   font-size: 14px;
 }
-:root {
-  --hero-txt-cl: #d41443;
-  --main-txt-cl: #fff;
-  --secondary-txt-cl: #907e82;
-  --accent-cl: #ffa5ba;
-  --dark-cl: #000;
-  --hero-bg-cl: #ffb8ca;
-  --main-bg-cl: #fff;
-  --secondary-bg-cl: #fff5f6;
-  --btn-bg-accent: #d41342;
-  --hero-bg-cl: #ffb8ca;
-  --main-bg-cl: #fff;
-  --secondary-bg-cl: #fff5f6;
-  --reviews-bg-cl: #fafafa;
-  --reviews-gradient-cl: #e1e1e1;
-  --reviews-dot-cl: #c7133e;
-  --pagination-bg-cl: #d9d9d9;
-  --main-font: "DM Sans", sans-serif;
-  --secondary-font: "Titan One", sans-serif;
-  --swiper-pagination-bullet-horizontal-gap: 10px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
 
 @media screen and (min-width: 320px) {
   .contacts {
@@ -656,9 +691,6 @@ li {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-
   .contacts {
     background-image: linear-gradient(#fff 18%, #fff5f6 18% 82%);
   }
@@ -699,81 +731,6 @@ li {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-.footer__button-locations, .footer__button-franchise {
-  height: 44px;
-  min-width: 160px;
-  text-align: center;
-  cursor: pointer;
-  color: var(--hero-txt-cl);
-  background-color: var(--main-bg-cl);
-  border-color: #0000;
-  border-radius: 22px;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.3;
-  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
-  display: flex;
-}
-
-.footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus {
-  color: var(--main-txt-cl);
-  background-color: var(--hero-txt-cl);
-}
-
-.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg, .footer__button-franchise:hover .footer__button-svg, .footer__button-franchise:focus .footer__button-svg {
-  fill: #fff;
-}
-
-.footer__button-locations {
-  margin-bottom: 10px;
-}
-
-.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg {
-  fill: #fff;
-}
-
-.footer__button-svg {
-  width: 9.8px;
-  height: 12px;
-  fill: #7fffd4;
-  margin-left: 14px;
-}
   .contacts__item {
     width: 368px;
     height: 538px;
@@ -1153,6 +1110,7 @@ ul, ol, li {
   flex-direction: column;
   display: flex;
 }
+
 .reviews__img {
   margin-bottom: 30px;
   margin-left: auto;
@@ -1335,6 +1293,52 @@ ul, ol, li {
 .swiper-pagination-bullet-active {
   background: url("home.39ef8a2b.svg");
   border-radius: 0%;
+}
+
+.footer__button-locations, .footer__button-franchise {
+  height: 44px;
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--hero-txt-cl);
+  background-color: var(--main-bg-cl);
+  border-color: #0000;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+}
+
+.footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus {
+  color: var(--main-txt-cl);
+  background-color: var(--hero-txt-cl);
+}
+
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg, .footer__button-franchise:hover .footer__button-svg, .footer__button-franchise:focus .footer__button-svg {
+  fill: #fff;
+}
+
+.footer__button-locations {
+  margin-bottom: 10px;
+}
+
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg {
+  fill: #fff;
+}
+
+.footer__button-svg {
+  width: 9.8px;
+  height: 12px;
+  fill: #7fffd4;
+  margin-left: 14px;
 }
 
 .footer__button-locations, .footer__button-franchise {
