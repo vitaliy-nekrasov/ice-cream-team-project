@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .button-up {
   position: fixed;
   bottom: 100px;
@@ -10,9 +13,19 @@
   border-radius: 50%;
   box-shadow: 0px 2px 6px 2px;
 
-  display: none;
+  cursor: pointer;
   z-index: 1000;
-  scroll-behavior: smooth;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(25%);
+  transition: all 250ms ease-in-out;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
 }
 
 .button-up:hover,
@@ -28,6 +41,7 @@
 .button-up:focus::after {
   border-top: 3px solid var(--main-txt-cl);
   border-left: 3px solid var(--main-txt-cl);
+  transition: all 250ms ease-in-out;
 }
 
 .button-up::before,

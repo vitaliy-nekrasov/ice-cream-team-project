@@ -1,17 +1,26 @@
-const scrollBtn = document.querySelector('.button-up');
-console.log(scrollBtn);
-const refreshButtonVisibility = () => {
-  if (document.documentElement.scrollTop <= 150) {
-    scrollBtn.style.display = 'none';
+const offset = 100;
+const scrollUp = document.querySelector('.button-up');
+const getTop = () => window.pageYOffset 
+
+
+
+//onScroll
+window.addEventListener('scroll', () => {
+  
+  if(getTop() > offset){
+    scrollUp.classList.add('button-up--visible')
   } else {
-    scrollBtn.style.display = 'block';
+    scrollUp.classList.remove('button-up--visible')
+
   }
-};
-scrollBtn.addEventListener('click', () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  
 });
 
-document.addEventListener('scroll', e => {
-  refreshButtonVisibility();
+
+// click
+scrollUp.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 });
