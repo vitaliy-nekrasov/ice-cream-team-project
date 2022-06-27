@@ -19,14 +19,11 @@
       <header class="header" id="header">
   <div class="container">
     <div class="header-container">
-      <nav class="">
-        <div class="header-nav">
+      <nav class="header-nav">
+        <div class="header-nav__sm">
           <a class="logo" href="/index.html" aria-label="Логотип сайта Ice Cream">
             <img src="/logo.0e4a6d8b.svg" alt="Логотип">
           </a>
-          <!-- <button type="button" class="header-btn-second" data-modal-open>
-            Buy now
-          </button> -->
           <button type="button" class="header-mobile-menu-btn" aria-expanded="false" data-menu-button="">
             <svg class="header-mobile-btn-icon" width="20" height="20" aria-label="Переключатель мобильного меню" aria-controls="header-menu">
               <use href="/sprite.f14d31f7.svg#burger-test" class="header-icon-menu"></use>
@@ -37,76 +34,79 @@
 
         <div class="header-menu" data-menu="">
           <button type="button" class="header-button-modal" data-modal-open="">
-            Buy now
+            <span class="header-button-modal-in-header">Buy now</span>
+            <span class="header-button-modal-in-menu">Buy now</span>
           </button>
-          <nav class="header-menu-nav">
-            <ul>
-              <li>
-                <a class="header-menu-link link" href="/index.html"> Home </a>
-              </li>
-              <li>
-                <a class="header-menu-link link" href="#about">About us</a>
-              </li>
-              <li>
-                <a class="header-menu-link link" href="#made">
-                  How it's made?
-                </a>
-              </li>
-              <li>
-                <a class="header-menu-link link" href="#products">Our products
-                </a>
-              </li>
-              <li>
-                <a class="header-menu-link link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+
+          <ul class="header-menu-list">
+            <li>
+              <a class="header-menu-link link" href="/index.html"> Home </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#about">About us</a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#made"> How it's made? </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#products">Our products
+              </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
   </div>
 </header>
-<div class="hero-modal-backdrop is-hidden" data-modal="">
-  <div class="hero-modal">
-    <button class="hero-modal-close--position" data-modal-close="">
+<div class="header-modal-backdrop is-hidden" data-modal="">
+  <div class="header-modal">
+    <button class="header-modal-close--position" data-modal-close="">
       <svg class="hero-modal__close-icon">
         <use href="/sprite.f14d31f7.svg#cross-modal"></use>
       </svg>
     </button>
 
-    <form class="hero-modal-form">
-      <p class="hero-modal__text">leave your details, we will call you back</p>
-      <div role="group">
-        <label class="hero-modal-form-unit">
-          <span class="hero-modal-form__item">Name</span>
-          <input class="hero-modal-form__input" type="text" name="input-modal">
-          <!-- <svg class="hero-modal-form__icon">
-            <use href="./images/Sprite.svg#icon-person"></use>
-          </svg> -->
+
+    <form class="header-modal-form">
+      <p class="header-modal__text">
+        leave your details, we will call you back
+      </p>
+      <div class="header-modal-bl" role="group">
+        <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">Name</span>
+          <input class="header-modal-form__input" type="text" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-person"></use>
+          </svg>
         </label>
 
-        <label class="hero-modal-form-unit">
-          <span class="hero-modal-form__item">Тel</span>
-          <input class="hero-modal-form__input" type="tel" name="input-modal">
-          <!-- <svg class="hero-modal-form__icon">
-            <use href="./images/Sprite.svg#icon-phone"></use>
-          </svg> -->
+        <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">Тel</span>
+          <input class="header-modal-form__input" type="tel" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
+          </svg>
         </label>
 
-        <label class="hero-modal-form-unit">
-          <span class="hero-modal-form__item">E-mail</span>
-          <input class="hero-modal-form__input" type="email" name="input-modal">
-          <!-- <svg class="hero-modal-form__icon">
-            <use href="./images/Sprite.svg#icon-email"></use>
-          </svg> -->
+        <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">E-mail</span>
+          <input class="header-modal-form__input" type="email" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-email"></use>
+          </svg>
         </label>
 
-        <label class="hero-modal-form-unit">
-          <span class="hero-modal-form__item">Address</span>
-          <textarea class="hero-modal-form__input hero-modal-form__comment" name="input-modal" placeholder="Input text"></textarea>
+        <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">Address</span>
+          <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Input text"></textarea>
         </label>
       </div>
-      <button class="hero-modal-mailing-btn-submit" type="submit">SEND</button>
+      <button class="header-modal-mailing-btn-submit" type="submit">
+        SEND
+      </button>
     </form>
   </div>
 </div>
@@ -116,17 +116,17 @@
     <div class="hero-container">
       <h1 class="hero-title">
         ice cream made with
-        <span class="hero-title-big"> passion</span>
+        <br><span class="hero-title-big">passion</span>
       </h1>
       <div class="hero-link">
         <a class="link link-red" href="#products">Products</a>
         <a class="link link-white" href="#made">How it's made?</a>
       </div>
+      <img class="girl-img" srcset="/girl150.2c2a7013.png, /girl300.07b6e383.png 300w" src="/girl150.2c2a7013.png" alt="девушка кушает мороженое" sizes="25vw">
+      <img class="milk-img" srcset="/milk154.3e17ac97.png, /milk308.32860218.png 308w" src="/milk154.3e17ac97.png" alt="молоко" sizes="20vw">
     </div>
   </div>
 </section>
-
-      
     <!-- Products -->
     <section class="section products" id="products">
       <div class="container container-products">
@@ -173,10 +173,7 @@
         </ul>
       </div>
     </section>
-
-
-
-       <section class="about-section" id="about">
+<section class="about-section" id="about">
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>

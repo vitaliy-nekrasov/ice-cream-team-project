@@ -1,6 +1,5 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  
 
   margin-left: auto;
   margin-right: auto;
@@ -13,6 +12,8 @@
   @include mq(mobile) {
     width: 320px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -21,6 +22,8 @@
 
   @include mq(tablet) {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,6 +32,8 @@
 
   @include mq(desktop) {
     width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
