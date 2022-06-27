@@ -1,14 +1,13 @@
 .footer__button-locations,
 .footer__button-franchise {
- 
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'DM Sans';
   font-style: normal;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   border-radius: 22px;
   border-color: transparent;
   height: 44px;
@@ -22,19 +21,27 @@
   color: var(--hero-txt-cl);
   background-color: var(--main-bg-cl);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: var(--main-txt-cl);
     background-color: var(--hero-txt-cl);
-    // fill: var(--main-txt-cl);
   }
-
+  
   
 }
 .footer__button-locations {
-  margin-bottom: 10px;
+   
+  @include mq (mobile-only){
+    margin-bottom: 10px;
+  }
+  @include mq (tablet-only){
+    margin-right: 15px;
+  }
+  @include mq (desktop) {
+    margin-right: 12px;
+  }
 }
 
 .footer__button-svg {
