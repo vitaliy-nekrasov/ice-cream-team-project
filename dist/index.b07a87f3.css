@@ -403,6 +403,18 @@ li {
   .header-menu.is-open .header-button-modal-in-header {
     opacity: 0;
   }
+
+  .header-button-modal-in-header:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("vector-buy.542a66dd.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    margin-left: 16px;
+    display: inline-flex;
+  }
 }
 
 .header-menu-list {
