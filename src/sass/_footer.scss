@@ -4,36 +4,28 @@
     height: 100wh;
     background-color: var(--secondary-bg-cl);
     
-    &__container {
-        @include mq (teblet) {
-            display: inline;
-            flex-direction: column-reverse;
-            margin: 0;
-        }
-    }
 
-    &__text {
+    &__subtitle {
         font-family: var(--secondary-font);
         color: var(--accent-cl);
         font-weight: 400;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 1.17;
         text-transform: uppercase;
-
         width: 232px;
 
-        margin-top: 40px;
         margin-bottom: 16px;
 
             @include mq (tablet-only){
                 font-size: 26px;
-                line-height: 30px;
+                line-height: 1.14;
                 letter-spacing: 0.04em;
                 width: 340px;
+                margin-bottom: 12px;
             }
             @include mq (desktop){
                 font-size: 30px;
-                line-height: 34px;
+                line-height: 1.14;
                 letter-spacing: 0.04em;
                 width: auto;
             }
@@ -45,26 +37,64 @@
         color: var(--hero-txt-cl);
         font-weight: 400;
         font-size: 34px;
-        line-height: 39px;
+        line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
         width: 200px;
         
-        margin-bottom: 40px;  
+          
 
             @include mq (tablet-only) {
                 font-size: 48px;
-                line-height: 55px;
+                line-height: 1.14;
                 letter-spacing: 0.06em;
             }
             @include mq (desktop) {
                 font-size: 58px;
-                line-height: 66px;
+                line-height: 1.14;
                 letter-spacing: 0.06em;
                 width: auto;
             }
     }
+}
+
+.footer__button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mq (tablet) {
+        display:flex;
+        justify-content: center;
+    }
+}
+.footer__content {
+    
+    @include mq (tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+.footer__content--text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @include mq (desktop) {
+        margin-top: 120px;
+        margin-bottom: 60px;
+    }
+}
+}
+.footer__contacts {
+    margin-bottom: 40px;
+
+    @include mq (tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 60px;
+    }
+
 }
 
 // Socials
@@ -93,6 +123,11 @@
 
 .socials__icon {
     fill: var(--accent-cl);
+    cursor: pointer;
+    @include mq (tablet){
+        width: 34px;
+        height: 34px;
+    }
 }
 
 // Footer tel
@@ -100,27 +135,47 @@
 .footer__tel {
 
    text-align: right;
-   margin-bottom: 40px;
    text-decoration: none;
 
     &--text {
         font-weight: 700;
             font-size: 12px;
-            line-height: 22px;
+            line-height: 1.8;
+
+            @include mq (tablet-only) {
+                font-size: 14px;
+            }
+            
+            @include mq (desktop) {
+                font-size: 16px;
+            }
     }
     &--number {
+        position: relative;
         text-decoration: none;
         color: var(--hero-txt-cl);
+        cursor: pointer;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-// .footer__tel--number:focus,
-// .footer__tel--number:hover {
-//     color: #ff007b50;
-//     font-size: 14px;
+// .footer__tel--number:hover,
+// .footer__tel--number:focus {
+//  color:  ;  
 // }
+
+// .footer__tel--number::before {
+//     position: absolute;
+//     content: "";
+    
+//         display: block;
+//         width: 100%;
+    
+//         height: 2px;
+//         background-color: var(--hero-txt-cl);
+//         left: 0;
+// }
+
 
 
 // Footer copyright
@@ -130,15 +185,26 @@
     padding-top: 16px;
     border-top: 1px solid #E1E1E1;
     
+    @include mq (mobile-only){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
     &--text {
         display: flex;
         font-weight: 700;
         font-size: 14px;
-        line-height: 152%;
+        line-height: 1.8;
         text-align: center;
         justify-content: center;
         color: var(--secondary-txt-cl);
+        
+        @include mq (mobile-only) {
+            width: 150px;
+        }
+    
     }
 }
 
