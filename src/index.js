@@ -61,6 +61,10 @@ var swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   loop: true,
-  speed: 1000,
+  speed: 2000,
 });
