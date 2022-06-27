@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page title</title>
 
-    <link head="" rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
@@ -14,8 +13,216 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/index.975ef6c8.js" defer=""></script>
   </head>
-  <body>
+
+  <body id="body">
     <main>
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header-container">
+      <nav class="">
+        <div class="header-nav">
+          <a class="logo" href="/index.html" aria-label="Логотип сайта Ice Cream">
+            <img src="/logo.0e4a6d8b.svg" alt="Логотип">
+          </a>
+          <!-- <button type="button" class="header-btn-second" data-modal-open>
+            Buy now
+          </button> -->
+          <button type="button" class="header-mobile-menu-btn" aria-expanded="false" data-menu-button="">
+            <svg class="header-mobile-btn-icon" width="20" height="20" aria-label="Переключатель мобильного меню" aria-controls="header-menu">
+              <use href="/sprite.f14d31f7.svg#burger-test" class="header-icon-menu"></use>
+              <use href="/sprite.f14d31f7.svg#cross-test" class="header-icon-close-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-menu" data-menu="">
+          <button type="button" class="header-button-modal" data-modal-open="">
+            Buy now
+          </button>
+          <nav class="header-menu-nav">
+            <ul>
+              <li>
+                <a class="header-menu-link link" href="/index.html"> Home </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#about">About us</a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#made">
+                  How it's made?
+                </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#products">Our products
+                </a>
+              </li>
+              <li>
+                <a class="header-menu-link link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="hero-modal-backdrop is-hidden" data-modal="">
+  <div class="hero-modal">
+    <button class="hero-modal-close--position" data-modal-close="">
+      <svg class="hero-modal__close-icon">
+        <use href="/sprite.f14d31f7.svg#cross-modal"></use>
+      </svg>
+    </button>
+
+    <form class="hero-modal-form">
+      <p class="hero-modal__text">leave your details, we will call you back</p>
+      <div role="group">
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Name</span>
+          <input class="hero-modal-form__input" type="text" name="input-modal">
+          <!-- <svg class="hero-modal-form__icon">
+            <use href="./images/Sprite.svg#icon-person"></use>
+          </svg> -->
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Тel</span>
+          <input class="hero-modal-form__input" type="tel" name="input-modal">
+          <!-- <svg class="hero-modal-form__icon">
+            <use href="./images/Sprite.svg#icon-phone"></use>
+          </svg> -->
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">E-mail</span>
+          <input class="hero-modal-form__input" type="email" name="input-modal">
+          <!-- <svg class="hero-modal-form__icon">
+            <use href="./images/Sprite.svg#icon-email"></use>
+          </svg> -->
+        </label>
+
+        <label class="hero-modal-form-unit">
+          <span class="hero-modal-form__item">Address</span>
+          <textarea class="hero-modal-form__input hero-modal-form__comment" name="input-modal" placeholder="Input text"></textarea>
+        </label>
+      </div>
+      <button class="hero-modal-mailing-btn-submit" type="submit">SEND</button>
+    </form>
+  </div>
+</div>
+
+      <section class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <h1 class="hero-title">
+        ice cream made with
+        <span class="hero-title-big"> passion</span>
+      </h1>
+      <div class="hero-link">
+        <a class="link link-red" href="#products">Products</a>
+        <a class="link link-white" href="#made">How it's made?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+    <!-- Products -->
+    <section class="section products" id="products">
+      <div class="container container-products">
+        <p class="products__lable">100% natural</p>
+        <h2 class="products__title">products</h2>
+
+        <ul class="products__list">
+          <li class="products__item product">
+            <h3 class="product__name product__name--cream">ice cream</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products__item product">
+            <h3 class="product__name product__name--coffee">ice coffee</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products__item product">
+            <h3 class="product__name product__name--milkshakes">milkshakes</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+       <section class="about-section" id="about">
+  <div class="about-section__overlay">
+    <div class="container">
+      <p class="about-section__suptitle">TRADITION AND LOVE</p>
+      <h2 class="about-section__title">HOW IT'S MADE?</h2>
+      <div class="about-section__content">
+        <div class="about-section__bg-bossy"></div>
+        <div class="about-section__information">
+          <p class="about-section__main-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="about-section__details-text">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt. <br><br>Aliquam erat volutpat. Aenean
+            accumsan.
+          </p>
+          <button type="button" class="button about-section__button" data-about-modal-open="">
+            Read more
+            <svg class="about-section__btn-svg" width="10px" height="12px">
+              <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKDROP -->
+<div class="backdrop is-hidden" data-about-modal="">
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-about-modal-close="">
+      <svg class="modal__icon-close-btn">
+        <use href="/close-button.c0542d00.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__suptitle">TRADITION AND LOVE</p>
+    <p class="modal__title">HOW IT'S MADE?</p>
+    <div class="frame"><iframe src="https://www.youtube.com/embed/MBJ7p1ci7LA" frameborder="0"></iframe>
+    </div>
+
+  </div>
+</div>
+
+
       <section class="advantages container">
   <h2 class="advantages__header"></h2>
   <ul class="advantages__list">
@@ -261,60 +468,157 @@
     </div>
   </div>
 </section>
+<section class="contacts" id="contact">
+<article class="container">
+    <h1 hidden="">Contacts</h1>
+    <ul class="contacts__list">
+        <li class="contacts__item">
+            <div class="contacts__card">
+                <div class="contacts__card-place">CAFE</div>
+                <h2 class="contacts__card-title">Chicago</h2>
+                <p class="contacts__card-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+            </div>
+            <div class="contacts__card-date">
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Monday - Friday</span>
+                    <time datetime="06:00 AM - 10:00 PM">
+                    <span class="contacts__card-time">06:00 AM - 10:00 PM</span></time></p>
 
-      <section class="about-section" id="about">
-  <div class="about-section__overlay">
-    <div class="container">
-      <p class="about-section__suptitle">TRADITION AND LOVE</p>
-      <h2 class="about-section__title">HOW IT'S MADE?</h2>
-      <div class="about-section__content">
-        <div class="about-section__bg-bossy"></div>
-        <div class="about-section__information">
-          <p class="about-section__main-text">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-          </p>
-          <p class="about-section__details-text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-            urna maximus. Cras massa nibh, tincidunt. <br><br>Aliquam erat volutpat. Aenean
-            accumsan.
-          </p>
-          <button type="button" class="button about-section__button" data-about-modal-open="">
-            Read more
-            <svg class="about-section__btn-svg" width="10px" height="12px">
-              <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Saturday - Sunday</span>
+                    <time datetime="08:00 AM - 16:00 PM">
+                        <span class="contacts__card-time">08:00 AM - 16:00 PM</span>
+                        </time></p>
+               
+            </div>
+           <address class="contacts__adress">
+            <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            
+           </address>
+        </li>
+        <li class="contacts__item">
+            <div class="contacts__card">
+                <div class="contacts__card-place2">FOOD TRUCK</div>
+                <h2 class="contacts__card-title">Los Angeles</h2>
+                <p class="contacts__card-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+            </div>
+            <div class="contacts__card-date">
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Monday - Friday</span>
+                    <time datetime="06:00 AM - 10:00 PM">
+                        <span class="contacts__card-time">06:00 AM - 10:00 PM</span></time>
+                </p>
+            
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Saturday - Sunday</span>
+                    <time datetime="08:00 AM - 16:00 PM">
+                        <span class="contacts__card-time">08:00 AM - 16:00 PM</span>
+                    </time>
+                </p>
+            
+            </div>
+            <address class="contacts__adress">
+                <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:noreply@envato.com">noreply@envato.com</a>
+               
+            </address>
+
+        </li>
+        <li class="contacts__item">
+            <div class="contacts__card">
+                <div class="contacts__card-place">CAFE</div>
+                <h2 class="contacts__card-title">New York</h2>
+                <p class="contacts__card-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+            </div>
+            <div class="contacts__card-date">
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Monday - Friday</span>
+                    <time datetime="06:00 AM - 10:00 PM">
+                        <span class="contacts__card-time">06:00 AM - 10:00 PM</span></time>
+                </p>
+            
+                <p class="contacts__card-item">
+                    <span class="contacts__card-day">Saturday - Sunday</span>
+                    <time datetime="08:00 AM - 16:00 PM">
+                        <span class="contacts__card-time">08:00 AM - 16:00 PM</span>
+                    </time>
+                </p>
+            
+            </div>
+            <address class="contacts__adress">
+                <a href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:noreply@envato.com">noreply@envato.com</a>
+               
+            </address>
+            </li>
+        
+    </ul>
+
+</article>
 </section>
 
-<!-- BACKDROP -->
-<div class="backdrop is-hidden" data-about-modal="">
-  <div class="modal">
-    <button type="button" class="modal__close-btn" data-about-modal-close="">
-      <svg class="modal__icon-close-btn">
-        <use href="/close-button.c0542d00.svg#icon-cross"></use>
-      </svg>
-    </button>
-    <p class="modal__suptitle">TRADITION AND LOVE</p>
-    <p class="modal__title">HOW IT'S MADE?</p>
-    <p class="modal__main-text">
-     Будь-який текст
-    </p>
-    <p class="modal__details-text">
-      тестовий параграф
-    </p>
-  </div>
-</div>
+
+      <footer class="footer">
+    <div class="footer__container container">
+        <button class="footer__button-locations" type="button">
+            Our Locations
+            <svg class="footer__button-svg" width="10px" height="12px">
+                <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+            </svg>
+        </button>
+        <button class="footer__button-franchise" type="button">
+            Franchise
+            <svg class="footer__button-svg" width="10px" height="12px">
+                <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+            </svg>
+        </button>
+    <p class="footer__text">homemade ice cream made</p> 
+    <h2 class="footer__title">with passion</h2>
+    <div class="footer__socials">
+        <ul class="socials__list">
+            <li class="socials__item">
+                <a class="socials__link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="icon Github">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#github"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="https://telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="icon Telegram">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="icon Facebook">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__tel">
+        <p class="footer__tel--text">
+            Feel free to contact
+            <a class="footer__tel--number" href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+        </p>
+    </div>
+   </div>
+    <div class="footer__copyright">
+        <p class="footer__copyright--text">© 2022 - IceCream.<br>
+            All Rights Reserved.</p>
+    </div>
 
 
       <a href="" class="button-up" aria-label="scroll to top"></a>
 
-    </main>
+    
     <script src="/index.a3a51be6.js"></script>
+
+</footer>
+    </main>
   </body>
 </html>

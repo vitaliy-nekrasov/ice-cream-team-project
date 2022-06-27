@@ -1,0 +1,11 @@
+// @import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+        scroll-behavior: smooth;
+}
+
+body {
+        font-family: var(--secondary-font);
+        font-family: var(--main-font);
+        font-style: normal;
+        margin: 0;
+}

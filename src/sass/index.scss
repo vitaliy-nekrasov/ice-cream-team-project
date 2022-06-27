@@ -1,17 +1,23 @@
-@import './common';
+@import './utils/common';
 @import './utils/mixins';
-
 @import './utils/vars';
 @import './base/container';
 @import './base/reset';
+@import './components/header';
+@import './components/hero';
+@import './products';
+@import './components/header-modal';
+@import './contacts';
 @import './reviews';
+@import './footer-button';
 
 @import './gallery';
-
 @import './about';
-
-@import './base/container';
-
 @import './section/advantages';
+@import './contacts';
+
 
 @import './button-up';
+
+@import './footer';
+

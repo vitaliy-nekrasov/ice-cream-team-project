@@ -1,0 +1,217 @@
+.hero-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 83, 138, 0.5);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    z-index: 999;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-modal {
+    // @media screen and (max-width: 479px) {
+    // //     // width: 92%;
+    // //     // height: 100%;
+    // }
+
+    // // @include mq (desktop) {
+    // //     width: 528px;
+    // //     height: 581px;
+    // // }
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 300px;
+    height: 70%;
+
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.hero-modal-close--position {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    
+
+    background-color: var(--card-cl);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    z-index: 300;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hero-modal__close-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 10px;
+    height: 10px;
+
+    
+
+    .hero-modal-close--position:hover & {
+        fill: var(--accent-color);
+    }
+
+}
+
+.hero-modal__text {
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    margin-bottom: 2px;
+}
+
+.hero-modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-modal-form-unit {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-modal-form__item {
+
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.hero-modal-form__input {
+
+    width: 100%;
+    height: 25px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+
+    outline: transparent;
+
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+
+}
+
+.hero-modal-form__icon {
+    position: absolute;
+    top: 38px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+
+    .hero-modal-form__input:focus+& {
+
+        fill: var(--accent-color);
+    }
+
+}
+
+.hero-modal-form__comment {
+    height: 80px;
+
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+
+    color: var(--title-cl);
+    padding: 12px 16px;
+    resize: none;
+
+    margin-bottom: 8px;
+
+}
+
+.hero-modal-mailing-btn-submit {
+    width: 80px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--hero-txt-cl);
+    font-size: 14px;
+
+}
+
+// .hero-modal-mailing__checkbox:checked+.hero-modal-mailing__custom-checkbox {
+//     background-color: var(--accent-color);
+//     outline: none;
+// }
+
+// .hero-modal-mailing-text {
+//     @include mq (desktop) {
+//         font-size: 14px;
+//         line-height: 1.71;
+//     }
+
+//     font-size: 12px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+
+//     color: #757575;
+// }
+
+// .hero-modal-mailing__terms {
+//     @include mq (desktop) {
+//         font-size: 14px;
+//         line-height: 1.71;
+//     }
+
+//     font-size: 12px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--accent-color);
+//     margin-left: 4px;
+// }

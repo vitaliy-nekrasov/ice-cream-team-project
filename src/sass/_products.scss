@@ -1,0 +1,144 @@
+
+.products__list {
+  list-style-type: none;
+}
+.container-products {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: auto auto;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.products__lable {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-cl);
+  margin-bottom: 15px;
+}
+.products__title {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-txt-cl);
+}
+.products__list {
+  display: flex;
+  flex-direction: column;
+}
+.products__item {
+  position: relative;
+  background-color: #907e82;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+  padding: 160px 40px 40px 40px;
+  &:nth-child(1) {
+    margin-top: 148px;
+  }
+  &:nth-child(3n + 1) {
+    background-color: #ffb8ca;
+  }
+  &:nth-child(3n + 2) {
+    background-color: #f0d1a5;
+  }
+  &:nth-child(3n + 3) {
+    background-color: #c2e297;
+  }
+}
+
+.product__name {
+  margin-bottom: 70px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+  &::before {
+    position: absolute;
+    top: -140px;
+    right: 50%;
+    transform: translate(50%, 0);
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+  }
+  &::after {
+    position: absolute;
+    top: 215px;
+    right: 50%;
+    transform: translate(50%, 0);
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-image: url(../images/products/Decor.svg);
+  }
+  
+}
+
+.product__name--cream::before {
+  background-image: url(../images/products/mobile/m-product1.png);
+}
+.product__name--coffee::before {
+  background-image: url(../images/products/mobile/m-product2.png);
+}
+.product__name--milkshakes::before {
+  background-image: url(../images/products/mobile/m-product3.png);
+}
+
+.product__description {
+  margin-bottom: 32px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-txt-cl);
+}
+.product__button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  color: var(--hero-txt-cl);
+  cursor: pointer;
+}
+
+.product__icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
