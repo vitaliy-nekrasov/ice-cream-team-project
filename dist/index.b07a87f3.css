@@ -120,56 +120,6 @@ li {
   list-style: none;
 }
 
-
-.footer__button-locations, .footer__button-franchise {
-  height: 44px;
-  min-width: 160px;
-  text-align: center;
-  cursor: pointer;
-  color: var(--hero-txt-cl);
-  background-color: var(--main-bg-cl);
-  border-color: #0000;
-  border-radius: 22px;
-  justify-content: center;
-  align-items: center;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.3;
-  transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
-  display: flex;
-}
-
-.footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus {
-  color: var(--main-txt-cl);
-  background-color: var(--hero-txt-cl);
-}
-
-@media screen and (max-width: 767.98px) {
-  .footer__button-locations {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer__button-locations {
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__button-locations {
-    margin-right: 12px;
-  }
-}
-
-.footer__button-svg {
-  width: 9.8px;
-  height: 12px;
-  margin-left: 14px;
-}
-
 .header {
   z-index: 10;
   width: 100%;
@@ -709,7 +659,6 @@ li {
   cursor: pointer;
 }
 
-
 @media screen and (min-width: 1200px) {
   .link-white:hover, .link-white:focus {
     color: var(--main-txt-cl);
@@ -721,26 +670,9 @@ li {
   .girl-img {
     display: none;
   }
-   
-}
-.products__list {
-  list-style-type: none;
-}
-
-.container-products {
-  margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 320px) {
-  .container-products {
-    width: 320px;
-  }
 }
 
 @media screen and (min-width: 768px) {
-
   .girl-img {
     width: 190px;
     height: 150px;
@@ -748,9 +680,6 @@ li {
     position: absolute;
     bottom: 0;
     right: 0;
-  }
-  .container-products {
-    width: 768px;
   }
 }
 
@@ -793,10 +722,32 @@ li {
   }
 }
 
-.header-modal-backdrop .container-products {
-  
+.products__list {
+  list-style-type: none;
+}
+
+.container-products {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .container-products {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-products {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-products {
     width: 1200px;
-  
+  }
 }
 
 .products__lable {
@@ -936,7 +887,7 @@ li {
   fill: currentColor;
 }
 
-.hero-modal-backdrop {
+.header-modal-backdrop {
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -3169,71 +3120,10 @@ html {
   display: flex;
 }
 
-
-
 @media screen and (max-width: 767.98px) {
   .footer__copyright--text {
     width: 150px;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
 
-.button-up {
-  width: 50px;
-  height: 80px;
-  background-color: var(--accent-cl);
-  cursor: pointer;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 50%;
-  transition: all .25s ease-in-out;
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  transform: translateY(25%);
-  box-shadow: 0 2px 6px 2px;
-}
-
-.button-up--visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0%);
-}
-
-.button-up:hover, .button-up:focus {
-  background-color: var(--hero-txt-cl);
-  outline: none;
-  transform: scale(1.1);
-}
-
-.button-up:hover:before, .button-up:focus:before, .button-up:hover:after, .button-up:focus:after {
-  border-top: 3px solid var(--main-txt-cl);
-  border-left: 3px solid var(--main-txt-cl);
-  transition: all .25s ease-in-out;
-}
-
-.button-up:before, .button-up:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.button-up:before {
-  width: 15px;
-  height: 15px;
-  border-top: 3px solid var(--hero-txt-cl);
-  border-left: 3px solid var(--hero-txt-cl);
-  transform: translate(-50%, -60%)rotate(45deg);
-}
-
-.button-up:after {
-  width: 15px;
-  height: 15px;
-  border-top: 3px solid var(--hero-txt-cl);
-  border-left: 3px solid var(--hero-txt-cl);
-  transform: translate(-50%, 20%)rotate(45deg);
-}
+/*# sourceMappingURL=index.b07a87f3.css.map */
