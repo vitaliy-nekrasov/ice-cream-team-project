@@ -6,13 +6,22 @@
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 344px;
     background-position: calc(50% + 43px) 92px, calc(50% + 50px) 83px;
+
+    @include mq (tablet) {
+        background-size: 143px, 335px;
+    }
 }
 
 
 .hero-container {
     height: 502px;
     padding-top: 194px;
+    position: relative;
 
+    @include mq (tablet) {
+        padding-top: 102px;
+        height: 416px;
+    }
     
 }
 
@@ -116,5 +125,29 @@
     &:hover,
     &:focus {
         cursor: pointer;
+    }
+}
+
+.girl-img {
+    display: none;
+
+    @include mq (tablet) {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 150px;
+    }
+}
+
+.milk-img {
+    display: none;
+    
+    @include mq (tablet) {
+        display: block;
+        position: absolute;
+        bottom: 16px;
+        left: 0px;
+        height: 150px;
     }
 }
