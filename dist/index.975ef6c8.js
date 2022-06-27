@@ -546,6 +546,18 @@ function changeHeaderBackground() {
         aboutModalRef.classList.toggle("is-hidden");
     });
 })();
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    },
+    loop: true,
+    speed: 2000
+});
 
 },{}]},["1RB6v","8lqZg"], "8lqZg", "parcelRequired7c6")
 

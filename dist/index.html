@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,6 +66,7 @@
       </svg>
     </button>
 
+
     <form class="header-modal-form">
       <p class="header-modal__text">
         leave your details, we will call you back
@@ -123,8 +124,53 @@
     </div>
   </div>
 </section>
+    <!-- Products -->
+    <section class="section products" id="products">
+      <div class="container container-products">
+        <p class="products__lable">100% natural</p>
+        <h2 class="products__title">products</h2>
 
-      <section class="about-section" id="about">
+        <ul class="products__list">
+          <li class="products__item product">
+            <h3 class="product__name product__name--cream">ice cream</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products__item product">
+            <h3 class="product__name product__name--coffee">ice coffee</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="products__item product">
+            <h3 class="product__name product__name--milkshakes">milkshakes</h3>
+            <p class="product__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button type="button" class="product__button">
+              <svg class="product__icon">
+                <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+<section class="about-section" id="about">
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>
@@ -415,7 +461,8 @@
   </div>
 </section>
 
-      <article class="contacts container">
+      <div class="section contacts">
+<article class="container">
     <h1 hidden="">Contacts</h1>
     <ul class="contacts__list">
         <li class="contacts__item">
@@ -502,21 +549,63 @@
     </ul>
 
 </article>
+</div>
 
 
-      <button class="footer__button-locations" type="button">
-  Our Locations
-  <svg class="about-section__btn-svg" width="10px" height="12px">
-    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-  </svg>
-</button>
-<button class="footer__button-franchise" type="button">
-  Franchise
-  <svg class="footer__button-svg" width="10px" height="12px">
-    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-  </svg>
-</button>
+      <footer class="footer">
+    <div class="footer__container container">
+        <button class="footer__button-locations" type="button">
+            Our Locations
+            <svg class="footer__button-svg" width="10px" height="12px">
+                <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+            </svg>
+        </button>
+        <button class="footer__button-franchise" type="button">
+            Franchise
+            <svg class="footer__button-svg" width="10px" height="12px">
+                <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+            </svg>
+        </button>
+    <p class="footer__text">homemade ice cream made</p> 
+    <h2 class="footer__title">with passion</h2>
+    <div class="footer__socials">
+        <ul class="socials__list">
+            <li class="socials__item">
+                <a class="socials__link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="icon Github">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#github"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="https://telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="icon Telegram">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="icon Facebook">
+                    <svg class="socials__icon" width="32" height="32">
+                        <use href="/sprite.f14d31f7.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__tel">
+        <p class="footer__tel--text">
+            Feel free to contact
+            <a class="footer__tel--number" href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+        </p>
+    </div>
+   </div>
+    <div class="footer__copyright">
+        <p class="footer__copyright--text">© 2022 - IceCream.<br>
+            All Rights Reserved.</p>
+    </div>
 
+</footer>
     </main>
   </body>
 </html>
