@@ -1,21 +1,21 @@
 .header {
-    @include mq (not-desktop) {
-        position: fixed;
-        padding-top: 32px;
+    @include mq (mobile-only) {
+        padding-top: 8px;
+        height: 68px;
     }
-    @include mq (desktop) {
-        background-color: var(--hero-bg-cl);
+    @include mq (tablet-only) {      
+        padding-top: 32px;
+        height: 115px;
+    }
+    @include mq (desktop) {      
         padding-top: 37px;
+        height: 125px;
     }
 
-         @include mq (mobile-only) {
-             padding-top: 8px;
-             height: 80px;
-         }
     
     
+    position: fixed;
     
-    height: 115px;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -25,21 +25,23 @@
 
 // Дополнительный класс для скрипта и фиксированного хедера
 
-@include mq (not-desktop) {
     .js-no-transparency {
 
     background-color: rgba(212, 151, 213, 0.4);
     backdrop-filter: blur(10px);
-}
+
 }
 
 
 .header-container {
+
     position: relative;
     width: 100%;
 } 
 
 .header-nav {
+    position: relative;
+    width: 100%;
     @include mq (desktop) {
         display: flex;
         align-items: center;
@@ -47,10 +49,10 @@
 }
 
 .header-nav__sm {
-   
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
 .logo {
@@ -61,67 +63,13 @@
     }
 }
 
-// .header-btn-second {
-//     @include mq (desktop) {
-//     display: none;
-//     opacity: 0;
-//     }
-    
-
-//     @include mq (mobile-only) {
-//         display: none;
-//     }
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         width: 209px;
-//         height: 44px;
-//         font-weight: 700;
-    
-//         @include mq (mobile-only) {
-//             margin-left: auto;
-//             margin-right: auto;
-//             margin-bottom: 32px;
-//         }
-    
-//         align-items: center;
-//         text-align: center;
-    
-//         font-size: 16px;
-//         line-height: 1.31;
-    
-//         color: var(--hero-txt-cl);
-    
-//         background: black;
-//         border-radius: 22px;
-//         border: none;
-    
-//         cursor: pointer;
-    
-//         &::after {
-//             content: '';
-//             display: inline-flex;
-//             justify-content: center;
-//             width: 10px;
-//             height: 10px;
-    
-//             margin-left: 16px;
-//             background-image: url(../images/icon/vector-buy.svg);
-//             background-size: contain;
-//             background-repeat: no-repeat;
-    
-//         }
-// }
 
 
 .header-mobile-menu-btn {
     @include mq (desktop) {
         display: none;
     }
-    position: absolute;
-
-    width: 20px;
-    height: 20px;
+    
     
     @include mq (mobile-only) {
     right: 15px;
@@ -129,10 +77,12 @@
 
     @include mq (tablet-only) {
         top: 15px;
-        right: 240px;
+        right: 210px;
     }
     
-
+    position: absolute;
+    width: 20px;
+    height: 20px;
     display: flex;
     margin: 0;
     padding: 0;
@@ -216,6 +166,7 @@
 
 
 .header-menu {
+    width: 100%;
     position: relative;
 
     @include mq (mobile-only) {
@@ -274,15 +225,6 @@
     }
 
 
-.header-menu-nav {
-    @include mq (not-desktop) {
-    flex-direction: column;
-    }
- 
-    flex-direction: row;
-
-}
-
 .header-button-modal {
     display: flex;
     align-items: center;
@@ -290,7 +232,7 @@
     width: 209px;
     height: 44px;
     font-weight: 700;
-    margin-left: 141px;
+    margin-left: auto;
 
     @include mq (not-desktop) {
         margin-top: 60px;
@@ -334,7 +276,34 @@
         background-image: url(../images/icon/vector-buy.svg);
         background-size: contain;
         background-repeat: no-repeat;
+
+        @include mq (desktop) {
         
+            &:hover &::after {
+                content: '';
+                display: inline-flex;
+                justify-content: center;
+                width: 10px;
+                height: 10px;
+            
+                margin-left: 16px;
+                
+                background-image: url(../images/icon/vector-buy-clean.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+
+            
+                }
+            }
+        
+    }
+    @include mq (desktop) {
+        &:hover,
+        &:focus {
+            color: #FFFFFF;
+            
+            background: var(--hero-txt-cl);
+        }
     }
 }
 
@@ -345,8 +314,9 @@
 
     @include mq (tablet-only) {
         position: fixed;
-        top: 32px;
+        top: 34px;
         left: -575px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -377,12 +347,15 @@
 
 }
 
+
 .header-menu-list {
     @include mq (not-desktop) {
+    display: flex;
     border-bottom: 1px solid #E18298;
     flex-direction: column;
     }
     display: flex;
+    
 }
 
 .header-menu-link {
@@ -401,15 +374,14 @@
     @include mq (desktop) {
         font-size: 16px;
         line-height: 1.31;
-        &:not(:last-child) {
-            margin-right: 35px;
-        }
+        margin-right: 35px;
     }
     cursor: pointer;
     font-weight: 700;
     color: #FFFFFF;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--hero-txt-cl);
     }
 }
