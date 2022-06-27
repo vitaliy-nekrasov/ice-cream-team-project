@@ -2825,4 +2825,66 @@ li {
   display: flex;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.button-up {
+  width: 50px;
+  height: 80px;
+  background-color: var(--accent-cl);
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  transform: translateY(25%);
+  box-shadow: 0 2px 6px 2px;
+}
+
+.button-up--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+.button-up:hover, .button-up:focus {
+  background-color: var(--hero-txt-cl);
+  outline: none;
+  transform: scale(1.1);
+}
+
+.button-up:hover:before, .button-up:focus:before, .button-up:hover:after, .button-up:focus:after {
+  border-top: 3px solid var(--main-txt-cl);
+  border-left: 3px solid var(--main-txt-cl);
+  transition: all .25s ease-in-out;
+}
+
+.button-up:before, .button-up:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.button-up:before {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid var(--hero-txt-cl);
+  border-left: 3px solid var(--hero-txt-cl);
+  transform: translate(-50%, -60%)rotate(45deg);
+}
+
+.button-up:after {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid var(--hero-txt-cl);
+  border-left: 3px solid var(--hero-txt-cl);
+  transform: translate(-50%, 20%)rotate(45deg);
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */
