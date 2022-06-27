@@ -3,7 +3,6 @@
     width: 100wv;
     height: 100wh;
     background-color: var(--secondary-bg-cl);
-    padding-top: 32px;
     
     &__container {
         @include mq (teblet) {

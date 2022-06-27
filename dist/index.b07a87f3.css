@@ -1301,6 +1301,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .reviews__img {
+    margin-bottom: 16px;
+  }
+}
+
 .reviews__background {
   background-color: var(--reviews-bg-cl);
 }
@@ -1309,6 +1315,13 @@ li {
   .reviews__background {
     margin-left: 54px;
     margin-right: 54px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__background {
+    margin-left: 96px;
+    margin-right: 96px;
   }
 }
 
@@ -1326,6 +1339,14 @@ li {
     background-position-y: 18px;
     margin-bottom: 4px;
     padding: 37px 6px 44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__gradient {
+    background-position-y: 31px;
+    margin-bottom: 16px;
+    padding: 31px 73px;
   }
 }
 
@@ -1352,6 +1373,15 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .reviews__text {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
 .reviews__client {
   font-family: var(--main-font);
   text-align: center;
@@ -1366,7 +1396,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .reviews__client {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 }
 
@@ -1383,7 +1413,13 @@ li {
 
 @media screen and (min-width: 768px) {
   .reviews__client:before {
-    left: 351px;
+    left: 353px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__client:before {
+    left: 569px;
   }
 }
 
@@ -1400,7 +1436,13 @@ li {
 
 @media screen and (min-width: 768px) {
   .reviews__client:after {
-    left: 361px;
+    left: 363px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__client:after {
+    left: 579px;
   }
 }
 
@@ -1421,8 +1463,15 @@ li {
 
 @media screen and (min-width: 768px) {
   .reviews__client--dot:before {
-    top: -71px;
-    left: 371px;
+    top: -76px;
+    left: 373px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__client--dot:before {
+    top: -76px;
+    left: 589px;
   }
 }
 
@@ -1432,7 +1481,13 @@ li {
 
 @media screen and (min-width: 768px) {
   .swiper-pagination {
-    top: 335px;
+    top: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-pagination {
+    top: 301px;
   }
 }
 
@@ -1455,6 +1510,13 @@ li {
   .swiper-slide:before {
     top: 127px;
     left: 59px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-slide:before {
+    top: 117px;
+    left: 168px;
   }
 }
 
@@ -2648,7 +2710,6 @@ li {
   width: 100wv;
   height: 100wh;
   background-color: var(--secondary-bg-cl);
-  padding-top: 32px;
 }
 
 .footer__text {
