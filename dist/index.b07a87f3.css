@@ -577,6 +577,23 @@ li {
   line-height: 1.17;
 }
 
+@media screen and (min-width: 768px) {
+  .products__lable {
+    margin-bottom: 18px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__lable {
+    letter-spacing: .04em;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
 .products__title {
   font-family: var(--secondary-font);
   text-align: center;
@@ -589,9 +606,39 @@ li {
   line-height: 1.15;
 }
 
+@media screen and (min-width: 768px) {
+  .products__title {
+    margin-bottom: 158px;
+    font-size: 48px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__title {
+    letter-spacing: .06em;
+    margin-bottom: 281px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
 .products__list {
   flex-direction: column;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .products__list {
+    flex-flow: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__list {
+    gap: 32px;
+  }
 }
 
 .products__item {
@@ -621,6 +668,25 @@ li {
   background-color: #c2e297;
 }
 
+@media screen and (min-width: 768px) {
+  .products__item {
+    flex-basis: calc(33.3333% - 10.6667px);
+    margin-top: 0;
+    padding: 118px 32px 32px 40px;
+  }
+
+  .products__item:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__item {
+    flex-basis: calc(33.3333% - 21.3333px);
+    padding: 165px 64px 64px 60px;
+  }
+}
+
 .product__name {
   font-family: var(--secondary-font);
   text-align: center;
@@ -634,6 +700,13 @@ li {
   line-height: 1.15;
 }
 
+@media screen and (min-width: 1200px) {
+  .product__name {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
 .product__name:before {
   content: "";
   width: 280px;
@@ -643,6 +716,22 @@ li {
   top: -140px;
   right: 50%;
   transform: translate(50%);
+}
+
+@media screen and (min-width: 768px) {
+  .product__name:before {
+    width: 224px;
+    height: 224px;
+    top: -140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__name:before {
+    width: 368px;
+    height: 394px;
+    top: -273px;
+  }
 }
 
 .product__name:after {
@@ -657,21 +746,70 @@ li {
   transform: translate(50%);
 }
 
+@media screen and (min-width: 768px) {
+  .product__name:after {
+    top: 173px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__name:after {
+    top: 231px;
+  }
+}
+
 .product__name--cream:before {
   background-image: url("m-product1.e4d6e433.png");
+}
+
+@media screen and (min-width: 768px) {
+  .product__name--cream:before {
+    background-image: url("t-product1.89962c74.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__name--cream:before {
+    background-image: url("d-product1.1e87afd7.png");
+  }
 }
 
 .product__name--coffee:before {
   background-image: url("m-product2.392cbf1c.png");
 }
 
+@media screen and (min-width: 768px) {
+  .product__name--coffee:before {
+    background-image: url("t-product2.777c5cc4.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__name--coffee:before {
+    background-image: url("d-product2.e2fd8fba.png");
+  }
+}
+
 .product__name--milkshakes:before {
   background-image: url("m-product3.0cdbd6c2.png");
+}
+
+@media screen and (min-width: 768px) {
+  .product__name--milkshakes:before {
+    background-image: url("t-product3.1752e2c5.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__name--milkshakes:before {
+    background-image: url("d-product3.aae51ea4.png");
+  }
 }
 
 .product__description {
   text-align: center;
   letter-spacing: .04em;
+  max-height: 124px;
   color: var(--main-txt-cl);
   margin-bottom: 32px;
   font-family: DM Sans;
@@ -679,6 +817,22 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: 152%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .product__description {
+    max-height: 150px;
+    line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__description {
+    max-height: 106px;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
 }
 
 .product__button {
