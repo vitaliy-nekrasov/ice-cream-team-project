@@ -1137,6 +1137,18 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .contacts__item {
     width: 280px;
@@ -1906,6 +1918,7 @@ li {
 .gallery__list {
   max-width: 100%;
   height: 100%;
+  justify-content: center;
   display: flex;
 }
 
@@ -2539,6 +2552,18 @@ li {
 @media screen and (min-width: 1200px) {
   .contacts {
     background-image: linear-gradient(#fff 18%, #fff5f6 18% 82%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
   }
 }
 
