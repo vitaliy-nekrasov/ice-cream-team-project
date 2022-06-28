@@ -277,35 +277,29 @@
         background-image: url(../images/icon/vector-buy.svg);
         background-size: contain;
         background-repeat: no-repeat;
+    }       
+        &:hover,
+        &:focus {
 
-        @include mq (desktop) {
-        
-            &:hover &::after {
+            color: #FFFFFF;  
+            background: var(--hero-txt-cl);
+
+            &::after {
                 content: '';
-                display: inline-flex;
-                justify-content: center;
-                width: 10px;
-                height: 10px;
-            
-                margin-left: 16px;
-                
                 background-image: url(../images/icon/vector-buy-clean.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
-
-            
-                }
             }
-        
-    }
-    @include mq (desktop) {
-        &:hover,
-        &:focus {
-            color: #FFFFFF;
-            
-            background: var(--hero-txt-cl);
+
+
         }
     }
+
+
+.header-btn-icon {
+    width: 10px;
+    height: 10px;
+
 }
 
 .header-button-modal-in-header {

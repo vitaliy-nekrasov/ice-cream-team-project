@@ -373,11 +373,21 @@ li {
   display: inline-flex;
 }
 
-@media screen and (min-width: 1200px) {
-  .header-button-modal:hover, .header-button-modal:focus {
-    color: #fff;
-    background: var(--hero-txt-cl);
-  }
+.header-button-modal:hover, .header-button-modal:focus {
+  color: #fff;
+  background: var(--hero-txt-cl);
+}
+
+.header-button-modal:hover:after, .header-button-modal:focus:after {
+  content: "";
+  background-image: url("vector-buy-clean.7b197b31.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-btn-icon {
+  width: 10px;
+  height: 10px;
 }
 
 .header-button-modal-in-header {
