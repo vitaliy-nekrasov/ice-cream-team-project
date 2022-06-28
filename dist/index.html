@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-
     <link rel="stylesheet" href="/index.b07a87f3.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/index.975ef6c8.js" defer=""></script>
   </head>
 
   <body id="body">
-    <main>
+    <main class="main-position-correction">
       <header class="header" id="header">
   <div class="container">
     <div class="header-container">
@@ -41,20 +40,24 @@
 
           <ul class="header-menu-list">
             <li>
-              <a class="header-menu-link link" href="/index.html"> Home </a>
-            </li>
-            <li>
-              <a class="header-menu-link link" href="#about">About us</a>
-            </li>
-            <li>
-              <a class="header-menu-link link" href="#made"> How it's made? </a>
-            </li>
-            <li>
-              <a class="header-menu-link link" href="#products">Our products
+              <a class="header-menu-link link" href="#body" close-home="">
+                Home
               </a>
             </li>
             <li>
-              <a class="header-menu-link link" href="#contact">Contact</a>
+              <a class="header-menu-link link" href="#about" close-about="">About us</a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#made" close-made="">
+                How it's made?
+              </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#products" close-products="">Our products
+              </a>
+            </li>
+            <li>
+              <a class="header-menu-link link" href="#contact" close-contact="">Contact</a>
             </li>
           </ul>
         </div>
@@ -80,18 +83,16 @@
           <input class="header-modal-form__input" type="text" name="input-modal">
 
           <svg class="header-modal-form__icon">
-
             <use href="/sprite.f14d31f7.svg#icon-person"></use>
-          </svg> 
+          </svg>
         </label>
-
 
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Тel</span>
           <input class="header-modal-form__input" type="tel" name="input-modal">
           <svg class="header-modal-form__icon">
             <use href="/sprite.f14d31f7.svg#icon-phone"></use>
-          </svg> 
+          </svg>
         </label>
 
         <label class="header-modal-form-unit">
@@ -99,7 +100,7 @@
           <input class="header-modal-form__input" type="email" name="input-modal">
           <svg class="header-modal-form__icon">
             <use href="/sprite.f14d31f7.svg#icon-email"></use>
-          </svg> 
+          </svg>
         </label>
 
         <label class="header-modal-form-unit">
@@ -125,8 +126,29 @@
         <a class="link link-red" href="#products">Products</a>
         <a class="link link-white" href="#made">How it's made?</a>
       </div>
-      <img class="girl-img" srcset="/girl150.2c2a7013.png, /girl300.07b6e383.png 300w" src="/girl150.2c2a7013.png" alt="девушка кушает мороженое" sizes="25vw">
-      <img class="milk-img" srcset="/milk154.3e17ac97.png, /milk308.32860218.png 308w" src="/milk154.3e17ac97.png" alt="молоко" sizes="20vw">
+      <img class="girl-img" srcset="/girl150.2c2a7013.png 150w, /girl300.07b6e383.png 300w" src="/girl150.2c2a7013.png" alt="девушка кушает мороженое" sizes="25vw">
+      <img class="milk-img" srcset="/milk154.3e17ac97.png 154w, /milk308.32860218.png 308w" src="/milk154.3e17ac97.png" alt="молоко" sizes="20vw">
+      <div class="hero__element hero__element--1">
+        <p class="element__number">16</p>
+        <p class="element__text">cafes</p>
+        <svg class="element__icon">
+          <use href="/sprite.f14d31f7.svg#ellipse"></use>
+        </svg>
+      </div>
+      <div class="hero__element hero__element--2">
+        <p class="element__number">23</p>
+        <p class="element__text">food trucks</p>
+        <svg class="element__icon">
+          <use href="/sprite.f14d31f7.svg#ellipse"></use>
+        </svg>
+      </div>
+      <div class="hero__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+        <a class="hero-text__link" href="">
+          <img class="hero-text__img" src="/arrow-right.5f8510b0.png" alt="стрелочка">
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -181,7 +203,7 @@
 
 
 
-       <section class="about-section" id="about">
+      <section class="about-section" id="made">
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>
@@ -227,7 +249,7 @@
   </div>
 </div>
 
-      <section class="advantages container">
+      <section class="advantages container" id="about">
   <h2 class="advantages__header"></h2>
   <ul class="advantages__list">
     <li class="advantages__block">
@@ -560,26 +582,28 @@
         
     </ul>
 
+
+    <div class="footer__button">
+        <button class="footer__button-locations" type="button">
+            Our Locations
+            <svg class="footer__button-svg" width="20px" height="20px">
+                <use href="/vector.1db44deb.svg#chevron-right"></use>
+            </svg>
+        </button>
+        <button class="footer__button-franchise" type="button">
+            Franchise
+            <svg class="footer__button-svg" width="20px" height="20px">
+                <use href="/vector.1db44deb.svg#chevron-right"></use>
+            </svg>
+        </button>
+    </div>
+
 </article>
 </section>
 
 
       <footer class="footer">
     <div class="footer__container container">
-        <div class="footer__button">
-            <button class="footer__button-locations" type="button">
-                Our Locations
-                <svg class="footer__button-svg" width="10px" height="12px">
-                    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-                </svg>
-            </button>
-            <button class="footer__button-franchise" type="button">
-                Franchise
-                <svg class="footer__button-svg" width="10px" height="12px">
-                    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-                </svg>
-            </button>
-        </div>
         <div class="footer__content">
             <div class="footer__content--text">
                 <p class="footer__subtitle">homemade ice cream made</p> 
@@ -626,10 +650,9 @@
     </div>
 
 </footer>
-       <a href="" class="button-up" aria-label="scroll to top"></a>
+      <a href="#" class="button-up" aria-label="scroll to top"></a>
 
       <script src="/index.a3a51be6.js"></script>
     </main>
-
   </body>
 </html>
