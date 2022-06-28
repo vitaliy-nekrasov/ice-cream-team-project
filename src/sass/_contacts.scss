@@ -21,11 +21,16 @@
    
 }
 .contacts__list {
+    padding-bottom: 32px;
+
     @include mq (tablet-only) {
         display: flex;
+        padding-bottom: 60px;
+
     }
     @include mq (desktop) {
         display: flex;
+        padding-bottom: 60px;
          }
     
 }
@@ -55,9 +60,9 @@
                  border-radius: 24px;
         
                  width: 224px;
-                padding-top: 40px;
+                 padding-top: 40px;
                  padding-left: 32px;
-                padding-bottom: 40px;
+                 padding-bottom: 40px;
         
                  display: inline-block;
         
@@ -110,18 +115,19 @@
     @include mq (mobile-only){
             background-color: #F0D1A5;
             width: 80px;
+            height: 16px;
             border-radius: 4px;
             color: #ffffff;
-        
-            // font-weight: 500;
-            // font-size: 12px;
-        
+
+            font-size: 12px;
+            line-height: 1.43;
+            letter-spacing: 0.04em;
         
             display: flex;
             align-items: center;
             text-align: center;
             justify-content: center;
-            letter-spacing: 0.04em;
+            
             margin-bottom: 20px;
     }
    
@@ -133,7 +139,7 @@
             color: #ffffff;
         
             font-size: 16px;
-            line-height: 0.53;
+            line-height: 1.87;
         
         
             display: flex;
@@ -151,7 +157,8 @@
             color: #ffffff;
         
             font-size: 16px;
-            line-height: 0.53;
+            line-height: 1.87;
+           
         
         
             display: flex;
@@ -169,10 +176,10 @@
         background-color: #C2E297;
         border-radius: 4px;
         width: 130px;
+        height: 16px;
     
-    
-        // font-size: 12px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 1.43;
     
         display: flex;
         align-items: center;
@@ -191,7 +198,7 @@
         color: #ffffff;
         
         font-size: 16px;
-        line-height: 0.53;
+        line-height: 1.87;
         
         
         display: flex;
@@ -210,7 +217,7 @@
         color: #ffffff;
     
         font-size: 16px;
-        line-height: 0.53;
+        line-height: 1.87;
     
     
         display: flex;
@@ -227,18 +234,16 @@
    
     @include mq (mobile-only) {
         font-size: 12px;
-        line-height: 22px;
+        line-height: 1.83;
         margin-bottom: 8px;
         letter-spacing: 0.04em;
         color: #000000;
     }
        
    @include mq (tablet-only) {
-        font-family: 'DM Sans';
-        font-style: normal;
-        
+       
         font-size: 14px;
-        line-height: 26px;
+        line-height: 1.85;
 
         margin-bottom: 12px;
         margin-top: 32px;
@@ -246,11 +251,9 @@
         color: #000000;
     }
         @include mq (desktop) {
-        font-family: 'DM Sans';
-            font-style: normal;
         
             font-size: 14px;
-            line-height: 30px;
+            line-height: 2.14;
         
             margin-bottom: 8px;
             margin-top: 32px;
@@ -262,16 +265,22 @@
         color: #907E82;
 
     @include mq (mobile-only){
-        font-size: 12px;
+        
         width: 179px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 1.5;
         margin-bottom: 24px;
     }   
     @include mq (tablet-only) {
+
         font-family: 'DM Sans';
         font-weight: 500;
+       
         width: 159px;
+        height: 65px;
         font-size: 14px;
-        line-height: 23px;
+        line-height: 1.64;
             
         margin-bottom: 32px;
     }
@@ -279,8 +288,9 @@
         font-family: 'DM Sans';
             font-weight: 500;
             width: 243px;
+            height: 50px;
             font-size: 16px;
-            line-height: 29px;
+            line-height: 1.81;
         
             margin-bottom: 32px;
     }
@@ -338,7 +348,7 @@
     @include mq (mobile-only) {
         font-weight: 500;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 1.83;
         
         
         color: #000000;
@@ -350,14 +360,14 @@
         color: #000000;
         font-weight: 500;
         font-size: 14px;
-        line-height: 23px;
+        line-height: 1.64;
     }
        
     @include mq (desktop) {
         color: #000000;
             font-weight: 500;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 1.87;
     }
        
 }
@@ -368,20 +378,20 @@
         font-family: 'DM Sans';
         font-weight: 500;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 1.83;
     }
    
     @include mq (tablet-only) {
         font-family: 'DM Sans';
         font-weight: 500;
         font-size: 14px;
-        line-height: 26px;
+        line-height: 1.85;
     }
     @include mq (desktop) {
         font-family: 'DM Sans';
             font-weight: 500;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 1.87;
     }
     
 }
@@ -403,7 +413,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
-            line-height: 18px;
+            line-height: 1.5;
             margin-top: 24px;
     }
    
@@ -415,7 +425,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            line-height: 26px;
+            line-height: 1.85;
             margin-top: 32px;
     }
         @include mq (desktop) {
@@ -426,8 +436,8 @@
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            line-height: 22px;
-            // line-height: 29px;
+           
+            line-height: 1.81;
 
             margin-top: 32px;
     }
