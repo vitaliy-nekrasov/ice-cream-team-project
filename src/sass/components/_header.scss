@@ -29,6 +29,7 @@
 
     background-color: rgba(212, 151, 213, 0.4);
     backdrop-filter: blur(10px);
+    
 
 }
 
@@ -175,8 +176,8 @@
         left: 0;
         flex-direction: column;
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         transform: translateX(120%);
         
         transition: transform 250ms ease-in-out;
@@ -195,7 +196,7 @@
     @include mq (tablet-only) {
         position: fixed;
         width: 254px;
-        height: 100%;
+        height: 100vh;
 
         top: 0;
         right: 0;
@@ -276,35 +277,29 @@
         background-image: url(../images/icon/vector-buy.svg);
         background-size: contain;
         background-repeat: no-repeat;
+    }       
+        &:hover,
+        &:focus {
 
-        @include mq (desktop) {
-        
-            &:hover &::after {
+            color: #FFFFFF;  
+            background: var(--hero-txt-cl);
+
+            &::after {
                 content: '';
-                display: inline-flex;
-                justify-content: center;
-                width: 10px;
-                height: 10px;
-            
-                margin-left: 16px;
-                
                 background-image: url(../images/icon/vector-buy-clean.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
-
-            
-                }
             }
-        
-    }
-    @include mq (desktop) {
-        &:hover,
-        &:focus {
-            color: #FFFFFF;
-            
-            background: var(--hero-txt-cl);
+
+
         }
     }
+
+
+.header-btn-icon {
+    width: 10px;
+    height: 10px;
+
 }
 
 .header-button-modal-in-header {
@@ -316,7 +311,7 @@
         position: fixed;
         top: 34px;
         left: -575px;
-        
+        left: calc(-540px - ((100vw - 704px) / 2));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -330,21 +325,20 @@
             opacity: 0;
         }
 
-        &::after {
-            content: '';
-            display: inline-flex;
-            justify-content: center;
-            width: 10px;
-            height: 10px;
-
-            margin-left: 16px;
-            background-image: url(../images/icon/vector-buy.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-
-        }
     }
 
+    &::after {
+        content: '';
+        display: inline-flex;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+
+        margin-left: 16px;
+        background-image: url(../images/icon/vector-buy.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 
@@ -361,6 +355,12 @@
 .header-menu-link {
     display: flex;
     align-items: center;
+
+    
+        // .main-position-correction {
+        //     padding-top: 150px;
+        // }
+    
 
     @include mq (not-desktop) {
     width: 100%;  

@@ -506,11 +506,36 @@ function hmrAcceptRun(bundle, id) {
 (()=>{
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
+    const mobileMenuCloseHome = document.querySelector("[close-home");
+    const mobileMenuCloseAbout = document.querySelector("[close-about");
+    const mobileMenuCloseMade = document.querySelector("[close-made");
+    const mobileMenuCloseProducts = document.querySelector("[close-products");
+    const mobileMenuCloseContact = document.querySelector("[close-contact");
     menuBtnRef.addEventListener("click", ()=>{
         const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
         menuBtnRef.classList.toggle("is-open");
         menuBtnRef.setAttribute("aria-expanded", !expanded);
         mobileMenuRef.classList.toggle("is-open");
+        mobileMenuCloseHome.addEventListener("click", ()=>{
+            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
+        });
+        mobileMenuCloseAbout.addEventListener("click", ()=>{
+            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
+        });
+        mobileMenuCloseMade.addEventListener("click", ()=>{
+            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
+        });
+        mobileMenuCloseProducts.addEventListener("click", ()=>{
+            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
+        });
+        mobileMenuCloseContact.addEventListener("click", ()=>{
+            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
+        });
     });
 })();
 (()=>{
