@@ -1309,14 +1309,17 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-place {
     width: 80px;
+    height: 16px;
     color: #fff;
-    text-align: center;
     letter-spacing: .04em;
+    text-align: center;
     background-color: #f0d1a5;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.43;
     display: flex;
   }
 }
@@ -1334,7 +1337,7 @@ li {
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -1352,7 +1355,7 @@ li {
     align-items: center;
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -1360,6 +1363,7 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-place2 {
     width: 130px;
+    height: 16px;
     text-align: center;
     letter-spacing: .04em;
     color: #fff;
@@ -1368,7 +1372,8 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 1.43;
     display: flex;
   }
 }
@@ -1386,7 +1391,7 @@ li {
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -1404,7 +1409,7 @@ li {
     align-items: center;
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -1415,7 +1420,7 @@ li {
     color: #000;
     margin-bottom: 8px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 1.83;
   }
 }
 
@@ -1424,10 +1429,8 @@ li {
     color: #000;
     margin-top: 32px;
     margin-bottom: 12px;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
-    line-height: 26px;
+    line-height: 1.85;
   }
 }
 
@@ -1436,10 +1439,8 @@ li {
     color: #000;
     margin-top: 32px;
     margin-bottom: 8px;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
-    line-height: 30px;
+    line-height: 2.14;
   }
 }
 
@@ -1450,30 +1451,34 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-text {
     width: 179px;
+    height: 36px;
     margin-bottom: 24px;
     font-size: 12px;
+    line-height: 1.5;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__card-text {
     width: 159px;
+    height: 65px;
     margin-bottom: 32px;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.64;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts__card-text {
     width: 243px;
+    height: 50px;
     margin-bottom: 32px;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
-    line-height: 29px;
+    line-height: 1.81;
   }
 }
 
@@ -1537,7 +1542,7 @@ li {
     flex-direction: column;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     display: flex;
   }
 }
@@ -1547,7 +1552,7 @@ li {
     color: #000;
     font-size: 14px;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.64;
   }
 }
 
@@ -1556,7 +1561,7 @@ li {
     color: #000;
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.87;
   }
 }
 
@@ -1569,7 +1574,7 @@ li {
     font-family: DM Sans;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
   }
 }
 
@@ -1578,7 +1583,7 @@ li {
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.85;
   }
 }
 
@@ -1587,7 +1592,7 @@ li {
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.87;
   }
 }
 
@@ -1607,7 +1612,7 @@ li {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.5;
     display: flex;
   }
 }
@@ -1620,7 +1625,7 @@ li {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.85;
     display: flex;
   }
 }
@@ -1633,7 +1638,7 @@ li {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.81;
     display: flex;
   }
 }
@@ -2700,14 +2705,17 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-place {
     width: 80px;
+    height: 16px;
     color: #fff;
-    text-align: center;
     letter-spacing: .04em;
+    text-align: center;
     background-color: #f0d1a5;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.43;
     display: flex;
   }
 }
@@ -2725,7 +2733,7 @@ li {
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -2743,7 +2751,7 @@ li {
     align-items: center;
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -2751,6 +2759,7 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-place2 {
     width: 130px;
+    height: 16px;
     text-align: center;
     letter-spacing: .04em;
     color: #fff;
@@ -2759,7 +2768,8 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 1.43;
     display: flex;
   }
 }
@@ -2777,7 +2787,7 @@ li {
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -2795,7 +2805,7 @@ li {
     align-items: center;
     margin-bottom: 32px;
     font-size: 16px;
-    line-height: .53;
+    line-height: 1.87;
     display: flex;
   }
 }
@@ -2806,7 +2816,7 @@ li {
     color: #000;
     margin-bottom: 8px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 1.83;
   }
 }
 
@@ -2815,10 +2825,8 @@ li {
     color: #000;
     margin-top: 32px;
     margin-bottom: 12px;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
-    line-height: 26px;
+    line-height: 1.85;
   }
 }
 
@@ -2827,10 +2835,8 @@ li {
     color: #000;
     margin-top: 32px;
     margin-bottom: 8px;
-    font-family: DM Sans;
     font-size: 14px;
-    font-style: normal;
-    line-height: 30px;
+    line-height: 2.14;
   }
 }
 
@@ -2841,30 +2847,34 @@ li {
 @media screen and (max-width: 767.98px) {
   .contacts__card-text {
     width: 179px;
+    height: 36px;
     margin-bottom: 24px;
     font-size: 12px;
+    line-height: 1.5;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__card-text {
     width: 159px;
+    height: 65px;
     margin-bottom: 32px;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.64;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts__card-text {
     width: 243px;
+    height: 50px;
     margin-bottom: 32px;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
-    line-height: 29px;
+    line-height: 1.81;
   }
 }
 
@@ -2928,7 +2938,7 @@ li {
     flex-direction: column;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
     display: flex;
   }
 }
@@ -2938,7 +2948,7 @@ li {
     color: #000;
     font-size: 14px;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.64;
   }
 }
 
@@ -2947,7 +2957,7 @@ li {
     color: #000;
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.87;
   }
 }
 
@@ -2960,7 +2970,7 @@ li {
     font-family: DM Sans;
     font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.83;
   }
 }
 
@@ -2969,7 +2979,7 @@ li {
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.85;
   }
 }
 
@@ -2978,7 +2988,7 @@ li {
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.87;
   }
 }
 
@@ -2998,7 +3008,7 @@ li {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.5;
     display: flex;
   }
 }
@@ -3011,7 +3021,7 @@ li {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.85;
     display: flex;
   }
 }
@@ -3024,7 +3034,7 @@ li {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.81;
     display: flex;
   }
 }
