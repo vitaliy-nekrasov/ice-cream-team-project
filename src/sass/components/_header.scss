@@ -316,7 +316,7 @@
         position: fixed;
         top: 34px;
         left: -575px;
-        
+        left: calc(-540px - ((100vw - 704px) / 2));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -330,21 +330,20 @@
             opacity: 0;
         }
 
-        &::after {
-            content: '';
-            display: inline-flex;
-            justify-content: center;
-            width: 10px;
-            height: 10px;
-
-            margin-left: 16px;
-            background-image: url(../images/icon/vector-buy.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-
-        }
     }
 
+    &::after {
+        content: '';
+        display: inline-flex;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+
+        margin-left: 16px;
+        background-image: url(../images/icon/vector-buy.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 

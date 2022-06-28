@@ -63,5 +63,11 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4"
                 d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
         </symbol>
+        <symbol id="ellipse" viewBox="0 0 16 16">
+            <circle r="8" transform="matrix(-1 0 0 1 8 8)" fill="white"></circle>
+        </symbol>
+        <symbol  viewBox="0 0 7 10" id="arrow">
+            <path d="M1.74207 1L5.76722 5L1.74207 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
     </defs>
 </svg>
