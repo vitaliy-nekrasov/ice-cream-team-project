@@ -1914,6 +1914,10 @@ li {
   background-color: var(--hero-txt-cl);
 }
 
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg, .footer__button-franchise:hover .footer__button-svg, .footer__button-franchise:focus .footer__button-svg {
+  fill: #fff;
+}
+
 @media screen and (max-width: 767.98px) {
   .footer__button-locations {
     margin-bottom: 10px;
@@ -1933,9 +1937,7 @@ li {
 }
 
 .footer__button-svg {
-  width: 9.8px;
-  height: 12px;
-  margin-left: 14px;
+  fill: var(--hero-txt-cl);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -3098,6 +3100,13 @@ html {
   width: 100wv;
   height: 100wh;
   background-color: var(--secondary-bg-cl);
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 120px;
+  }
 }
 
 .footer__subtitle {
@@ -3180,13 +3189,11 @@ html {
 }
 
 .footer__content .footer__content--text {
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__content .footer__content--text {
-    margin-top: 120px;
     margin-bottom: 60px;
   }
 }
@@ -3256,11 +3263,15 @@ html {
 }
 
 .footer__tel--number {
-  color: var(--hero-txt-cl);
+  color: var(--secondary-txt-cl);
   cursor: pointer;
   text-decoration: none;
   transition: color .25s cubic-bezier(.4, 0, .2, 1);
   position: relative;
+}
+
+.footer__tel--number:hover, .footer__tel--number:focus {
+  color: var(--hero-txt-cl);
 }
 
 .footer__copyright {
