@@ -6,8 +6,7 @@
   font-family: 'DM Sans';
   font-style: normal;
   display: flex;
-  // margin-left: auto;
-  // margin-right: auto;
+
   border-radius: 22px;
   border-color: transparent;
   height: 44px;
@@ -28,8 +27,11 @@
     color: var(--main-txt-cl);
     background-color: var(--hero-txt-cl);
   }
-  
-  
+  &:hover .footer__button-svg,
+  &:focus .footer__button-svg {
+    fill: #ffffff;
+  }
+   
 }
 .footer__button-locations {
    
@@ -45,7 +47,6 @@
 }
 
 .footer__button-svg {
-  width: 9.8px;
-  height: 12px;
-  margin-left: 14px;
+
+  fill:var(--hero-txt-cl)
 }
