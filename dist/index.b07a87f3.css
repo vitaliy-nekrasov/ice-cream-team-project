@@ -3094,10 +3094,29 @@ html {
   transform: translate(-50%, 20%)rotate(45deg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.button-ice-up {
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+}
+
 .footer {
   width: 100wv;
   height: 100wh;
   background-color: var(--secondary-bg-cl);
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 120px;
+  }
 }
 
 .footer__subtitle {
@@ -3180,13 +3199,11 @@ html {
 }
 
 .footer__content .footer__content--text {
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__content .footer__content--text {
-    margin-top: 120px;
     margin-bottom: 60px;
   }
 }
