@@ -768,6 +768,10 @@ li {
 
 .hero__element {
   text-align: right;
+  background-image: url("ellipse2.4cf0723c.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
   padding-right: 8px;
   display: none;
   position: absolute;
@@ -782,6 +786,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   .hero__element {
+    background-size: 30px 30px;
     padding-right: 18px;
   }
 }

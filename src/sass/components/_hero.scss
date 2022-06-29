@@ -258,6 +258,10 @@
     right: 0;
     padding-right: 8px;
     text-align: right;
+    background-image: url(../images/hero/ellipse2.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
 
     @include mq (tablet) {
         display: block; 
@@ -265,6 +269,7 @@
 
     @include mq (desktop) {
         padding-right: 18px;
+        background-size: 30px 30px;
     }
     
 }
