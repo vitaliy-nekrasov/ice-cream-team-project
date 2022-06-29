@@ -66,6 +66,7 @@
     </div>
   </div>
 </header>
+
 <div class="header-modal-backdrop is-hidden" data-modal="">
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close="">
@@ -76,45 +77,69 @@
 
     <form class="header-modal-form">
       <p class="header-modal__text">
-        leave your details,<br> we will call you back
+        Leave your ,<br> we will call you back
       </p>
       <div class="header-modal-bl" role="group">
         <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">Name</span>
+          <span class="header-modal-form__item">Your name</span>
           <input class="header-modal-form__input" type="text" name="input-modal">
-
-          <svg class="header-modal-form__icon">
-            <use href="/sprite.f14d31f7.svg#icon-person"></use>
-          </svg>
         </label>
 
         <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">Тel</span>
+          <span class="header-modal-form__item">Your contact</span>
           <input class="header-modal-form__input" type="tel" name="input-modal">
-          <svg class="header-modal-form__icon">
-            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
-          </svg>
         </label>
 
-        <label class="header-modal-form-unit">
+        <div class="header-modal__text-radio">
+          <p class="header-modal__text-radio">What would you like to order?</p>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice cream" checked="">
+            Ice cream
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice coffe">
+
+           Ice coffe
+
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Milk shake">
+            Milk shake
+          </label>
+
+
+          <label class="header-modal-form-unit">
+            <span class="header-modal-form__item">Comment</span>
+            <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
+          </label>
+        </div>
+
+        </div>
+
+        <!-- <label class="header-modal-form-unit">
           <span class="header-modal-form__item">E-mail</span>
-          <input class="header-modal-form__input" type="email" name="input-modal">
+          <input
+            class="header-modal-form__input"
+            type="email"
+            name="input-modal"
+          />
           <svg class="header-modal-form__icon">
-            <use href="/sprite.f14d31f7.svg#icon-email"></use>
+            <use href="./images/sprite.svg#icon-email"></use>
           </svg>
-        </label>
+        </label> -->
 
         <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">Address</span>
-          <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Input text"></textarea>
+          <span class="header-modal-form__item">Comment</span>
+          <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
         </label>
-      </div>
+
+      </form></div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send
       </button>
-    </form>
+    
   </div>
-</div>
+
 
       <section class="hero">
   <div class="container">
@@ -133,19 +158,15 @@
       <div class="hero__element hero__element--1">
         <p class="element__number">16</p>
         <p class="element__text">cafes</p>
-        <svg class="element__icon">
-          <use href="/sprite.f14d31f7.svg#ellipse"></use>
-        </svg>
       </div>
       <div class="hero__element hero__element--2">
         <p class="element__number">23</p>
         <p class="element__text">food trucks</p>
-        <svg class="element__icon">
-          <use href="/sprite.f14d31f7.svg#ellipse"></use>
-        </svg>
       </div>
       <div class="hero__text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
         </p>
         <a class="hero-text__link" href="">
           <img class="hero-text__img" src="/arrow-right.5f8510b0.png" alt="стрелочка">
@@ -157,8 +178,10 @@
 
       
     <!-- Products -->
-    <section class="section products" id="products">
+    <section class="section products">
       <div class="container container-products">
+        <!-- не отображается -->
+        <div class="anchor" id="products"></div>
         <p class="products__lable">100% natural</p>
         <h2 class="products__title">products</h2>
 
@@ -205,13 +228,18 @@
 
 
 
-      <section class="about-section" id="made">
+      
+<section class="about-section">
+  <!-- не отображается -->
+  <div class="anchor" id="about"></div>
+<section class="about-section" id="made">
+
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>
       <h2 class="about-section__title">HOW IT'S MADE?</h2>
       <div class="about-section__content">
-        <div class="about-section__bg-bossy"></div>
+        <div class="about-section__bg-bossy swing"></div>
         <div class="about-section__information">
           <p class="about-section__main-text">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
@@ -223,11 +251,9 @@
             urna maximus. Cras massa nibh, tincidunt. <br><br>Aliquam erat volutpat. Aenean
             accumsan.
           </p>
-          <button type="button" class="button about-section__button" data-about-modal-open="">
+          <button type="button" class="button about-section__button grow" data-about-modal-open="">
             Read more
-            <svg class="about-section__btn-svg" width="10px" height="12px">
-              <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-            </svg>
+           
           </button>
         </div>
       </div>
@@ -245,12 +271,12 @@
     </button>
     <p class="modal__suptitle">TRADITION AND LOVE</p>
     <p class="modal__title">HOW IT'S MADE?</p>
-    <div class="frame"><iframe src="https://www.youtube.com/embed/MBJ7p1ci7LA" frameborder="0"></iframe>
+    <div class="frame"><iframe class="video" src="https://www.youtube.com/embed/nSPCdu5rpRE" frameborder="0"></iframe>
     </div>
 
   </div>
 </div>
-
+</section>
       
 <section class="advantages section" id="about">
   <div class="container">
@@ -501,7 +527,8 @@
   </div>
 </section>
 
-      <section class="contacts" id="contact">
+      <section class="contacts">
+    <div class="anchor" id="contact"></div>
 <article class="container">
     <h1 hidden="">Contacts</h1>
     <ul class="contacts__list">
@@ -589,23 +616,78 @@
     </ul>
 
 
-    <div class="footer__button">
-        <button class="footer__button-locations" type="button">
-            Our Locations
-            <svg class="footer__button-svg" width="20px" height="20px">
-                <use href="/vector.1db44deb.svg#chevron-right"></use>
-            </svg>
-        </button>
-        <button class="footer__button-franchise" type="button">
-            Franchise
-            <svg class="footer__button-svg" width="20px" height="20px">
-                <use href="/vector.1db44deb.svg#chevron-right"></use>
-            </svg>
-        </button>
+    <div class="footer__button-list">
+      <button class="footer__button-locations" type="button" data-modal-location-open="">
+        Our Locations
+        <svg class="footer__button-svg" width="10px" height="12px">
+          <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+        </svg>
+      </button>
+      <button class="footer__button-franchise" type="button" data-modal-franchise-open="">
+        Franchise
+        <svg class="footer__button-svg" width="10px" height="12px">
+          <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
+        </svg>
+      </button>
     </div>
 
 </article>
 </section>
+
+<!--Backdrop-->
+
+<div class="backdrop is-hidden" data-modal-location="">
+    <div class="modal__footer">
+      <button type="button" class="modal__close-btn" data-modal-location-close="">
+        <svg class="modal__icon-close-btn">
+          <use href="/close-button.c0542d00.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48394.100539971834!2d-73.9623459!3d40.7041175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25941934bb85f%3A0x486aa5dc8e5c1416!2z0J_QsNGA0Log0JTQvtC80LjQvdC-!5e0!3m2!1sru!2sus!4v1656404447135!5m2!1sru!2sus" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-franchise="">
+    <div class="modal__franchise">
+      <button type="button" class="modal__close-btn" data-modal-franchise-close="">
+        <svg class="modal__icon-close-btn">
+          <use href="/close-button.c0542d00.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="franchise__header">
+        <p class="franchise__text">Cooperation</p>
+        <h2 class="franchise__service">Franchise</h2>
+        <p class="franchise__defaulttext">
+          Ice-ice-baby Franchise Network is a Business - successfully operating
+          in 3 countries(Ukraine, Italy, Germany)
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">An initial fee</p>
+        <p class="franchise__defaulttext">
+          Pay a fee for 2 years for one outlet. It includes: The right to use
+          the brand, training with a specialist visit, further business support.
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">Buy equipment</p>
+        <p class="franchise__defaulttext">
+          Our refrigerated display cabinets are handcrafted in Europe
+          individually by order of the company. Our kiosks in the form of bright
+          pink retro cars are unique and inimitable, they are the intellectual
+          patented property of the company, which radically distinguishes us
+          from the kiosks of competing companies.
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">Buy products</p>
+        <p class="franchise__defaulttext">
+          Buy our products and sell at the price you want. We do not have an
+          established price monopoly, which is also a “plus” of working with us.
+        </p>
+      </div>
+      <button class="franchise__poll" type="button">Application form</button>
+    </div>
+  </div>
 
 
       <footer class="footer">
@@ -659,6 +741,8 @@
       <a href="#" class="button-up" aria-label="scroll to top"></a>
 
       <script src="/index.a3a51be6.js"></script>
+      <script src="/index.d6b62af9.js"></script>
+      <script src="/index.0ba1dfa7.js"></script>
     </main>
   </body>
 </html>
