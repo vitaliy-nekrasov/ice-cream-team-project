@@ -66,6 +66,7 @@
     </div>
   </div>
 </header>
+
 <div class="header-modal-backdrop is-hidden" data-modal="">
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close="">
@@ -82,15 +83,34 @@
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your name</span>
           <input class="header-modal-form__input" type="text" name="input-modal">
-
-          <svg class="header-modal-form__icon">
-            <use href="/sprite.f14d31f7.svg#icon-person"></use>
-          </svg>
         </label>
 
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your contact</span>
           <input class="header-modal-form__input" type="tel" name="input-modal">
+        </label>
+
+        <div class="header-modal__text-radio">
+          <p class="header-modal__text-radio">What would you like to order?</p>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice cream" checked="">
+            Ice cream
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice coffe">
+            Ice coffe
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Milk shake">
+            Milk shake
+          </label>
+
+          <label class="header-modal-form-unit">
+            <span class="header-modal-form__item">Comment</span>
+            <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
+          </label>
+        </div>
+
           <svg class="header-modal-form__icon">
             <use href="/sprite.f14d31f7.svg#icon-phone"></use>
           </svg>
@@ -128,6 +148,7 @@
           <span class="header-modal-form__item">Comment</span>
           <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
         </label>
+
       </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send
@@ -153,19 +174,15 @@
       <div class="hero__element hero__element--1">
         <p class="element__number">16</p>
         <p class="element__text">cafes</p>
-        <svg class="element__icon">
-          <use href="/sprite.f14d31f7.svg#ellipse"></use>
-        </svg>
       </div>
       <div class="hero__element hero__element--2">
         <p class="element__number">23</p>
         <p class="element__text">food trucks</p>
-        <svg class="element__icon">
-          <use href="/sprite.f14d31f7.svg#ellipse"></use>
-        </svg>
       </div>
       <div class="hero__text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
         </p>
         <a class="hero-text__link" href="">
           <img class="hero-text__img" src="/arrow-right.5f8510b0.png" alt="стрелочка">
@@ -177,8 +194,10 @@
 
       
     <!-- Products -->
-    <section class="section products" id="products">
+    <section class="section products">
       <div class="container container-products">
+        <!-- не отображается -->
+        <div class="anchor" id="products"></div>
         <p class="products__lable">100% natural</p>
         <h2 class="products__title">products</h2>
 
@@ -225,7 +244,13 @@
 
 
 
+
+      <section class="about-section">
+  <!-- не отображается -->
+  <div class="anchor" id="about"></div>
+
       <section class="about-section" id="made">
+
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>
@@ -519,7 +544,8 @@
   </div>
 </section>
 
-      <section class="contacts" id="contact">
+      <section class="contacts">
+    <div class="anchor" id="contact"></div>
 <article class="container">
     <h1 hidden="">Contacts</h1>
     <ul class="contacts__list">

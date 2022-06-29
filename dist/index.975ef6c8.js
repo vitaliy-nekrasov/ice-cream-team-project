@@ -516,26 +516,26 @@ function hmrAcceptRun(bundle, id) {
         menuBtnRef.classList.toggle("is-open");
         menuBtnRef.setAttribute("aria-expanded", !expanded);
         mobileMenuRef.classList.toggle("is-open");
-        mobileMenuCloseHome.addEventListener("click", ()=>{
-            menuBtnRef.classList.toggle("is-open");
-            mobileMenuRef.classList.toggle("is-open");
-        });
-        mobileMenuCloseAbout.addEventListener("click", ()=>{
-            menuBtnRef.classList.toggle("is-open");
-            mobileMenuRef.classList.toggle("is-open");
-        });
-        mobileMenuCloseMade.addEventListener("click", ()=>{
-            menuBtnRef.classList.toggle("is-open");
-            mobileMenuRef.classList.toggle("is-open");
-        });
-        mobileMenuCloseProducts.addEventListener("click", ()=>{
-            menuBtnRef.classList.toggle("is-open");
-            mobileMenuRef.classList.toggle("is-open");
-        });
-        mobileMenuCloseContact.addEventListener("click", ()=>{
-            menuBtnRef.classList.toggle("is-open");
-            mobileMenuRef.classList.toggle("is-open");
-        });
+    });
+    mobileMenuCloseHome.addEventListener("click", ()=>{
+        menuBtnRef.classList.toggle("is-open");
+        mobileMenuRef.classList.toggle("is-open");
+    });
+    mobileMenuCloseAbout.addEventListener("click", ()=>{
+        menuBtnRef.classList.toggle("is-open");
+        mobileMenuRef.classList.toggle("is-open");
+    });
+    mobileMenuCloseMade.addEventListener("click", ()=>{
+        menuBtnRef.classList.toggle("is-open");
+        mobileMenuRef.classList.toggle("is-open");
+    });
+    mobileMenuCloseProducts.addEventListener("click", ()=>{
+        menuBtnRef.classList.toggle("is-open");
+        mobileMenuRef.classList.toggle("is-open");
+    });
+    mobileMenuCloseContact.addEventListener("click", ()=>{
+        menuBtnRef.classList.toggle("is-open");
+        mobileMenuRef.classList.toggle("is-open");
     });
 })();
 (()=>{
