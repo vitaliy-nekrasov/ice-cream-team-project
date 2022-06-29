@@ -1,8 +1,13 @@
 
 .footer {
+    padding-top: 40px;
     width: 100wv;
     height: 100wh;
     background-color: var(--secondary-bg-cl);
+
+        @include mq (desktop) {
+            padding-top: 120px;
+        }
     
 
     &__subtitle {
@@ -77,10 +82,10 @@
         justify-content: space-between;
     }
 .footer__content--text {
-    margin-top: 40px;
+   
     margin-bottom: 40px;
     @include mq (desktop) {
-        margin-top: 120px;
+    
         margin-bottom: 60px;
     }
 }
@@ -153,16 +158,16 @@
     &--number {
         position: relative;
         text-decoration: none;
-        color: var(--hero-txt-cl);
+        color: var(--secondary-txt-cl);
         cursor: pointer;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     }
 }
-// .footer__tel--number:hover,
-// .footer__tel--number:focus {
-//  color:  ;  
-// }
+.footer__tel--number:hover,
+.footer__tel--number:focus {
+ color: var(--hero-txt-cl) ;  
+}
 
 // .footer__tel--number::before {
 //     position: absolute;

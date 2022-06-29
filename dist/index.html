@@ -60,6 +60,7 @@
               <a class="header-menu-link link" href="#contact" close-contact="">Contact</a>
             </li>
           </ul>
+
         </div>
       </nav>
     </div>
@@ -109,9 +110,48 @@
             <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
           </label>
         </div>
+
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
+          </svg>
+        </label>
+
+        <div class="header-modal__text-radio">
+          <p class="header-modal__text-radio">What would you like to order?</p>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice cream" checked="">
+            Ice cream
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Ice coffe">
+           Ice coffe
+          </label>
+          <label class="header-modal-form__item-radio">
+            <input type="radio" name="option" value="Milk shake">
+            Milk shake
+          </label>
+        </div>
+
+        <!-- <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">E-mail</span>
+          <input
+            class="header-modal-form__input"
+            type="email"
+            name="input-modal"
+          />
+          <svg class="header-modal-form__icon">
+            <use href="./images/sprite.svg#icon-email"></use>
+          </svg>
+        </label> -->
+
+        <label class="header-modal-form-unit">
+          <span class="header-modal-form__item">Comment</span>
+          <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
+        </label>
+
       </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
-        SEND
+        Send
       </button>
     </form>
   </div>
@@ -120,6 +160,7 @@
       <section class="hero">
   <div class="container">
     <div class="hero-container">
+      
       <h1 class="hero-title">
         ice cream made with
         <br><span class="hero-title-big">passion</span>
@@ -203,9 +244,13 @@
 
 
 
+
       <section class="about-section">
   <!-- не отображается -->
   <div class="anchor" id="about"></div>
+
+      <section class="about-section" id="made">
+
   <div class="about-section__overlay">
     <div class="container">
       <p class="about-section__suptitle">TRADITION AND LOVE</p>
@@ -251,28 +296,32 @@
   </div>
 </div>
 
-      <section class="advantages container">
-  <h2 class="advantages__header"></h2>
-  <ul class="advantages__list">
-    <li class="advantages__block">
-      <h3 class="advantages__title">721</h3>
-      <p class="advantages__description">
-        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-      </p>
-    </li>
-    <li class="advantages__block">
-      <h3 class="advantages__title">16kg</h3>
-      <p class="advantages__description">
-        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-      </p>
-    </li>
-    <li class="advantages__block">
-      <h3 class="advantages__title">84</h3>
-      <p class="advantages__description">
-        Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-      </p>
-    </li>
-  </ul>
+      
+<section class="advantages section" id="about">
+  <div class="container">
+    <h2 class="advantages__header"></h2>
+    <ul class="advantages__list">
+      <li class="advantages__block">
+        <h3 class="advantages__title">721</h3>
+        <p class="advantages__description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages__block">
+        <h3 class="advantages__title">16kg</h3>
+        <p class="advantages__description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages__block">
+        <h3 class="advantages__title">84</h3>
+        <p class="advantages__description">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
+
 </section>
 
       <section class="gallery gallery__section">
@@ -584,26 +633,29 @@
             </li>
         
     </ul>
+
+
+    <div class="footer__button">
+        <button class="footer__button-locations" type="button">
+            Our Locations
+            <svg class="footer__button-svg" width="20px" height="20px">
+                <use href="/vector.1db44deb.svg#chevron-right"></use>
+            </svg>
+        </button>
+        <button class="footer__button-franchise" type="button">
+            Franchise
+            <svg class="footer__button-svg" width="20px" height="20px">
+                <use href="/vector.1db44deb.svg#chevron-right"></use>
+            </svg>
+        </button>
+    </div>
+
 </article>
 </section>
 
 
       <footer class="footer">
     <div class="footer__container container">
-        <div class="footer__button">
-            <button class="footer__button-locations" type="button">
-                Our Locations
-                <svg class="footer__button-svg" width="10px" height="12px">
-                    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-                </svg>
-            </button>
-            <button class="footer__button-franchise" type="button">
-                Franchise
-                <svg class="footer__button-svg" width="10px" height="12px">
-                    <use href="/arrow-button.f8924630.svg#icon-arrow-button"></use>
-                </svg>
-            </button>
-        </div>
         <div class="footer__content">
             <div class="footer__content--text">
                 <p class="footer__subtitle">homemade ice cream made</p> 
@@ -650,7 +702,7 @@
     </div>
 
 </footer>
-      <a href="" class="button-up" aria-label="scroll to top"></a>
+      <a href="#" class="button-up" aria-label="scroll to top"></a>
 
       <script src="/index.a3a51be6.js"></script>
     </main>

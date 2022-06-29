@@ -38,6 +38,7 @@
 
     background-color: white;
 
+
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     background-image: linear-gradient(to bottom,
             #FFFFFF 10%,
@@ -53,7 +54,39 @@
     width: 438px;
     height: 500px;
 
-}
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+       
+   
+   
+    border-radius: 10px;
+   
+
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+    // my
+        @include mq (desktop) {
+        width: 438px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        background-image: linear-gradient(to bottom,
+                                 #FFFFFF 10%,
+                                 #fff5f6 90%);
+                 }
+        }
+
 
 
 .header-modal-close--position {
@@ -67,19 +100,24 @@
 
     background-color: var(--card-cl);
 
-
+   
+    
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
+   
+   
 
     z-index: 300;
 
     &:hover {
         cursor: pointer;
+
         border: 1px solid #D41443;
         fill: #D41443;
 
     }
+
+
 
 }
 
@@ -94,12 +132,20 @@
     height: 10px;
 
     .header-modal-close--position:hover & {
+
         fill: currentColor;
 
-    }
+      
+
+    } 
+   
+
+
+
 }
 
 .header-modal__text {
+
 
     margin-bottom: 2px;    
     color: #D41443;
@@ -114,6 +160,62 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
+
+
+    color: #212121;
+    
+    margin-bottom: 2px;
+
+    // my
+
+    @include mq (desktop) {
+        color: #D41443;
+        margin-bottom: 10px;
+        font-family: 'Titan One';
+            
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.15;
+        
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+    }
+   
+}
+.header-modal__text-radio {
+    font-family: var(--secondary-font);
+        font-size: 15px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+    
+        margin-bottom: 2px;
+
+        @include mq (desktop) {
+                color: #D41443;
+                margin-top: 10px;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+               
+
+            }
+}
+.header-modal-form__item-radio {
+    color: #FFA5BA;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'DM Sans';
+        font-weight: 500;
+       
+        font-size: 16px;
+        line-height: 1.81;
 
 }
 
@@ -148,6 +250,7 @@
     margin-top: 5px;
     margin-bottom: 4px;
 
+
    
     font-family: 'DM Sans';
     font-weight: 500;
@@ -158,6 +261,20 @@
     margin-bottom: 2px;
     
 
+
+
+    // my
+        @include mq (desktop) {
+            font-family: 'DM Sans';
+            font-weight: 500;
+               
+            letter-spacing: 0.04em;
+            color: #907E82;
+            margin-top: 8px;
+            margin-bottom: 2px;
+        }
+  
+    
 
 }
 
@@ -174,6 +291,7 @@
 
     outline: transparent;
 
+
     &:focus, &:hover {
         border: 1px solid #D41443;
         cursor: pointer;
@@ -188,7 +306,30 @@
       
     }
 
+        &:focus {
+            border: 1px solid #D41443;
+        }
+
+
+
+    // my
+
+         &:hover {
+             border: 1px solid #D41443;
+         }
+        @include mq (desktop) {
+            border-radius: 22px;
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border: 1px solid #FFA5BA;
+
+            &::placeholder {
+                color: #907E82;
+            }
+        }
+
+
 }
+
 
 
 .header-modal__text-radio {
@@ -216,6 +357,21 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
+  
+
+ 
+
+
+    // my
+        .header-modal-form__input:hover+& {
+    
+            fill: #D41443;
+        }
+
+        .header-modal-form__input:focus+& {
+        
+            fill: #D41443;
+        }
 
     font-family: 'DM Sans';
     font-weight: 500;
@@ -252,6 +408,7 @@
     font-size: 14px;
     font-family: 'DM Sans';
 
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -260,6 +417,33 @@
     text-align: center;
     justify-content: center;
     color: #FFFFFF;
+
+    margin-top: auto;
+    // my
+
+        @include mq (desktop) {
+            width: 159px;
+            height: 44px;
+            margin-top: 30px;
+            font-family: 'DM Sans';
+    
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #D41443;
+                border: 2px solid #D41443;
+            }
+        }
+  
+
 
     &:hover,
     &:focus {
