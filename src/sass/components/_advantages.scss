@@ -14,6 +14,7 @@
 .advantages__list {
   @include mq(tablet) {
     display: flex;
+    justify-content: center;
   }
 }
 
