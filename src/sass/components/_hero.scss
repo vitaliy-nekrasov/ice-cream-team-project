@@ -301,7 +301,7 @@
     text-transform: uppercase;
     color: #D41443;
 
-    z-index: 2;
+    z-index: 10;
 
     @include mq (desktop) {
         font-size: 46px;
@@ -331,7 +331,7 @@
         height: 30px;
     }
 
-    z-index: 1;
+    z-index: 0;
 }
 
 .hero__text {
