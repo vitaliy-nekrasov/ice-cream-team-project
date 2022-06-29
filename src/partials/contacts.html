@@ -86,21 +86,92 @@
     </ul>
 
 
-    <div class="footer__button">
-        <button class="footer__button-locations" type="button">
-            Our Locations
-            <svg class="footer__button-svg" width="20px" height="20px">
-                <use href="./images/icon/vector.svg#chevron-right"></use>
-            </svg>
-        </button>
-        <button class="footer__button-franchise" type="button">
-            Franchise
-            <svg class="footer__button-svg" width="20px" height="20px">
-                <use href="./images/icon/vector.svg#chevron-right"></use>
-            </svg>
-        </button>
+    <div class="footer__button-list">
+      <button
+        class="footer__button-locations"
+        type="button"
+        data-modal-location-open
+      >
+        Our Locations
+        <svg class="footer__button-svg" width="10px" height="12px">
+          <use href="./images/icon/arrow-button.svg#icon-arrow-button"></use>
+        </svg>
+      </button>
+      <button
+        class="footer__button-franchise"
+        type="button"
+        data-modal-franchise-open
+      >
+        Franchise
+        <svg class="footer__button-svg" width="10px" height="12px">
+          <use href="./images/icon/arrow-button.svg#icon-arrow-button"></use>
+        </svg>
+      </button>
     </div>
 
 </article>
 </section>
+
+<!--Backdrop-->
+
+<div class="backdrop is-hidden" data-modal-location>
+    <div class="modal__footer">
+      <button type="button" class="modal__close-btn" data-modal-location-close>
+        <svg class="modal__icon-close-btn">
+          <use href="./images/icon/close-button.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48394.100539971834!2d-73.9623459!3d40.7041175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25941934bb85f%3A0x486aa5dc8e5c1416!2z0J_QsNGA0Log0JTQvtC80LjQvdC-!5e0!3m2!1sru!2sus!4v1656404447135!5m2!1sru!2sus"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-franchise>
+    <div class="modal__franchise">
+      <button type="button" class="modal__close-btn" data-modal-franchise-close>
+        <svg class="modal__icon-close-btn">
+          <use href="./images/icon/close-button.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="franchise__header">
+        <p class="franchise__text">Cooperation</p>
+        <h2 class="franchise__service">Franchise</h2>
+        <p class="franchise__defaulttext">
+          Ice-ice-baby Franchise Network is a Business - successfully operating
+          in 3 countries(Ukraine, Italy, Germany)
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">An initial fee</p>
+        <p class="franchise__defaulttext">
+          Pay a fee for 2 years for one outlet. It includes: The right to use
+          the brand, training with a specialist visit, further business support.
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">Buy equipment</p>
+        <p class="franchise__defaulttext">
+          Our refrigerated display cabinets are handcrafted in Europe
+          individually by order of the company. Our kiosks in the form of bright
+          pink retro cars are unique and inimitable, they are the intellectual
+          patented property of the company, which radically distinguishes us
+          from the kiosks of competing companies.
+        </p>
+      </div>
+      <div class="franchise__card">
+        <p class="franchise__name">Buy products</p>
+        <p class="franchise__defaulttext">
+          Buy our products and sell at the price you want. We do not have an
+          established price monopoly, which is also a “plus” of working with us.
+        </p>
+      </div>
+      <button class="franchise__poll" type="button">Application form</button>
+    </div>
+  </div>
 
