@@ -74,6 +74,7 @@
     </div>
   </div>
 </header>
+
 <div class="header-modal-backdrop is-hidden" data-modal>
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close>
@@ -94,10 +95,6 @@
             type="text"
             name="input-modal"
           />
-
-          <svg class="header-modal-form__icon">
-            <use href="./images/sprite.svg#icon-person"></use>
-          </svg>
         </label>
 
         <label class="header-modal-form-unit">
@@ -107,9 +104,6 @@
             type="tel"
             name="input-modal"
           />
-          <svg class="header-modal-form__icon">
-            <use href="./images/sprite.svg#icon-phone"></use>
-          </svg>
         </label>
 
         <div class="header-modal__text-radio">
@@ -120,12 +114,26 @@
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Ice coffe" />
+
            Ice coffe
+
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Milk shake" />
             Milk shake
           </label>
+
+
+          <label class="header-modal-form-unit">
+            <span class="header-modal-form__item">Comment</span>
+            <textarea
+              class="header-modal-form__input header-modal-form__comment"
+              name="input-modal"
+              placeholder="Add your comment"
+            ></textarea>
+          </label>
+        </div>
+
         </div>
 
         <!-- <label class="header-modal-form-unit">
@@ -148,6 +156,7 @@
             placeholder="Add your comment"
           ></textarea>
         </label>
+
       </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send

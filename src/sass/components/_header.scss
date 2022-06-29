@@ -10,27 +10,21 @@
     @include mq (desktop) {      
         padding-top: 37px;
         height: 125px;
-    }
-
-    
-    
+    }   
     position: fixed;
     
     top: 0;
     z-index: 10;
     width: 100%;
-    
-    
+      
 }
 
 // Дополнительный класс для скрипта и фиксированного хедера
-
-    .js-no-transparency {
+.js-no-transparency {
 
     background-color: rgba(212, 151, 213, 0.4);
     backdrop-filter: blur(10px);
     
-
 }
 
 
@@ -38,6 +32,7 @@
 
     position: relative;
     width: 100%;
+    
 } 
 
 .header-nav {
@@ -64,13 +59,10 @@
     }
 }
 
-
-
 .header-mobile-menu-btn {
     @include mq (desktop) {
         display: none;
     }
-    
     
     @include mq (mobile-only) {
     right: 15px;
@@ -90,15 +82,13 @@
     align-items: center;
     justify-content: center;
 
-
     border: none;
     background-color: transparent;
 
     &.is-open {
         position: absolute;
         z-index: 200;
-
-        
+       
         @include mq (mobile-only) {
         top: 20px;
         right: 15px;
@@ -108,7 +98,6 @@
         right: 260px;
         }
         
-
     }
 
 
@@ -121,7 +110,6 @@
         display: none;
     }
 
-
     &.is-open .header-icon-menu {
         display: none;
     }
@@ -129,8 +117,7 @@
     &.is-open .header-icon-close-menu {
         display: block;
         opacity: 1;
-        position: fixed;
-        
+        position: fixed;        
 
     }
 
@@ -162,9 +149,6 @@
         }
     }
 }
-
-
-
 
 .header-menu {
     width: 100%;
@@ -223,8 +207,7 @@
     
     }
           
-    }
-
+}
 
 .header-button-modal {
     display: flex;
@@ -278,34 +261,28 @@
         background-size: contain;
         background-repeat: no-repeat;
     }       
+
+    @include mq (desktop) {
         &:hover,
         &:focus {
-
-            color: #FFFFFF;  
+    
+            color: #FFFFFF;
             background: var(--hero-txt-cl);
-
+    
             &::after {
                 content: '';
                 background-image: url(../images/icon/vector-buy-clean.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-
-
+       
         }
     }
-
-
-.header-btn-icon {
-    width: 10px;
-    height: 10px;
-
+                
 }
 
 .header-button-modal-in-header {
     display: none;
-
-    
 
     @include mq (tablet-only) {
         position: fixed;
@@ -355,13 +332,7 @@
 .header-menu-link {
     display: flex;
     align-items: center;
-
     
-        // .main-position-correction {
-        //     padding-top: 150px;
-        // }
-    
-
     @include mq (not-desktop) {
     width: 100%;  
     padding-left: 20px;
@@ -385,3 +356,22 @@
         color: var(--hero-txt-cl);
     }
 }
+
+.anchor {
+    position: absolute;
+    z-index: -10;
+    top: -68px;
+    @include mq (tablet) {
+        top: -115px;
+    }
+    @include mq (desktop) {
+        top: -125px;
+    }
+}
+
+.about-section,
+.container-products,
+.contacts {
+    position: relative;
+}
+
