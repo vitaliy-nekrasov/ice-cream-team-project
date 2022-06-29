@@ -24,11 +24,11 @@
   }
 
   @include mq(tablet) {
-    margin-right: 25px;
+    margin-right: 75px;
   }
 
   @include mq(desktop) {
-    margin-right: 135px;
+    margin-right: 110px;
   }
 }
 

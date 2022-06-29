@@ -398,13 +398,7 @@
 .contacts__adress {
     color: #907E82;
     
-        &:hover {
-            color: #D41443;
-        }
-    
-        &:focus {
-            color: #D41443;
-        }
+        
 
         @include mq (mobile-only) {
             display: flex;
@@ -447,4 +441,22 @@
          display: flex;
          flex-direction: column;
     
+}
+.contacts__link {
+    &:hover {
+            color: #D41443;
+        }
+    
+    &:focus {
+            color: #D41443;
+        }
+}
+.contacts__tel {
+    &:hover {
+        color: #D41443;
+    }
+
+    &:focus {
+        color: #D41443;
+    }
 }
