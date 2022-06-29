@@ -1963,10 +1963,6 @@ li {
   color: #907e82;
 }
 
-.contacts__adress:hover, .contacts__adress:focus {
-  color: #d41443;
-}
-
 @media screen and (max-width: 767.98px) {
   .contacts__adress {
     flex-direction: column;
@@ -2009,6 +2005,10 @@ li {
 .contacts__card-time {
   flex-direction: column;
   display: flex;
+}
+
+.contacts__link:hover, .contacts__link:focus, .contacts__tel:hover, .contacts__tel:focus {
+  color: #d41443;
 }
 
 .reviews__img {
@@ -3596,10 +3596,6 @@ li {
   color: #907e82;
 }
 
-.contacts__adress:hover, .contacts__adress:focus {
-  color: #d41443;
-}
-
 @media screen and (max-width: 767.98px) {
   .contacts__adress {
     flex-direction: column;
@@ -3642,6 +3638,10 @@ li {
 .contacts__card-time {
   flex-direction: column;
   display: flex;
+}
+
+.contacts__link:hover, .contacts__link:focus, .contacts__tel:hover, .contacts__tel:focus {
+  color: #d41443;
 }
 
 html {
