@@ -27,8 +27,12 @@
 
     @include mq (mobile-only) {
         width: 90%;
-        height: 60%;
+        height: 62%;
         top: 37%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 
@@ -40,12 +44,7 @@
             #fff5f6 90%);
 
     border-radius: 24px;
-    @include mq (mobile-only) {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+   
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 30px;
@@ -95,11 +94,9 @@
     height: 10px;
 
     .header-modal-close--position:hover & {
-        fill: var(--accent-color);
+        fill: currentColor;
 
     }
-
-
 }
 
 .header-modal__text {
@@ -177,16 +174,11 @@
 
     outline: transparent;
 
-    &:focus {
+    &:focus, &:hover {
         border: 1px solid #D41443;
+        cursor: pointer;
     }
 
-
-    &:hover {
-        border: 1px solid #D41443;
-    }
-
-   
         border-radius: 22px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border: 1px solid #FFA5BA;
@@ -198,14 +190,6 @@
 
 }
 
-.header-modal-form__icon {
-    position: absolute;
-    top: 38px;
-    left: 12px;
-    width: 18px;
-    height: 18px;
-
-}
 
 .header-modal__text-radio {
     font-family: var(--secondary-font);
@@ -214,18 +198,17 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: #D41443;
 
-    margin-bottom: 2px;
+    
+    margin-top: 10px;
 
-    @include mq (desktop) {
-        color: #D41443;
-        margin-top: 10px;
+        
 
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
+    &:not(:last-child) {
+        margin-bottom: 10px;
     }
+               
 }
 
 .header-modal-form__item-radio {
@@ -278,13 +261,12 @@
     justify-content: center;
     color: #FFFFFF;
 
-    &:hover {
+    &:hover,
+    &:focus {
             background-color: #FFFFFF;
             color: #D41443;
             border: 2px solid #D41443;
+            cursor: pointer;
         }
-
-    
-
 
 }
