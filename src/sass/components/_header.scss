@@ -279,22 +279,26 @@
         background-size: contain;
         background-repeat: no-repeat;
     }       
+
+    @include mq (desktop) {
         &:hover,
         &:focus {
-
-            color: #FFFFFF;  
+    
+            color: #FFFFFF;
             background: var(--hero-txt-cl);
-
+    
             &::after {
                 content: '';
                 background-image: url(../images/icon/vector-buy-clean.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-
-
+    
+    
         }
     }
+                
+}
 
 
 .header-btn-icon {
@@ -386,3 +390,22 @@
         color: var(--hero-txt-cl);
     }
 }
+
+.anchor {
+    position: absolute;
+    z-index: -10;
+    top: -68px;
+    @include mq (tablet) {
+        top: -115px;
+    }
+    @include mq (desktop) {
+        top: -125px;
+    }
+}
+
+.about-section,
+.container-products,
+.contacts {
+    position: relative;
+}
+

@@ -373,16 +373,18 @@ li {
   display: inline-flex;
 }
 
-.header-button-modal:hover, .header-button-modal:focus {
-  color: #fff;
-  background: var(--hero-txt-cl);
-}
+@media screen and (min-width: 1200px) {
+  .header-button-modal:hover, .header-button-modal:focus {
+    color: #fff;
+    background: var(--hero-txt-cl);
+  }
 
-.header-button-modal:hover:after, .header-button-modal:focus:after {
-  content: "";
-  background-image: url("vector-buy-clean.7b197b31.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  .header-button-modal:hover:after, .header-button-modal:focus:after {
+    content: "";
+    background-image: url("vector-buy-clean.7b197b31.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .header-btn-icon {
@@ -468,6 +470,28 @@ li {
 
 .header-menu-link:hover, .header-menu-link:focus {
   color: var(--hero-txt-cl);
+}
+
+.anchor {
+  z-index: -10;
+  position: absolute;
+  top: -68px;
+}
+
+@media screen and (min-width: 768px) {
+  .anchor {
+    top: -115px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .anchor {
+    top: -125px;
+  }
+}
+
+.about-section, .container-products, .contacts {
+  position: relative;
 }
 
 .hero {
