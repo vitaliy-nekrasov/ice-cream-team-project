@@ -21,7 +21,7 @@
    
 }
 .contacts__list {
-    
+    margin-bottom: 32px;
 
     @include mq (tablet-only) {
         display: flex;

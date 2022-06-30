@@ -296,7 +296,7 @@
   }
 }
 .franchise__poll {
- 
+ padding: revert;
 
   @include mq (mobile-only) {
    
