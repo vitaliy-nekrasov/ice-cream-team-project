@@ -144,7 +144,6 @@ li {
 @media screen and (min-width: 1200px) {
   .header {
     height: 125px;
-    padding-top: 37px;
   }
 }
 
@@ -446,6 +445,7 @@ li {
   color: #fff;
   align-items: center;
   font-weight: 700;
+  transition: color .5s cubic-bezier(.4, 0, .2, 1);
   display: flex;
 }
 
@@ -464,6 +464,8 @@ li {
 @media screen and (min-width: 1200px) {
   .header-menu-link {
     margin-right: 35px;
+    padding-top: 40px;
+    padding-bottom: 37px;
     font-size: 16px;
     line-height: 1.31;
   }
@@ -1397,7 +1399,6 @@ li {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2x) {
   .product__name--coffee:before {
     background-image: url("d-product2@2x.f8596b07.png");
-
   }
 }
 
@@ -1407,7 +1408,6 @@ li {
     background-size: contain;
   }
 }
-
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2x) {
   .product__name--milkshakes:before {
@@ -2905,6 +2905,8 @@ li {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 35px;
+  padding-right: 17px;
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -2917,6 +2919,10 @@ li {
 .footer__button-locations:hover, .footer__button-locations:focus, .footer__button-franchise:hover, .footer__button-franchise:focus, .franchise__poll:hover, .franchise__poll:focus {
   color: var(--main-txt-cl);
   background-color: var(--hero-txt-cl);
+}
+
+.footer__button-locations:hover .footer__button-svg, .footer__button-locations:focus .footer__button-svg, .footer__button-franchise:hover .footer__button-svg, .footer__button-franchise:focus .footer__button-svg, .franchise__poll:hover .footer__button-svg, .franchise__poll:focus .footer__button-svg {
+  fill: #fff;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -2945,8 +2951,7 @@ li {
 }
 
 .footer__button-svg {
-  width: 9.8px;
-  height: 12px;
+  fill: var(--hero-txt-cl);
   margin-left: 14px;
 }
 
@@ -3231,7 +3236,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   .gallery__section {
-    background-color: var(--main-bg-cl);
+    background-image: linear-gradient(to bottom, var(--secondary-bg-cl) 78px, var(--main-bg-cl) 78px);
     padding-bottom: 80px;
   }
 }
@@ -3887,6 +3892,10 @@ li {
   }
 }
 
+.advantages__list > :hover:before {
+  transform: scale(1.5);
+}
+
 .advantages__list > :before {
   content: "";
   height: 50px;
@@ -3898,6 +3907,7 @@ li {
   width: 33px;
   background-image: url("milk.2a36f432.png");
   background-size: 33px 50px;
+  transition-duration: .5s;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2x) {
@@ -3910,6 +3920,7 @@ li {
   width: 50px;
   background-image: url("apple.3ce2f42b.png");
   background-size: 50px 50px;
+  transition-duration: .5s;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2x) {
@@ -3922,6 +3933,7 @@ li {
   width: 44px;
   background-image: url("heart.61aa518c.png");
   background-size: 44px 50px;
+  transition-duration: .5s;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2x) {
@@ -4426,16 +4438,16 @@ html {
 
 .button-up {
   width: 100px;
-  height: 80px;
+  height: 70px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
   opacity: 0;
   visibility: hidden;
   transition: all .25s ease-in-out;
   position: fixed;
   bottom: 250px;
-  right: 20px;
-  transform: translateY(25%);
+  right: 15px;
+  transform: translateY(10%);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -4464,7 +4476,7 @@ html {
 .button-up:before, .button-up:after {
   content: "";
   position: absolute;
-  top: -7%;
+  top: -6px;
   left: 50%;
 }
 
