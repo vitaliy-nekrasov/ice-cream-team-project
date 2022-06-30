@@ -19,7 +19,9 @@
 
   @include mq(desktop) {
     padding-bottom: 80px;
-    background-color: var(--main-bg-cl);
+    background-image: linear-gradient(to bottom,
+          var(--secondary-bg-cl) 78px,
+          var(--main-bg-cl) 78px);
   }
 }
 
