@@ -21,16 +21,17 @@
    
 }
 .contacts__list {
-    padding-bottom: 32px;
+    
 
     @include mq (tablet-only) {
         display: flex;
-        padding-bottom: 60px;
+        margin-bottom: 60px;
+        
 
     }
     @include mq (desktop) {
         display: flex;
-        padding-bottom: 60px;
+        margin-bottom: 60px;
          }
     
 }
