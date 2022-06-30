@@ -31,13 +31,11 @@
             </svg>
           </button>
         </div>
-
         <div class="header-menu" data-menu="">
           <button type="button" class="header-button-modal" data-modal-open="">
             <span class="header-button-modal-in-header">Buy now</span>
             <span class="header-button-modal-in-menu">Buy now</span>
           </button>
-
           <ul class="header-menu-list">
             <li>
               <a class="header-menu-link link" href="#body" close-home="">
@@ -60,13 +58,11 @@
               <a class="header-menu-link link" href="#contact" close-contact="">Contact</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </div>
   </div>
 </header>
-
 <div class="header-modal-backdrop is-hidden" data-modal="">
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close="">
@@ -74,7 +70,6 @@
         <use href="/sprite.f14d31f7.svg#cross-modal"></use>
       </svg>
     </button>
-
     <form class="header-modal-form">
       <p class="header-modal__text">
         Leave your ,<br> we will call you back
@@ -83,13 +78,17 @@
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your name</span>
           <input class="header-modal-form__input" type="text" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-person"></use>
+          </svg>
         </label>
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your contact</span>
           <input class="header-modal-form__input" type="tel" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
+          </svg>
         </label>
-
         <div class="header-modal__text-radio">
           <p class="header-modal__text-radio">What would you like to order?</p>
           <label class="header-modal-form__item-radio">
@@ -98,49 +97,24 @@
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Ice coffe">
-
            Ice coffe
-
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Milk shake">
             Milk shake
           </label>
-
-
-          <label class="header-modal-form-unit">
-            <span class="header-modal-form__item">Comment</span>
-            <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
-          </label>
         </div>
-
-        </div>
-
-        <!-- <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">E-mail</span>
-          <input
-            class="header-modal-form__input"
-            type="email"
-            name="input-modal"
-          />
-          <svg class="header-modal-form__icon">
-            <use href="./images/sprite.svg#icon-email"></use>
-          </svg>
-        </label> -->
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Comment</span>
           <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
         </label>
-
-      </form></div>
+      </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send
       </button>
-    
+    </form>
   </div>
-
-
+</div>
      <main class="main-position-correction">
         <section class="hero">
   <div class="container">
@@ -177,58 +151,119 @@
   </div>
 </section>
 
-        
-    <!-- Products -->
-    <section class="section products">
-      <div class="container container-products">
-        <!-- не отображается -->
-        <div class="anchor" id="products"></div>
-        <p class="products__lable">100% natural</p>
-        <h2 class="products__title">products</h2>
+        <!-- Products -->
+<section class="section products" id="products">
+  <div class="container container-products">
+    <p class="products__lable">100% natural</p>
+    <h2 class="products__title">products</h2>
 
-        <ul class="products__list">
-          <li class="products__item product">
+    <ul class="products__list">
+      <li class="products__item product scene scene--card1">
+        <div class="card1">
+          <div class="card1__face card1__face--front">
             <h3 class="product__name product__name--cream">ice cream</h3>
             <p class="product__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et. dolore magna aliqua facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et. dolore magna aliqua
+              facilisis.
             </p>
             <button type="button" class="product__button">
               <svg class="product__icon">
                 <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
               </svg>
             </button>
-          </li>
-          <li class="products__item product">
+          </div>
+          <div class="card1__face card1__face--back">
+            <h3 class="product__name product__name--cream product__name--back">
+              ice cream
+            </h3>
+            <div class="ingredients">
+              <p class="ingredients__title">Ingredients:</p>
+              <ul class="ingredients__list">
+                <li class="ingredients__item">- Milk</li>
+                <li class="ingredients__item">- Сhocolate</li>
+                <li class="ingredients__item">- Fantasy</li>
+                <li class="ingredients__item">- Creative</li>
+              </ul>
+              <p class="ingredients__tagline">Made with love!</p>
+              <p class="ingredients__impulse">It's delicious!</p>
+            </div>
+            <button type="button" class="product__button--back">Buy now</button>
+          </div>
+        </div>
+      </li>
+      <li class="products__item product scene scene--card2">
+        <div class="card2">
+          <div class="card2__face card2__face--front">
             <h3 class="product__name product__name--coffee">ice coffee</h3>
             <p class="product__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et. dolore magna aliqua facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et. dolore magna aliqua
+              facilisis.
             </p>
             <button type="button" class="product__button">
               <svg class="product__icon">
                 <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
               </svg>
             </button>
-          </li>
-          <li class="products__item product">
+          </div>
+          <div class="card2__face card2__face--back">
+            <h3 class="product__name product__name--coffee product__name--back">
+              ice-coffee
+            </h3>
+            <div class="ingredients">
+              <p class="ingredients__title">Ingredients:</p>
+              <ul class="ingredients__list">
+                <li class="ingredients__item">- Milk</li>
+                <li class="ingredients__item">- Сhocolate</li>
+                <li class="ingredients__item">- Fantasy</li>
+                <li class="ingredients__item">- Creative</li>
+              </ul>
+              <p class="ingredients__tagline">Made with love!</p>
+              <p class="ingredients__impulse">It's delicious!</p>
+            </div>
+            <button type="button" class="product__button--back">Buy now</button>
+          </div>
+        </div>
+      </li>
+      <li class="products__item product scene scene--card3">
+        <div class="card3">
+          <div class="card3__face card3__face--front">
             <h3 class="product__name product__name--milkshakes">milkshakes</h3>
             <p class="product__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et. dolore magna aliqua facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et. dolore magna aliqua
+              facilisis.
             </p>
             <button type="button" class="product__button">
               <svg class="product__icon">
                 <use href="/products_icon.791feb24.svg#icon-arrow-right"></use>
               </svg>
             </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-
+          </div>
+          <div class="card3__face card3__face--back">
+            <h3 class="product__name product__name--milkshakes product__name--back">
+              milkshakes
+            </h3>
+            <div class="ingredients">
+              <p class="ingredients__title">Ingredients:</p>
+              <ul class="ingredients__list">
+                <li class="ingredients__item">- Milk</li>
+                <li class="ingredients__item">- Сhocolate</li>
+                <li class="ingredients__item">- Fantasy</li>
+                <li class="ingredients__item">- Creative</li>
+              </ul>
+              <p class="ingredients__tagline">Made with love!</p>
+              <p class="ingredients__impulse">It's delicious!</p>
+            </div>
+            <button type="button" class="product__button--back">Buy now</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="/index.e5e95213.js"></script>
+</section>
         
 <section class="about-section">
   <!-- не отображается -->
@@ -690,7 +725,9 @@
   </div>
 
 
-        <a href="#" class="button-up" aria-label="scroll to top"></a>
+        <a href="" class="button-up" aria-label="scroll to top">
+    <img class="ice-icon" src="/ice-scroll.e0cfc122.png" aria-label="scroll to top" alt="ice-icon">
+</a>
 
         <script src="/index.a3a51be6.js"></script>
         <script src="/index.d6b62af9.js"></script>

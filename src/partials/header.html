@@ -34,13 +34,11 @@
             </svg>
           </button>
         </div>
-
         <div class="header-menu" data-menu>
           <button type="button" class="header-button-modal" data-modal-open>
             <span class="header-button-modal-in-header">Buy now</span>
             <span class="header-button-modal-in-menu">Buy now</span>
           </button>
-
           <ul class="header-menu-list">
             <li>
               <a class="header-menu-link link" href="#body" close-home>
@@ -68,13 +66,11 @@
               >
             </li>
           </ul>
-
         </div>
       </nav>
     </div>
   </div>
 </header>
-
 <div class="header-modal-backdrop is-hidden" data-modal>
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close>
@@ -82,7 +78,6 @@
         <use href="./images/sprite.svg#cross-modal"></use>
       </svg>
     </button>
-
     <form class="header-modal-form">
       <p class="header-modal__text">
         Leave your ,</br> we will call you back
@@ -95,8 +90,10 @@
             type="text"
             name="input-modal"
           />
+          <svg class="header-modal-form__icon">
+            <use href="./images/sprite.svg#icon-person"></use>
+          </svg>
         </label>
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your contact</span>
           <input
@@ -104,8 +101,10 @@
             type="tel"
             name="input-modal"
           />
+          <svg class="header-modal-form__icon">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
         </label>
-
         <div class="header-modal__text-radio">
           <p class="header-modal__text-radio">What would you like to order?</p>
           <label class="header-modal-form__item-radio">
@@ -114,40 +113,13 @@
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Ice coffe" />
-
            Ice coffe
-
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Milk shake" />
             Milk shake
           </label>
-
-
-          <label class="header-modal-form-unit">
-            <span class="header-modal-form__item">Comment</span>
-            <textarea
-              class="header-modal-form__input header-modal-form__comment"
-              name="input-modal"
-              placeholder="Add your comment"
-            ></textarea>
-          </label>
         </div>
-
-        </div>
-
-        <!-- <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">E-mail</span>
-          <input
-            class="header-modal-form__input"
-            type="email"
-            name="input-modal"
-          />
-          <svg class="header-modal-form__icon">
-            <use href="./images/sprite.svg#icon-email"></use>
-          </svg>
-        </label> -->
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Comment</span>
           <textarea
@@ -156,7 +128,6 @@
             placeholder="Add your comment"
           ></textarea>
         </label>
-
       </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send
