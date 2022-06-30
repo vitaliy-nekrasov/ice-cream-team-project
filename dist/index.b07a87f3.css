@@ -258,7 +258,12 @@ li {
 
 .header-mobile-menu-btn:hover .header-icon-menu, .header-mobile-menu-btn:focus .header-icon-menu {
   cursor: pointer;
-  fill: #fff;
+  stroke: #fff;
+}
+
+.header-icon-menu {
+  stroke: #d41443;
+  transition: stroke .25s ease-in-out;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -336,6 +341,7 @@ li {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
+  transition: background-color .25s ease-in-out, color .25s ease-in-out;
   display: flex;
 }
 
