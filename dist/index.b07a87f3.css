@@ -509,7 +509,7 @@ li {
 
 @media screen and (max-width: 767.98px) {
   .hero {
-    background-position: calc(50% + 43px) 92px, calc(50% + 50px) 83px;
+    background-position: calc(50% + 43px) 98px, calc(50% + 50px) 89px;
     background-size: 171px, 344px;
   }
 }
