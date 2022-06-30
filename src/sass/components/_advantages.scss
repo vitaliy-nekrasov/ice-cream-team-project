@@ -18,7 +18,7 @@
   }
 }
 
-.advantages__list > *:not(:last-child) {
+.advantages__list>*:not(:last-child) {
   @include mq(mobile-only) {
     margin-bottom: 32px;
   }
@@ -32,7 +32,11 @@
   }
 }
 
-.advantages__list > * {
+.advantages__list>* {
+  &:hover::before {
+    transform: scale(1.5);
+  }
+
   &::before {
     content: '';
     display: block;
@@ -41,27 +45,33 @@
   }
 
   &:first-child::before {
+    transition-duration: 500ms;
     width: 33px;
     background-image: url('../images/advantages/milk.png');
     background-size: 33px 50px;
+
     @include mq(retina) {
       background-image: url('../images/advantages/milk@2x.png');
     }
   }
 
   &:nth-child(2)::before {
+    transition-duration: 500ms;
     width: 50px;
     background-image: url('../images/advantages/apple.png');
     background-size: 50px 50px;
+
     @include mq(retina) {
       background-image: url('../images/advantages/apple@2x.png');
     }
   }
 
   &:last-child::before {
+    transition-duration: 500ms;
     width: 44px;
     background-image: url('../images/advantages/heart.png');
     background-size: 44px 50px;
+
     @include mq(retina) {
       background-image: url('../images/advantages/heart@2x.png');
     }
@@ -70,6 +80,7 @@
 
 .advantages__block {
   width: 230px;
+
   @include mq(tablet) {
     width: 155px;
   }
