@@ -31,13 +31,11 @@
             </svg>
           </button>
         </div>
-
         <div class="header-menu" data-menu="">
           <button type="button" class="header-button-modal" data-modal-open="">
             <span class="header-button-modal-in-header">Buy now</span>
             <span class="header-button-modal-in-menu">Buy now</span>
           </button>
-
           <ul class="header-menu-list">
             <li>
               <a class="header-menu-link link" href="#body" close-home="">
@@ -60,13 +58,11 @@
               <a class="header-menu-link link" href="#contact" close-contact="">Contact</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </div>
   </div>
 </header>
-
 <div class="header-modal-backdrop is-hidden" data-modal="">
   <div class="header-modal">
     <button class="header-modal-close--position" data-modal-close="">
@@ -74,7 +70,6 @@
         <use href="/sprite.f14d31f7.svg#cross-modal"></use>
       </svg>
     </button>
-
     <form class="header-modal-form">
       <p class="header-modal__text">
         Leave your ,<br> we will call you back
@@ -83,13 +78,17 @@
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your name</span>
           <input class="header-modal-form__input" type="text" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-person"></use>
+          </svg>
         </label>
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Your contact</span>
           <input class="header-modal-form__input" type="tel" name="input-modal">
+          <svg class="header-modal-form__icon">
+            <use href="/sprite.f14d31f7.svg#icon-phone"></use>
+          </svg>
         </label>
-
         <div class="header-modal__text-radio">
           <p class="header-modal__text-radio">What would you like to order?</p>
           <label class="header-modal-form__item-radio">
@@ -98,49 +97,24 @@
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Ice coffe">
-
            Ice coffe
-
           </label>
           <label class="header-modal-form__item-radio">
             <input type="radio" name="option" value="Milk shake">
             Milk shake
           </label>
-
-
-          <label class="header-modal-form-unit">
-            <span class="header-modal-form__item">Comment</span>
-            <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
-          </label>
         </div>
-
-        </div>
-
-        <!-- <label class="header-modal-form-unit">
-          <span class="header-modal-form__item">E-mail</span>
-          <input
-            class="header-modal-form__input"
-            type="email"
-            name="input-modal"
-          />
-          <svg class="header-modal-form__icon">
-            <use href="./images/sprite.svg#icon-email"></use>
-          </svg>
-        </label> -->
-
         <label class="header-modal-form-unit">
           <span class="header-modal-form__item">Comment</span>
           <textarea class="header-modal-form__input header-modal-form__comment" name="input-modal" placeholder="Add your comment"></textarea>
         </label>
-
-      </form></div>
+      </div>
       <button class="header-modal-mailing-btn-submit" type="submit">
         Send
       </button>
-    
+    </form>
   </div>
-
-
+</div>
      <main class="main-position-correction">
         <section class="hero">
   <div class="container">
@@ -178,8 +152,11 @@
 </section>
 
         <!-- Products -->
-<section class="section products" id="products">
+
+<section class="section products">
   <div class="container container-products">
+    <div class="anchor" id="products"></div>
+
     <p class="products__lable">100% natural</p>
     <h2 class="products__title">products</h2>
 
@@ -292,9 +269,8 @@
 </section>
         
 <section class="about-section">
-  <!-- не отображается -->
-  <div class="anchor"></div>
-<section class="about-section" id="made">
+<section class="about-section">
+  <div class="anchor" id="made"></div>
 
   <div class="about-section__overlay">
     <div class="container">
@@ -340,7 +316,8 @@
 </div>
 </section>
         
-<section class="advantages section" id="about">
+<section class="advantages section">
+  <div class="anchor" id="about"></div>
   <div class="container">
     <h2 class="advantages__header"></h2>
     <ul class="advantages__list">

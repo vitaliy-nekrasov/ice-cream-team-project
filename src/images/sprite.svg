@@ -12,17 +12,16 @@
             <path fill="#d41443" style="fill: var(--color2, #d41443)" d="M8.629 23.308c0 3.524 1.224 4.229 7.406 4.229s7.405-0.705 7.405-4.229c0-1.538-0.322-2.179-0.966-2.179-0.579 0-0.965 0.577-0.965 1.538 0 3.588-4.895 3.908-5.603 0.384-0.322-1.858-0.515-1.922-3.799-1.922h-3.478v2.179zM12.622 30.548c0.387 2.051 6.955 1.859 6.955-0.128 0-0.705-0.837-0.961-3.606-0.961-3.027 0-3.542 0.192-3.348 1.089z"></path>
         </symbol>
         <symbol id="burger-test" viewBox="0 0 20 14">
-            <path d="M0 1H20" stroke="#D41443"></path>
-            <path d="M0 7H20" stroke="#D41443"></path>
-            <path d="M0 13H20" stroke="#D41443"></path>
+            <path d="M0 1H20"></path>
+            <path d="M0 7H20"></path>
+            <path d="M0 13H20"></path>
         </symbol>
         <symbol viewBox="0 0 16 16" id="cross-test">
             <path d="M1.25925 1L14.7407 15" stroke="white"></path>
             <path d="M1 14.7407L15 1.25924" stroke="white"></path>
         </symbol>
-        <symbol viewBox="0 0 16 16" id="cross-modal">
-            <path d="M1.25925 1L14.7407 15" stroke="black"></path>
-            <path d="M1 14.7407L15 1.25924" stroke="black"></path>
+        <symbol id="cross-modal" viewBox="0 0 32 32">
+            <path d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z"></path>
         </symbol>
         <!-- Social icons -->
         <symbol viewBox="0 0 32 32" id="github">

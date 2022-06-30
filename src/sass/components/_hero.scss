@@ -13,7 +13,7 @@
 
   @include mq(mobile-only) {
     background-size: 171px, 344px;
-    background-position: calc(50% + 43px) 92px, calc(50% + 50px) 83px;
+    background-position: calc(50% + 43px) 98px, calc(50% + 50px) 89px;
   }
   @include mq(tablet) {
     background-size: 143px, 336px;

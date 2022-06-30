@@ -135,9 +135,14 @@
     &:hover .header-icon-menu,
     &:focus .header-icon-menu {
         cursor: pointer;
-        fill: #ffffff;
+        stroke: #ffffff;
     }
 
+}
+
+.header-icon-menu {
+    stroke: #D41443;
+    transition: stroke 250ms ease-in-out;
 }
 
 .header-mobile-btn-icon {
@@ -218,6 +223,8 @@
     font-weight: 700;
     margin-left: auto;
 
+    transition: background-color 250ms ease-in-out,
+                color 250ms ease-in-out;
     @include mq (not-desktop) {
         margin-top: 60px;
         margin-bottom: 32px;
@@ -371,7 +378,8 @@
 
 .about-section,
 .container-products,
-.contacts {
+.contacts,
+.advantages {
     position: relative;
 }
 
