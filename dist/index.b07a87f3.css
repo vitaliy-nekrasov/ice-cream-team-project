@@ -1397,6 +1397,7 @@ li {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2x) {
   .product__name--coffee:before {
     background-image: url("d-product2@2x.f8596b07.png");
+
   }
 }
 
@@ -1406,6 +1407,7 @@ li {
     background-size: contain;
   }
 }
+
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2x) {
   .product__name--milkshakes:before {
@@ -2954,6 +2956,27 @@ li {
   }
 }
 
+.modal__close-btn-footer {
+  width: 22px;
+  height: 22px;
+  background: var(--main-bg-cl);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.modal__close-btn-footer:hover, .modal__close-btn-footer:focus {
+  fill: #fff;
+  background: #d41443;
+  border: 1px solid #d41443;
+}
+
 .modal__footer {
   background-color: var(--main-txt-cl);
   border-radius: 8px;
@@ -3115,7 +3138,18 @@ li {
   font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .franchise__defaulttext {
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .franchise__defaulttext {
+    font-weight: 500;
+  }
 }
 
 .franchise__name {
